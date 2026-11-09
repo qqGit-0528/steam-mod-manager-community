@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <_ModManagerSourceRoot>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', 'src'))</_ModManagerSourceRoot>
+    <_ModManagerExpectedProject>$([MSBuild]::NormalizePath('$(_ModManagerSourceRoot)', '$(MSBuildProjectName)', '$(MSBuildProjectName).csproj'))</_ModManagerExpectedProject>
+    <_ModManagerLayer Condition="'$(MSBuildProjectFullPath)' == '$(_ModManagerExpectedProject)'">$(MSBuildProjectName)</_ModManagerLayer>
+    <_ModManagerEntryPoint Condition="'$(_ModManagerLayer)' == 'Ck3ModManager.Desktop' Or '$(_ModManagerLayer)' == 'Ck3ModManager.Cli'">true</_ModManagerEntryPoint>
+  </PropertyGroup>
+
+  <Target Name="CheckModManagerProjectReferences" BeforeTargets="ResolveProjectReferences"
+          Condition="'$(_ModManagerLayer)' != ''">
+    <ItemGroup>
+      <_AllowedModManagerReference Include="$([MSBuild]::NormalizePath('$(_ModManagerSourceRoot)', 'Ck3ModManager.Core', 'Ck3ModManager.Core.csproj'))"
+                                   Condition="'$(_ModManagerLayer)' != 'Ck3ModManager.Core'" />
+      <_AllowedModManagerReference Include="$([MSBuild]::NormalizePath('$(_ModManagerSourceRoot)', 'Ck3ModManager.Application', 'Ck3ModManager.Application.csproj'))"
+                                   Condition="'$(_ModManagerEntryPoint)' == 'true'" />
+      <_AllowedModManagerReference Include="$([MSBuild]::NormalizePath('$(_ModManagerSourceRoot)', 'Ck3ModManager.Infrastructure', 'Ck3ModManager.Infrastructure.csproj'))"
+                                   Condition="'$(_ModManagerEntryPoint)' == 'true'" />
+      <_ForbiddenModManagerReference Include="@(ProjectReference->'%(FullPath)')" Exclude="@(_AllowedModManagerReference)" />
+    </ItemGroup>
+
+    <Error Condition="'@(_ForbiddenModManagerReference)' != ''"
+           Code="SMM001"
+           Text="$(MSBuildProjectName) 引用了架构约定禁止的项目。目标为 @(_ForbiddenModManagerReference)。详见 docs/architecture.md。" />
+  </Target>
+</Project>

@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data name="ADependencyHasAnInvalidIDOr" xml:space="preserve">
+    <value>工坊依赖属于其他游戏或 ID 无效。</value>
+  </data>
+  <data name="ALocalRestoreFolderWithThisID" xml:space="preserve">
+    <value>已存在同一身份的本地恢复目录。</value>
+  </data>
+  <data name="AModIsMissingTheMetadataJson" xml:space="preserve">
+    <value>Mod 缺少当前游戏需要的 metadata.json：{0}</value>
+  </data>
+  <data name="AModMayAppearOnlyOnceIn" xml:space="preserve">
+    <value>同一 Mod 不能在播放集中重复出现。</value>
+  </data>
+  <data name="ANewerWorkshopEntryWasFoundRefresh" xml:space="preserve">
+    <value>已检测到更新的工坊条目，完整介绍仍需刷新。</value>
+  </data>
+  <data name="AProfileCanContainUpTo1" xml:space="preserve">
+    <value>配置最多可包含 1000 个 Mod。</value>
+  </data>
+  <data name="AProfileCannotContainTwoLocalCopies" xml:space="preserve">
+    <value>同一个工坊 Mod 的不同本地副本不能同时加入一份配置。</value>
+  </data>
+  <data name="ASnapshotSupportsUpTo1000" xml:space="preserve">
+    <value>快照最多支持 1000 项，配置内不能包含重复的 Mod。</value>
+  </data>
+  <data name="AZIPDirectoryContainsFileData" xml:space="preserve">
+    <value>ZIP 目录包含文件数据。</value>
+  </data>
+  <data name="ActiveProfile" xml:space="preserve">
+    <value>当前配置：{0}</value>
+  </data>
+  <data name="ActiveProfile2" xml:space="preserve">
+    <value>当前配置</value>
+  </data>
+  <data name="AddToProfile" xml:space="preserve">
+    <value>加入清单</value>
+  </data>
+  <data name="AllCategories" xml:space="preserve">
+    <value>全部类型</value>
+  </data>
+  <data name="AllVersions" xml:space="preserve">
+    <value>全部版本</value>
+  </data>
+  <data name="AlreadyUpToDate" xml:space="preserve">
+    <value>已是最新，无需下载</value>
+  </data>
+  <data name="AlsoEnabledInTheCurrentProfile" xml:space="preserve">
+    <value>当前配置额外启用：{0}</value>
+  </data>
+  <data name="AnEnabledModIsMissingFiles" xml:space="preserve">
+    <value>已启用的 Mod 缺少文件：{0}</value>
+  </data>
+  <data name="AnEnabledSnapshotItemIsMissingFrom" xml:space="preserve">
+    <value>当前配置缺少快照中的启用项：{0}</value>
+  </data>
+  <data name="AnImportWithThisNameAndVersion" xml:space="preserve">
+    <value>该名称和版本的导入目标已存在，保留现有安装。</value>
+  </data>
+  <data name="AnUpdateIsAvailableOnSteamSelect" xml:space="preserve">
+    <value>；Steam 已有更新，可再次点击更新</value>
+  </data>
+  <data name="AnotherAppInstanceIsWritingAProfile" xml:space="preserve">
+    <value>另一个应用实例正在写入配置，请稍后重试。</value>
+  </data>
+  <data name="AppManaged" xml:space="preserve">
+    <value>应用管理</value>
+  </data>
+  <data name="Applied" xml:space="preserve">
+    <value>已应用</value>
+  </data>
+  <data name="ApplyGameProfile" xml:space="preserve">
+    <value>应用游戏配置</value>
+  </data>
+  <data name="ApplyTheProfileAndLaunchViaSteam" xml:space="preserve">
+    <value>应用当前配置并通过 Steam 启动 {0}</value>
+  </data>
+  <data name="ApplyToGame" xml:space="preserve">
+    <value>应用到游戏</value>
+  </data>
+  <data name="AuthorDescription" xml:space="preserve">
+    <value>作者介绍</value>
+  </data>
+  <data name="AutomaticallyFindSteam" xml:space="preserve">
+    <value>自动发现 Steam 安装路径</value>
+  </data>
+  <data name="AvailableReleases" xml:space="preserve">
+    <value>可选发布：{0}</value>
+  </data>
+  <data name="BackToResults" xml:space="preserve">
+    <value>‹ 返回搜索结果</value>
+  </data>
+  <data name="BatchWorkshopStatusChecksAreUnavailableFor" xml:space="preserve">
+    <value>当前游戏暂不支持批量检查工坊状态。</value>
+  </data>
+  <data name="BindASnapshotToThisSaveFirst" xml:space="preserve">
+    <value>请先为此存档绑定一份快照。</value>
+  </data>
+  <data name="BindSaveToSnapshot" xml:space="preserve">
+    <value>绑定存档与快照</value>
+  </data>
+  <data name="BoundTo" xml:space="preserve">
+    <value>已绑定：{0}</value>
+  </data>
+  <data name="BrowseWorkshop" xml:space="preserve">
+    <value>浏览创意工坊</value>
+  </data>
+  <data name="CK3CrashesAndLogs" xml:space="preserve">
+    <value>CK3 崩溃与日志</value>
+  </data>
+  <data name="CK3Diagnostics" xml:space="preserve">
+    <value>⊕   CK3 诊断</value>
+  </data>
+  <data name="CK3DiffersFromSnapshotVersion" xml:space="preserve">
+    <value>当前 CK3 {0} 与快照版本 {1} 不同。</value>
+  </data>
+  <data name="CK3EnabledMods" xml:space="preserve">
+    <value>CK3 {0} · {1} 个已启用 Mod</value>
+  </data>
+  <data name="CK3LogDiagnosticsAreUnavailableForThis" xml:space="preserve">
+    <value>当前游戏不支持 CK3 日志诊断。</value>
+  </data>
+  <data name="CK3LogsLoaded" xml:space="preserve">
+    <value>CK3 日志读取完成</value>
+  </data>
+  <data name="CK3PlaysetCk3pack" xml:space="preserve">
+    <value>CK3 播放集.ck3pack</value>
+  </data>
+  <data name="CK3PlaysetPack" xml:space="preserve">
+    <value>CK3 播放集快照包</value>
+  </data>
+  <data name="CK3Save" xml:space="preserve">
+    <value>CK3 存档</value>
+  </data>
+  <data name="CK3VersionEnabledModsFilesAndLoad" xml:space="preserve">
+    <value>本次检查：实际 CK3 版本和选中配置的启用项、文件、加载顺序均与绑定快照一致。</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>已取消</value>
+  </data>
+  <data name="CannotReproduceThisModBecauseThePack" xml:space="preserve">
+    <value>快照包缺少 Mod 文件，无法复现：{0}</value>
+  </data>
+  <data name="CheckConflicts" xml:space="preserve">
+    <value>检查文件冲突</value>
+  </data>
+  <data name="CheckDependencies" xml:space="preserve">
+    <value>检查依赖</value>
+  </data>
+  <data name="CheckForUpdates" xml:space="preserve">
+    <value>检查并更新</value>
+  </data>
+  <data name="CheckPaths" xml:space="preserve">
+    <value>检查路径</value>
+  </data>
+  <data name="CheckSaveEnvironment" xml:space="preserve">
+    <value>检查存档环境</value>
+  </data>
+  <data name="CheckTheSteamClientSStatusAnd" xml:space="preserve">
+    <value>请检查 Steam 客户端状态后重试。</value>
+  </data>
+  <data name="CheckThisModInTheOfficialLauncher" xml:space="preserve">
+    <value>请先在官方启动器检查此 Mod：{0}</value>
+  </data>
+  <data name="CheckUpToWorkshopModsAtA" xml:space="preserve">
+    <value>单次最多检查 {0} 个工坊 Mod。</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>检查工坊更新</value>
+  </data>
+  <data name="CheckedFindingsAvailableMissingWorkshopItems" xml:space="preserve">
+    <value>检查了 {0} 项 · {1} 条发现 · {2} 个可获取的缺失工坊项</value>
+  </data>
+  <data name="Checking" xml:space="preserve">
+    <value>正在检查…</value>
+  </data>
+  <data name="CheckingExistingFiles" xml:space="preserve">
+    <value>正在检查已有文件</value>
+  </data>
+  <data name="CheckingForUpdates" xml:space="preserve">
+    <value>正在检查更新…</value>
+  </data>
+  <data name="CheckingTheCurrentSteamContent" xml:space="preserve">
+    <value>正在核对 Steam 当前内容</value>
+  </data>
+  <data name="ChooseALocalCK3SaveFile" xml:space="preserve">
+    <value>请选择本机的 CK3 存档文件。</value>
+  </data>
+  <data name="ChooseALocalCk3packFile" xml:space="preserve">
+    <value>请选择本机 .ck3pack 快照包。</value>
+  </data>
+  <data name="ChooseALocalFileOrFolder" xml:space="preserve">
+    <value>请选择本机文件或文件夹。</value>
+  </data>
+  <data name="ChooseALocalFolderToOpen" xml:space="preserve">
+    <value>这里只能打开本地目录。</value>
+  </data>
+  <data name="ChooseALocalZIPOrFolder" xml:space="preserve">
+    <value>请选择本机 ZIP 或文件夹。</value>
+  </data>
+  <data name="ChooseAVersion" xml:space="preserve">
+    <value>选择版本</value>
+  </data>
+  <data name="ChooseAZIPWithOneCK3Mod" xml:space="preserve">
+    <value>请选择单个 CK3 Mod 的 ZIP 文件。</value>
+  </data>
+  <data name="ChooseFromLocalMods" xml:space="preserve">
+    <value>从本地 Mod 库选择</value>
+  </data>
+  <data name="ClickAgainToDelete" xml:space="preserve">
+    <value>再次点击确认删除</value>
+  </data>
+  <data name="ClickAgainToDeleteTheSnapshotAnd" xml:space="preserve">
+    <value>再次点击确认删除快照和对应的恢复副本</value>
+  </data>
+  <data name="ClickTheDeleteButtonForAgainTo" xml:space="preserve">
+    <value>再次点击“{0}”的删除按钮以确认</value>
+  </data>
+  <data name="CloseTheGameAndParadoxLauncherBefore" xml:space="preserve">
+    <value>请先退出游戏和 P 社启动器，再应用配置。</value>
+  </data>
+  <data name="CommunicationWithSteamFailedReopenTheClient" xml:space="preserve">
+    <value>与 Steam 客户端的通信失败，请重新打开 Steam 后重试。</value>
+  </data>
+  <data name="ComparisonUnavailable" xml:space="preserve">
+    <value>无法比较</value>
+  </data>
+  <data name="Compatible" xml:space="preserve">
+    <value>兼容</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>确认删除</value>
+  </data>
+  <data name="ConfirmDependencyDownloads" xml:space="preserve">
+    <value>确认下载缺失依赖（{0}）</value>
+  </data>
+  <data name="ConfirmImport" xml:space="preserve">
+    <value>确认导入</value>
+  </data>
+  <data name="ConfirmInstall" xml:space="preserve">
+    <value>确认安装</value>
+  </data>
+  <data name="ConfirmTheGameUserDataFolderIn" xml:space="preserve">
+    <value>请先在路径设置中确认游戏用户数据目录。</value>
+  </data>
+  <data name="ConfirmTheUserDataFolderFirst" xml:space="preserve">
+    <value>请先确认用户数据目录。</value>
+  </data>
+  <data name="ConfirmYourLocalCK3InstallationAndGame" xml:space="preserve">
+    <value>请先确认本机 CK3 游戏目录和游戏版本。</value>
+  </data>
+  <data name="ConnectedToTheLocalSteamClient" xml:space="preserve">
+    <value>已连接本机 Steam</value>
+  </data>
+  <data name="ConnectingToTheLocalSteamClient" xml:space="preserve">
+    <value>正在连接本机 Steam 客户端</value>
+  </data>
+  <data name="ContainsAnUnrecognizedReplacePathEntry" xml:space="preserve">
+    <value>#{0} {1}：无法识别一条 replace_path。</value>
+  </data>
+  <data name="CouldNotBeListed" xml:space="preserve">
+    <value>#{0} {1}：无法列出文件。{2}</value>
+  </data>
+  <data name="CouldNotCheckDirectoryReplacement" xml:space="preserve">
+    <value>#{0} {1}：无法检查目录替换。{2}</value>
+  </data>
+  <data name="CouldNotCompare" xml:space="preserve">
+    <value>#{0} {1}：无法比较 {2}。{3}</value>
+  </data>
+  <data name="CouldNotConfirmThatTheLauncherClosed" xml:space="preserve">
+    <value>无法确认启动器是否退出，请关闭它后重试。</value>
+  </data>
+  <data name="CouldNotConnectToSteamOpenThe" xml:space="preserve">
+    <value>无法连接 Steam 客户端，请先打开并登录 Steam，并确认当前账户拥有游戏。</value>
+  </data>
+  <data name="CouldNotCreateTheDownloadTask" xml:space="preserve">
+    <value>无法创建下载任务：{0}</value>
+  </data>
+  <data name="CouldNotLaunchTheGameCheckThe" xml:space="preserve">
+    <value>无法启动游戏，请检查 Steam 是否已安装：{0}</value>
+  </data>
+  <data name="CouldNotLoadDownloadHistory" xml:space="preserve">
+    <value>下载历史读取失败：{0}</value>
+  </data>
+  <data name="CouldNotLocateTheApplicationEntryAssembly" xml:space="preserve">
+    <value>无法确定应用入口程序集。</value>
+  </data>
+  <data name="CouldNotLocateTheDownloadBridgeExecutable" xml:space="preserve">
+    <value>无法确定下载桥接程序位置。</value>
+  </data>
+  <data name="CouldNotOpenTheDiagnosticsFolder" xml:space="preserve">
+    <value>无法打开诊断目录：{0}</value>
+  </data>
+  <data name="CouldNotOpenTheProfileFile" xml:space="preserve">
+    <value>无法打开配置文件：{0}</value>
+  </data>
+  <data name="CouldNotParse" xml:space="preserve">
+    <value>#{0} {1}：无法解析 {2}。{3}</value>
+  </data>
+  <data name="CouldNotReadAsText" xml:space="preserve">
+    <value>{0} · 内容无法按文本读取</value>
+  </data>
+  <data name="CouldNotReadDefinitionsInTheZIP" xml:space="preserve">
+    <value>#{0} {1}：无法读取 ZIP 中的定义。{2}</value>
+  </data>
+  <data name="CouldNotReadFullWorkshopDetails" xml:space="preserve">
+    <value>未能读取完整工坊资料。</value>
+  </data>
+  <data name="CouldNotReadGameVersionFile" xml:space="preserve">
+    <value>无法读取游戏版本文件 {0}：{1}</value>
+  </data>
+  <data name="CouldNotReadModMetadataJsonAt" xml:space="preserve">
+    <value>无法读取 Mod metadata.json：{0}；{1}</value>
+  </data>
+  <data name="CouldNotReadSteamLibraryManifest" xml:space="preserve">
+    <value>无法读取 Steam 库清单 {0}：{1}</value>
+  </data>
+  <data name="CouldNotReadSteamStatus" xml:space="preserve">
+    <value>Steam 状态读取失败。</value>
+  </data>
+  <data name="CouldNotReadTheInstallManifest" xml:space="preserve">
+    <value>无法读取 {0} 安装清单 {1}：{2}</value>
+  </data>
+  <data name="CouldNotReadTheLocalDescriptorMod" xml:space="preserve">
+    <value>本地 descriptor.mod 无法读取，使用外层描述信息：{0}；{1}</value>
+  </data>
+  <data name="CouldNotReadThePrisonArchitectMod" xml:space="preserve">
+    <value>无法读取监狱建筑师 Mod 清单 {0}：{1}</value>
+  </data>
+  <data name="CouldNotReadTheSpecifiedGameFolder" xml:space="preserve">
+    <value>指定的游戏目录无法读取：{0}</value>
+  </data>
+  <data name="CouldNotReadTheWorkshopList" xml:space="preserve">
+    <value>未能读取工坊列表。</value>
+  </data>
+  <data name="CouldNotRefreshTheWorkshopList" xml:space="preserve">
+    <value>工坊列表刷新失败：{0}</value>
+  </data>
+  <data name="CouldNotRefreshWorkshopData" xml:space="preserve">
+    <value>更新工坊资料失败：{0}</value>
+  </data>
+  <data name="CouldNotRefreshWorkshopDetails" xml:space="preserve">
+    <value>更新工坊详情失败：{0}</value>
+  </data>
+  <data name="CouldNotRefreshWorkshopDetails2" xml:space="preserve">
+    <value>工坊资料刷新失败：{0}</value>
+  </data>
+  <data name="CouldNotRemoveTheTask" xml:space="preserve">
+    <value>无法移除任务记录：{0}</value>
+  </data>
+  <data name="CouldNotReopenTheZIP" xml:space="preserve">
+    <value>#{0} {1}：无法重新打开 ZIP。{2}</value>
+  </data>
+  <data name="CouldNotRetryTheDownload" xml:space="preserve">
+    <value>无法重试下载：{0}</value>
+  </data>
+  <data name="CouldNotSaveTheProfileFile" xml:space="preserve">
+    <value>无法保存配置文件：{0}</value>
+  </data>
+  <data name="CouldNotScanFolder" xml:space="preserve">
+    <value>无法扫描目录 {0}：{1}</value>
+  </data>
+  <data name="CouldNotScanThePrisonArchitectMod" xml:space="preserve">
+    <value>无法扫描监狱建筑师 Mod 目录 {0}：{1}</value>
+  </data>
+  <data name="CouldNotSelectASave" xml:space="preserve">
+    <value>无法选择存档：{0}</value>
+  </data>
+  <data name="CouldNotSelectTheFileOrFolder" xml:space="preserve">
+    <value>无法选择文件或文件夹：{0}</value>
+  </data>
+  <data name="CouldNotStartTheSteamClientBridge" xml:space="preserve">
+    <value>无法启动 Steam 客户端桥接。</value>
+  </data>
+  <data name="CouldNotVerifyTheFilesFor" xml:space="preserve">
+    <value>无法核对 Mod 文件：{0}（{1}）</value>
+  </data>
+  <data name="CreateAProfileForYourNextCampaign" xml:space="preserve">
+    <value>为下一场战役新建配置</value>
+  </data>
+  <data name="CreateOrSelectAProfileFirst" xml:space="preserve">
+    <value>请先新建或选择一份配置。</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>当前 {0} {1}</value>
+  </data>
+  <data name="CurrentGame" xml:space="preserve">
+    <value>当前游戏</value>
+  </data>
+  <data name="CurrentGameProfileLoaded" xml:space="preserve">
+    <value>已读取当前游戏配置</value>
+  </data>
+  <data name="CurrentInstallationNotFound" xml:space="preserve">
+    <value>#{0} {1}：找不到当前安装</value>
+  </data>
+  <data name="CurrentInstallationUnconfirmed" xml:space="preserve">
+    <value>当前安装状态未确认</value>
+  </data>
+  <data name="CurrentProfileLocalSteamStatus" xml:space="preserve">
+    <value>当前配置 · 本机 Steam 状态</value>
+  </data>
+  <data name="CurrentSeeTheAuthorSCompatibilityNotes" xml:space="preserve">
+    <value>当前 {0} {1} · 兼容性请查看作者说明</value>
+  </data>
+  <data name="CurrentUserDataPaths" xml:space="preserve">
+    <value>当前用户数据位置</value>
+  </data>
+  <data name="CurrentVersion" xml:space="preserve">
+    <value>当前 {0} 版本</value>
+  </data>
+  <data name="CurrentlyInstalled" xml:space="preserve">
+    <value>当前已安装</value>
+  </data>
+  <data name="CurrentlyNotInstalled" xml:space="preserve">
+    <value>当前未安装</value>
+  </data>
+  <data name="DeclaredDependencies" xml:space="preserve">
+    <value>声明依赖：{0}</value>
+  </data>
+  <data name="DeleteMod" xml:space="preserve">
+    <value>删除 Mod</value>
+  </data>
+  <data name="DeletePlaysetSnapshot" xml:space="preserve">
+    <value>删除播放集快照</value>
+  </data>
+  <data name="DeleteRunProfile" xml:space="preserve">
+    <value>删除运行配置</value>
+  </data>
+  <data name="DeleteSelectedProfile" xml:space="preserve">
+    <value>删除选中配置</value>
+  </data>
+  <data name="DeleteSnapshot" xml:space="preserve">
+    <value>删除快照</value>
+  </data>
+  <data name="DeleteThisProfile" xml:space="preserve">
+    <value>删除这份配置</value>
+  </data>
+  <data name="DeletedFromDisk" xml:space="preserve">
+    <value>已从磁盘删除“{0}”</value>
+  </data>
+  <data name="DeletedProfile" xml:space="preserve">
+    <value>已删除配置“{0}”</value>
+  </data>
+  <data name="DependenciesAreUnconfirmedCheckTheAuthorS" xml:space="preserve">
+    <value>依赖待确认，请以作者说明和 Steam 工坊的必需物品为准。</value>
+  </data>
+  <data name="DependenciesEnabledMods" xml:space="preserve">
+    <value>依赖检查 · 当前配置启用项</value>
+  </data>
+  <data name="DependencyCheckComplete" xml:space="preserve">
+    <value>依赖检查完成</value>
+  </data>
+  <data name="DependencyCycle" xml:space="preserve">
+    <value>循环依赖：{0}</value>
+  </data>
+  <data name="DependencyDeclaredByTheLocalDescriptorIs" xml:space="preserve">
+    <value>{0} → {1}：本地描述声明的前置未安装。</value>
+  </data>
+  <data name="DependencyDownloadsQueued" xml:space="preserve">
+    <value>已将 {0} 个依赖加入下载任务</value>
+  </data>
+  <data name="DetailSeparator" xml:space="preserve">
+    <value>；</value>
+  </data>
+  <data name="DetectAutomaticallyOrEnterTheFullMod" xml:space="preserve">
+    <value>自动发现，或填写 Mod 目录的完整路径</value>
+  </data>
+  <data name="DetectPathsAutomaticallyOrSetYourOwn" xml:space="preserve">
+    <value>自动发现环境，也允许你指定自己的安装位置。</value>
+  </data>
+  <data name="DifferentContent" xml:space="preserve">
+    <value>内容不同</value>
+  </data>
+  <data name="DirectoryOverridesReplacePath" xml:space="preserve">
+    <value>目录替换 · replace_path</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>已禁用</value>
+  </data>
+  <data name="Disabled2" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="DisabledListEntry" xml:space="preserve">
+    <value>禁用 · 清单记录</value>
+  </data>
+  <data name="DiscoverModsInTheWorkshop" xml:space="preserve">
+    <value>从创意工坊发现新内容</value>
+  </data>
+  <data name="DoesNotExist" xml:space="preserve">
+    <value>{0}不存在：{1}</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="DownloadAgain" xml:space="preserve">
+    <value>重新下载</value>
+  </data>
+  <data name="DownloadCanceledVerifiedContentIsAvailableFor" xml:space="preserve">
+    <value>下载已取消，已验证内容可供重试复用</value>
+  </data>
+  <data name="DownloadComplete" xml:space="preserve">
+    <value>下载完成</value>
+  </data>
+  <data name="DownloadCompleteFilesVerifiedAndInstalled" xml:space="preserve">
+    <value>下载完成，文件已校验并安装</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>下载失败</value>
+  </data>
+  <data name="DownloadInstalledAndLocalLibraryRefreshed" xml:space="preserve">
+    <value>下载已安装，本地 Mod 库已更新</value>
+  </data>
+  <data name="DownloadPlan" xml:space="preserve">
+    <value>将加入下载任务</value>
+  </data>
+  <data name="DownloadQueuedFollowItsProgressInThe" xml:space="preserve">
+    <value>下载任务已加入队列，可在应用内查看进度</value>
+  </data>
+  <data name="DownloadedEnableItFromTheGameS" xml:space="preserve">
+    <value>已下载；请到游戏内 Mod 菜单启用</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>下载中</value>
+  </data>
+  <data name="DownloadingInSteam" xml:space="preserve">
+    <value>Steam 正在下载</value>
+  </data>
+  <data name="Downloads" xml:space="preserve">
+    <value>⇩   下载任务</value>
+  </data>
+  <data name="Downloads2" xml:space="preserve">
+    <value>{0} · 下载任务</value>
+  </data>
+  <data name="DownloadsAreUnavailableInThisEnvironment" xml:space="preserve">
+    <value>当前环境未配置下载服务。</value>
+  </data>
+  <data name="DownloadsAreUnavailableInThisWorkspace" xml:space="preserve">
+    <value>当前工作区未配置下载服务。</value>
+  </data>
+  <data name="DragToChangeLoadOrder" xml:space="preserve">
+    <value>拖动调整加载顺序</value>
+  </data>
+  <data name="DuplicateFilePath" xml:space="preserve">
+    <value>包含重复文件路径：{0}</value>
+  </data>
+  <data name="DuplicateOrCaseConflictingPackagePath" xml:space="preserve">
+    <value>包内路径重复或大小写冲突：{0}</value>
+  </data>
+  <data name="DuplicatePlaysetIDsWereFound" xml:space="preserve">
+    <value>存在重复的播放集 ID。</value>
+  </data>
+  <data name="EarlierModPathsInThisDirectory" xml:space="preserve">
+    <value>#{0} {1} · 前序 Mod 有 {2} 个同目录路径</value>
+  </data>
+  <data name="EnableTheModsYouWantToSave" xml:space="preserve">
+    <value>请先启用需要保存的 Mod。</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>已启用</value>
+  </data>
+  <data name="Enabled2" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="EnabledFilesIncluded" xml:space="preserve">
+    <value>启用 · 含文件</value>
+  </data>
+  <data name="EnabledModsTheChangeTakesEffectThe" xml:space="preserve">
+    <value>已启用 {0} 个 Mod；下次启动游戏生效</value>
+  </data>
+  <data name="EnterAModNameOrWorkshopLink" xml:space="preserve">
+    <value>输入 Mod 名称、汉化或工坊链接</value>
+  </data>
+  <data name="EnterANonzeroWorkshopIDOrA" xml:space="preserve">
+    <value>请输入非零的工坊 ID，或 steamcommunity.com 的工坊条目链接。</value>
+  </data>
+  <data name="EnterAPageNumberAndPressEnter" xml:space="preserve">
+    <value>输入页码后按回车跳转</value>
+  </data>
+  <data name="EnterAProfileName" xml:space="preserve">
+    <value>请填写配置名称。</value>
+  </data>
+  <data name="EnterAProfileNameFirst" xml:space="preserve">
+    <value>请先填写配置名称。</value>
+  </data>
+  <data name="ExistingFilesPassedVerification" xml:space="preserve">
+    <value>文件已存在并通过校验</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="ExportCK3PackWithEnabledModFiles" xml:space="preserve">
+    <value>导出 CK3 快照包（包含已启用的 Mod 文件）</value>
+  </data>
+  <data name="ExportPack" xml:space="preserve">
+    <value>导出快照包</value>
+  </data>
+  <data name="ExportProfile" xml:space="preserve">
+    <value>导出配置</value>
+  </data>
+  <data name="ExportProfileFile" xml:space="preserve">
+    <value>导出配置文件</value>
+  </data>
+  <data name="ExternalPath" xml:space="preserve">
+    <value>外部路径</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>{0}失败：{1}</value>
+  </data>
+  <data name="FileConflictCheckComplete" xml:space="preserve">
+    <value>文件冲突检查完成</value>
+  </data>
+  <data name="FileConflictChecksAreUnavailableForThis" xml:space="preserve">
+    <value>当前游戏暂不支持文件冲突检查。</value>
+  </data>
+  <data name="FileConflictsEnabledMods" xml:space="preserve">
+    <value>文件冲突 · 当前配置启用项</value>
+  </data>
+  <data name="FileExceedsItsDeclaredLength" xml:space="preserve">
+    <value>文件超过声明长度：{0}</value>
+  </data>
+  <data name="FileLengthChanged" xml:space="preserve">
+    <value>文件长度有变化：{0}</value>
+  </data>
+  <data name="FileSizeMB" xml:space="preserve">
+    <value>文件大小 {0:N1} MB</value>
+  </data>
+  <data name="FilesAvailable" xml:space="preserve">
+    <value>文件可用</value>
+  </data>
+  <data name="FilesChangedWhileSavingWaitForThe" xml:space="preserve">
+    <value>保存期间 Mod 文件发生变化，请等待更新完成后重试：{0}</value>
+  </data>
+  <data name="FilesForInTheSteamManifestAre" xml:space="preserve">
+    <value>Steam 清单中的 {0} 游戏文件不可用：{1}</value>
+  </data>
+  <data name="FilesMissing" xml:space="preserve">
+    <value>文件缺失</value>
+  </data>
+  <data name="FilesSavedButTheLocalLibraryCould" xml:space="preserve">
+    <value>文件已保存，刷新本地库失败：{0}</value>
+  </data>
+  <data name="FilesVerifiedAndRestoredToASeparate" xml:space="preserve">
+    <value>已校验文件并恢复为独立配置，可点击「应用到游戏」</value>
+  </data>
+  <data name="FolderNotFound" xml:space="preserve">
+    <value>目录不存在：{0}</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>游戏</value>
+  </data>
+  <data name="GameAndModPaths" xml:space="preserve">
+    <value>游戏与 Mod 路径</value>
+  </data>
+  <data name="GameFolder" xml:space="preserve">
+    <value>{0} 游戏目录</value>
+  </data>
+  <data name="GameFolderNotFoundCheckSettings" xml:space="preserve">
+    <value>未找到游戏目录，请检查路径设置</value>
+  </data>
+  <data name="GameLaunchRequestFailedSeeTheError" xml:space="preserve">
+    <value>游戏启动请求未完成，请查看错误信息</value>
+  </data>
+  <data name="GameVersion" xml:space="preserve">
+    <value>游戏版本</value>
+  </data>
+  <data name="GameVersion2" xml:space="preserve">
+    <value> · 游戏版本 {0}</value>
+  </data>
+  <data name="GameVersionUndeclared" xml:space="preserve">
+    <value>未声明游戏版本</value>
+  </data>
+  <data name="GameVersionUnknownBrowseTheWorkshopAnd" xml:space="preserve">
+    <value>当前游戏版本未知 · 可浏览工坊并查看作者说明</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>跳转</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="ImportAndDownload" xml:space="preserve">
+    <value>导入并下载 {0} 项</value>
+  </data>
+  <data name="ImportPack" xml:space="preserve">
+    <value>导入快照包</value>
+  </data>
+  <data name="ImportPreview" xml:space="preserve">
+    <value>导入预览</value>
+  </data>
+  <data name="ImportProfile" xml:space="preserve">
+    <value>导入配置</value>
+  </data>
+  <data name="ImportProfileFile" xml:space="preserve">
+    <value>导入配置文件</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>正在{0}…</value>
+  </data>
+  <data name="Incompatible" xml:space="preserve">
+    <value>不兼容</value>
+  </data>
+  <data name="InitializeWorkspace" xml:space="preserve">
+    <value>初始化环境</value>
+  </data>
+  <data name="InstallFromFolder" xml:space="preserve">
+    <value>从文件夹安装…</value>
+  </data>
+  <data name="InstallFromZIP" xml:space="preserve">
+    <value>从 ZIP 安装…</value>
+  </data>
+  <data name="InstallLocalMod" xml:space="preserve">
+    <value>安装本地 Mod</value>
+  </data>
+  <data name="Installed" xml:space="preserve">
+    <value>已安装“{0}”</value>
+  </data>
+  <data name="InstalledButDisabled" xml:space="preserve">
+    <value>{0} → {1}：已安装但未启用。</value>
+  </data>
+  <data name="InstalledLocally" xml:space="preserve">
+    <value>本机已安装</value>
+  </data>
+  <data name="InstalledMods" xml:space="preserve">
+    <value>已安装内容</value>
+  </data>
+  <data name="Installing" xml:space="preserve">
+    <value>正在安装</value>
+  </data>
+  <data name="InstallingToTheLocalLibrary" xml:space="preserve">
+    <value>正在安装到本地库</value>
+  </data>
+  <data name="InvalidDescriptorOrLargerThan1MiB" xml:space="preserve">
+    <value>描述文件超过 1 MiB 或无效：{0}</value>
+  </data>
+  <data name="InvalidGameVersionField" xml:space="preserve">
+    <value>游戏版本字段无效。</value>
+  </data>
+  <data name="InvalidProfileFileFormat" xml:space="preserve">
+    <value>配置文件格式无效。</value>
+  </data>
+  <data name="InvalidUserDataFolder" xml:space="preserve">
+    <value>用户数据目录无效：{0}</value>
+  </data>
+  <data name="InvalidWorkshopFolder" xml:space="preserve">
+    <value>创意工坊目录无效：{0}</value>
+  </data>
+  <data name="IsInvalid" xml:space="preserve">
+    <value>{0}无效：{1}</value>
+  </data>
+  <data name="ItemsPending" xml:space="preserve">
+    <value>{0}{1} · {2} 项，{3} 项待处理</value>
+  </data>
+  <data name="KeepPending" xml:space="preserve">
+    <value>保留待匹配</value>
+  </data>
+  <data name="LanguageChanged" xml:space="preserve">
+    <value>界面语言已切换</value>
+  </data>
+  <data name="LanguageSaveFailed" xml:space="preserve">
+    <value>无法保存界面语言：{0}</value>
+  </data>
+  <data name="LatestSessionLogs" xml:space="preserve">
+    <value>最近会话日志</value>
+  </data>
+  <data name="LaunchGame" xml:space="preserve">
+    <value>启动游戏</value>
+  </data>
+  <data name="LaunchViaSteam" xml:space="preserve">
+    <value>通过 Steam 启动 {0}（{1}）</value>
+  </data>
+  <data name="LauncherFormatIsUnsupported" xml:space="preserve">
+    <value>暂不支持启动器格式 {0}。</value>
+  </data>
+  <data name="LauncherProfileWritesAreUnavailableForThis" xml:space="preserve">
+    <value>该游戏暂不支持写入启动器配置。</value>
+  </data>
+  <data name="LeaveBlankToDetectAutomaticallySavingRefreshes" xml:space="preserve">
+    <value>留空时自动发现。修改后保存，会重新扫描本地内容。</value>
+  </data>
+  <data name="LinkOrSpecialFileIsUnsupported" xml:space="preserve">
+    <value>不支持符号链接或特殊文件：{0}</value>
+  </data>
+  <data name="LinkOrSpecialFileSkipped" xml:space="preserve">
+    <value>{0} · 已跳过链接或特殊文件</value>
+  </data>
+  <data name="ListSeparator" xml:space="preserve">
+    <value>、</value>
+  </data>
+  <data name="LoadSteamWorkshopListings" xml:space="preserve">
+    <value>读取 Steam 工坊列表</value>
+  </data>
+  <data name="LoadWorkshopDetails" xml:space="preserve">
+    <value>读取工坊详情</value>
+  </data>
+  <data name="LoadedSteamWorkshopPageWithCompatibleVersions" xml:space="preserve">
+    <value>已读取 Steam 工坊第 {0} 页，兼容版本优先。</value>
+  </data>
+  <data name="Local" xml:space="preserve">
+    <value>本地</value>
+  </data>
+  <data name="LocalEnvironmentLoaded" xml:space="preserve">
+    <value>本地环境已载入</value>
+  </data>
+  <data name="LocalEnvironmentLoadedTheLauncherProfileCould" xml:space="preserve">
+    <value>本地环境已载入；启动器配置未读取：{0}</value>
+  </data>
+  <data name="LocalFilesPendingRequestedVersion" xml:space="preserve">
+    <value>尚未匹配本地文件 · 清单版本 {0}</value>
+  </data>
+  <data name="LocalInstallPreview" xml:space="preserve">
+    <value>本地安装预览</value>
+  </data>
+  <data name="LocalModFolder" xml:space="preserve">
+    <value>本地 Mod 目录</value>
+  </data>
+  <data name="LocalMods" xml:space="preserve">
+    <value>▤   本地 Mod</value>
+  </data>
+  <data name="LocalMods2" xml:space="preserve">
+    <value>本地 Mod</value>
+  </data>
+  <data name="LocalMods3" xml:space="preserve">
+    <value>{0} · 本地 Mod 库</value>
+  </data>
+  <data name="LocalModsChangedReviewTheMissingItems" xml:space="preserve">
+    <value>本地 Mod 已变化，请重新确认缺失项。</value>
+  </data>
+  <data name="LocalModsChangedReviewVersionsAndMissing" xml:space="preserve">
+    <value>本地 Mod 已变化，请重新核对版本和缺失项</value>
+  </data>
+  <data name="LocalSaveBindingStored" xml:space="preserve">
+    <value>已保存本机存档绑定</value>
+  </data>
+  <data name="LocalStatus" xml:space="preserve">
+    <value>本地状态</value>
+  </data>
+  <data name="MANAGE" xml:space="preserve">
+    <value>内容管理</value>
+  </data>
+  <data name="ManageAnOrderedModListForEach" xml:space="preserve">
+    <value>为每次战役整理一份清晰、有序的 Mod 清单。</value>
+  </data>
+  <data name="ManageInstalledModsAndGameVersions" xml:space="preserve">
+    <value>管理本地 Mod 和游戏版本。</value>
+  </data>
+  <data name="ManageModsAndProfilesSeparatelyForEach" xml:space="preserve">
+    <value>切换游戏，分别管理各自的 Mod 与配置</value>
+  </data>
+  <data name="ManifestTxtIsMissingName" xml:space="preserve">
+    <value>manifest.txt 缺少 Name。</value>
+  </data>
+  <data name="MatchingUsesTheVersionDeclaredByEach" xml:space="preserve">
+    <value>按 Mod 声明的版本匹配副本。</value>
+  </data>
+  <data name="MissingAppStateNode" xml:space="preserve">
+    <value>缺少 AppState 节点。</value>
+  </data>
+  <data name="MissingDisabled" xml:space="preserve">
+    <value>缺失 · 已禁用</value>
+  </data>
+  <data name="MissingDownloadAfterConfirmation" xml:space="preserve">
+    <value>缺失 · 确认后下载</value>
+  </data>
+  <data name="MissingInstallManually" xml:space="preserve">
+    <value>缺失 · 需手动安装</value>
+  </data>
+  <data name="MissingInstalldir" xml:space="preserve">
+    <value>缺少 installdir。</value>
+  </data>
+  <data name="MissingLibraryfoldersNode" xml:space="preserve">
+    <value>缺少 libraryfolders 节点。</value>
+  </data>
+  <data name="ModCK3Files" xml:space="preserve">
+    <value>{0} · Mod {1} · 支持 CK3 {2} · {3} 个文件 · {4}</value>
+  </data>
+  <data name="ModContentIsMissingOrHasNot" xml:space="preserve">
+    <value>Mod 内容不存在或尚未下载：{0}（{1}）</value>
+  </data>
+  <data name="ModFilesAreMissing" xml:space="preserve">
+    <value>Mod 文件缺失：{0}</value>
+  </data>
+  <data name="ModFilesAreMissingDownloadOrDisable" xml:space="preserve">
+    <value>Mod 文件缺失，请先下载或禁用：{0}</value>
+  </data>
+  <data name="ModFilesOrDescriptorDiffer" xml:space="preserve">
+    <value>Mod 文件或描述内容不同：{0}</value>
+  </data>
+  <data name="ModGame" xml:space="preserve">
+    <value>Mod {0} · 支持游戏 {1}  ·  {2}</value>
+  </data>
+  <data name="ModInstallationsAccessedThroughSymbolicLinksCannot" xml:space="preserve">
+    <value>不能删除通过符号链接访问的 Mod 安装。</value>
+  </data>
+  <data name="ModList" xml:space="preserve">
+    <value>Mod 清单</value>
+  </data>
+  <data name="ModMetadataJsonMustBeAJSON" xml:space="preserve">
+    <value>Mod metadata.json 必须是 JSON 对象。</value>
+  </data>
+  <data name="ModProfileJson" xml:space="preserve">
+    <value>Mod 配置.json</value>
+  </data>
+  <data name="ModRemovalIsUnavailableInThisEnvironment" xml:space="preserve">
+    <value>当前环境未配置 Mod 删除功能。</value>
+  </data>
+  <data name="ModZIPsInThePackExceedThe" xml:space="preserve">
+    <value>快照内的 Mod ZIP 合计超过解压大小或文件数上限。</value>
+  </data>
+  <data name="ModsDownloadedFromTheWorkshopAppearHere" xml:space="preserve">
+    <value>在创意工坊选择 Mod 下载，安装完成后会自动显示在这里。</value>
+  </data>
+  <data name="ModsOnThisPageSteamReleases" xml:space="preserve">
+    <value>本页 {0} 个 Mod · Steam 共 {1:N0} 条发布{2}</value>
+  </data>
+  <data name="ModsScannedSharedPathsDifferentContent" xml:space="preserve">
+    <value>已列出 {0} 个 Mod 的文件 · {1} 个同路径文件 · {2} 个内容不同{3}</value>
+  </data>
+  <data name="MostSubscribed" xml:space="preserve">
+    <value>最多订阅</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>下移 ↓</value>
+  </data>
+  <data name="MoveTheOuterModFileForThis" xml:space="preserve">
+    <value>请将此 Mod 的外层 .mod 文件放入游戏用户目录的 mod 文件夹：{0}</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>上移 ↑</value>
+  </data>
+  <data name="MultiGameModManager" xml:space="preserve">
+    <value>多游戏 Mod 管理</value>
+  </data>
+  <data name="MultiGamePreview" xml:space="preserve">
+    <value>多游戏 · 开发预览</value>
+  </data>
+  <data name="MultipleCopiesChooseOne" xml:space="preserve">
+    <value>多个副本 · 待选择</value>
+  </data>
+  <data name="MultipleCopiesMatchChooseOneInThe" xml:space="preserve">
+    <value>{0} → {1}：多个匹配副本，请在配置中选择。</value>
+  </data>
+  <data name="MyProfiles" xml:space="preserve">
+    <value>我的配置</value>
+  </data>
+  <data name="NewProfile" xml:space="preserve">
+    <value>＋ 新建配置</value>
+  </data>
+  <data name="NewProfile2" xml:space="preserve">
+    <value>新建配置</value>
+  </data>
+  <data name="NewProfileIsUnsavedAddModsFrom" xml:space="preserve">
+    <value>新配置尚未保存，可从本地 Mod 库加入内容</value>
+  </data>
+  <data name="NewRunProfile" xml:space="preserve">
+    <value>新运行配置</value>
+  </data>
+  <data name="NewestReleases" xml:space="preserve">
+    <value>最新发布</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="NoDependenciesAreListedInTheWorkshop" xml:space="preserve">
+    <value>工坊未列出依赖；仍请阅读作者说明。</value>
+  </data>
+  <data name="NoDependenciesDeclaredInTheDescriptor" xml:space="preserve">
+    <value>描述文件未声明依赖</value>
+  </data>
+  <data name="NoDependenciesNeedDownloading" xml:space="preserve">
+    <value>没有需要加入下载的依赖</value>
+  </data>
+  <data name="NoDownloadTasksYetChooseAMod" xml:space="preserve">
+    <value>暂无下载任务，请在创意工坊选择 Mod 并点击下载。</value>
+  </data>
+  <data name="NoDownloadedWorkshopFolders" xml:space="preserve">
+    <value>暂无已下载的工坊目录</value>
+  </data>
+  <data name="NoInstallationOfWasFoundSetThe" xml:space="preserve">
+    <value>未发现可用的 {0} 安装，请手动指定游戏目录。</value>
+  </data>
+  <data name="NoLauncherPlaysetFound" xml:space="preserve">
+    <value>尚无启动器播放集。</value>
+  </data>
+  <data name="NoLocalModFolderFound" xml:space="preserve">
+    <value>暂未找到本地 Mod 目录</value>
+  </data>
+  <data name="NoMatchingInstallation" xml:space="preserve">
+    <value>无匹配安装</value>
+  </data>
+  <data name="NoMatchingMods" xml:space="preserve">
+    <value>没有匹配的 Mod</value>
+  </data>
+  <data name="NoModsFound" xml:space="preserve">
+    <value>还没有发现 Mod</value>
+  </data>
+  <data name="NoPendingUpdate" xml:space="preserve">
+    <value>当前无待更新</value>
+  </data>
+  <data name="NoReleasesToDisplayOnThisPage" xml:space="preserve">
+    <value>本页没有可显示的发布</value>
+  </data>
+  <data name="NoSaveSelected" xml:space="preserve">
+    <value>尚未选择存档</value>
+  </data>
+  <data name="NoSessionLogsOrCrashReportsWere" xml:space="preserve">
+    <value>未找到可显示的会话日志或崩溃报告。</value>
+  </data>
+  <data name="NoWorkshopBrowsingSourceIsConfigured" xml:space="preserve">
+    <value>当前环境未配置工坊浏览来源。</value>
+  </data>
+  <data name="NotScannedYet" xml:space="preserve">
+    <value>尚未扫描</value>
+  </data>
+  <data name="OpenFolder" xml:space="preserve">
+    <value>打开目录</value>
+  </data>
+  <data name="OpenInSteam" xml:space="preserve">
+    <value>在 Steam 中打开</value>
+  </data>
+  <data name="OpenInstallFolder" xml:space="preserve">
+    <value>打开本地目录</value>
+  </data>
+  <data name="OpenSteamWorkshop" xml:space="preserve">
+    <value>打开 Steam 创意工坊</value>
+  </data>
+  <data name="OpenSteamWorkshop2" xml:space="preserve">
+    <value>打开 Steam 工坊</value>
+  </data>
+  <data name="OpenTheOfficialLauncherOnceToDiscover" xml:space="preserve">
+    <value>请先打开一次官方启动器，让它发现本地 Mod 后再应用。</value>
+  </data>
+  <data name="OpenTheSteamClientFirst" xml:space="preserve">
+    <value>请先打开 Steam 客户端。</value>
+  </data>
+  <data name="OpenWorkshop" xml:space="preserve">
+    <value>打开工坊</value>
+  </data>
+  <data name="OperationCancelled" xml:space="preserve">
+    <value>操作已取消</value>
+  </data>
+  <data name="OperationFailedSeeTheErrorDetails" xml:space="preserve">
+    <value>操作未完成，请查看错误信息</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>顺序</value>
+  </data>
+  <data name="PackPreview" xml:space="preserve">
+    <value>快照包预览</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="PageNumberMustBeGreaterThanZero" xml:space="preserve">
+    <value>页码必须大于零。</value>
+  </data>
+  <data name="PageOf" xml:space="preserve">
+    <value>第 {0} / {1} 页</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>/ {0} 页</value>
+  </data>
+  <data name="PartialCheck" xml:space="preserve">
+    <value> · 部分内容未完成检查</value>
+  </data>
+  <data name="PathsSavedAndLocalEnvironmentRefreshed" xml:space="preserve">
+    <value>路径已保存，本地环境已刷新</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>待应用</value>
+  </data>
+  <data name="PermanentlyDeleteFromDiskExitTheGame" xml:space="preserve">
+    <value>将从磁盘永久删除“{0}”。{1}请先退出游戏，使用此 Mod 的配置需手动调整。
+{2}</value>
+  </data>
+  <data name="PlaysetFileIsInvalidAndWasPreserved" xml:space="preserve">
+    <value>播放集文件 {0} 内容无效，原文件已保留：{1}</value>
+  </data>
+  <data name="PlaysetPackExported" xml:space="preserve">
+    <value>已导出快照包</value>
+  </data>
+  <data name="PlaysetSnapshotsAreUnavailableForThisGame" xml:space="preserve">
+    <value>当前游戏暂不支持播放集快照。</value>
+  </data>
+  <data name="PossibleDuplicate" xml:space="preserve">
+    <value>疑似同名副本</value>
+  </data>
+  <data name="PrepareGameLaunch" xml:space="preserve">
+    <value>准备启动游戏</value>
+  </data>
+  <data name="PreparingDownload" xml:space="preserve">
+    <value>准备下载</value>
+  </data>
+  <data name="PreparingToDiscoverLocalContent" xml:space="preserve">
+    <value>准备发现本地环境</value>
+  </data>
+  <data name="PreviewLocalMod" xml:space="preserve">
+    <value>预览本地 Mod</value>
+  </data>
+  <data name="PreviewPlaysetPack" xml:space="preserve">
+    <value>预览快照包</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="PreviousDownloadInterrupted" xml:space="preserve">
+    <value>上次下载已中断</value>
+  </data>
+  <data name="PreviousFilterResults" xml:space="preserve">
+    <value> · 原筛选结果</value>
+  </data>
+  <data name="PrisonArchitectDoesNotUseParadoxPlaysets" xml:space="preserve">
+    <value>监狱建筑师不使用 P 社播放集，暂不支持此功能。</value>
+  </data>
+  <data name="ProfileExported" xml:space="preserve">
+    <value>配置已导出</value>
+  </data>
+  <data name="ProfileFileJSON" xml:space="preserve">
+    <value>配置文件（JSON）</value>
+  </data>
+  <data name="ProfileImported" xml:space="preserve">
+    <value>配置已导入</value>
+  </data>
+  <data name="ProfileImportedFollowDownloadsInTheApp" xml:space="preserve">
+    <value>配置已导入，可在下载任务中查看进度</value>
+  </data>
+  <data name="ProfileLoaded" xml:space="preserve">
+    <value>清单已载入</value>
+  </data>
+  <data name="ProfileModIDsCannotBeEmpty" xml:space="preserve">
+    <value>配置中的 Mod ID 不能为空。</value>
+  </data>
+  <data name="ProfileName" xml:space="preserve">
+    <value>配置名称</value>
+  </data>
+  <data name="ProfileNameEGNorthernCampaign" xml:space="preserve">
+    <value>配置名称，例如：北境战役</value>
+  </data>
+  <data name="ProfileSaved" xml:space="preserve">
+    <value>配置已保存</value>
+  </data>
+  <data name="Profiles" xml:space="preserve">
+    <value>☷   运行配置</value>
+  </data>
+  <data name="Profiles2" xml:space="preserve">
+    <value>运行配置</value>
+  </data>
+  <data name="Profiles3" xml:space="preserve">
+    <value>{0} · 运行配置</value>
+  </data>
+  <data name="ProfilesAreStoredSeparatelyChangesToThe" xml:space="preserve">
+    <value>本工具独立保存配置，不会自动更改游戏或官方启动器文件。</value>
+  </data>
+  <data name="QueueDependencyDownloads" xml:space="preserve">
+    <value>排队下载依赖</value>
+  </data>
+  <data name="Queued" xml:space="preserve">
+    <value>排队中</value>
+  </data>
+  <data name="QueuedInSteam" xml:space="preserve">
+    <value>Steam 排队中</value>
+  </data>
+  <data name="QueuedInSteam2" xml:space="preserve">
+    <value>已交给 Steam，等待下载</value>
+  </data>
+  <data name="ReachedTheItemLimitSomeDependenciesWere" xml:space="preserve">
+    <value>达到 {0} 个项目的检查上限。其余依赖未检查。</value>
+  </data>
+  <data name="ReadCK3Logs" xml:space="preserve">
+    <value>读取 CK3 日志</value>
+  </data>
+  <data name="ReadCK3Save" xml:space="preserve">
+    <value>读取 CK3 存档</value>
+  </data>
+  <data name="ReadGameProfile" xml:space="preserve">
+    <value>读取游戏配置</value>
+  </data>
+  <data name="ReadLogs" xml:space="preserve">
+    <value>读取日志</value>
+  </data>
+  <data name="ReadProfile" xml:space="preserve">
+    <value>读取配置</value>
+  </data>
+  <data name="ReadRecentSessionLogsAndPastCrash" xml:space="preserve">
+    <value>读取 CK3 用户目录里的最近会话日志和历史崩溃报告。</value>
+  </data>
+  <data name="RecentlyUpdated" xml:space="preserve">
+    <value>最近更新</value>
+  </data>
+  <data name="Recommended" xml:space="preserve">
+    <value>推荐 · </value>
+  </data>
+  <data name="RecordTheTargetGameVersionAndMod" xml:space="preserve">
+    <value>记录目标游戏版本与 Mod 加载顺序。</value>
+  </data>
+  <data name="RefreshData" xml:space="preserve">
+    <value>更新资料</value>
+  </data>
+  <data name="Releases" xml:space="preserve">
+    <value>{0} 个发布</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="RequestedInstalled" xml:space="preserve">
+    <value>清单 {0} · 本机 {1}</value>
+  </data>
+  <data name="RequiredModIsMissing" xml:space="preserve">
+    <value>{0} → {1}：缺少前置。</value>
+  </data>
+  <data name="RequiresCK3InstalledGame" xml:space="preserve">
+    <value>{0} · 需要 CK3 {1} · 本机 {2} · {3}</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="RestoreAPackAsASeparateLocal" xml:space="preserve">
+    <value>从快照包恢复为独立本地配置</value>
+  </data>
+  <data name="RestoreBoundSnapshot" xml:space="preserve">
+    <value>恢复存档绑定的快照</value>
+  </data>
+  <data name="RestorePlaysetSnapshot" xml:space="preserve">
+    <value>恢复播放集快照</value>
+  </data>
+  <data name="RestoredASeparateLocalProfileChooseApply" xml:space="preserve">
+    <value>已恢复为独立本地配置，可点击「应用到游戏」</value>
+  </data>
+  <data name="RestoredModFilesHaveChangedForMove" xml:space="preserve">
+    <value>已恢复的 Mod 文件有变化：{0}。请先将旧副本移出 {1}。</value>
+  </data>
+  <data name="RetryDownload" xml:space="preserve">
+    <value>重试下载</value>
+  </data>
+  <data name="ReusingTheSteamInstallation" xml:space="preserve">
+    <value>Steam 内容已安装，直接复用</value>
+  </data>
+  <data name="ReviewEnabledModsLoadOrderAndVersion" xml:space="preserve">
+    <value>请核对启停、加载顺序和版本差异</value>
+  </data>
+  <data name="ReviewTheCK3VersionEnabledModsAnd" xml:space="preserve">
+    <value>请核对 CK3 版本、Mod 启停和顺序</value>
+  </data>
+  <data name="ReviewTheModSourceAndInstallationPath" xml:space="preserve">
+    <value>请核对 Mod 来源和安装位置</value>
+  </data>
+  <data name="SameContent" xml:space="preserve">
+    <value>内容相同</value>
+  </data>
+  <data name="SaveAndRescan" xml:space="preserve">
+    <value>保存并重新扫描</value>
+  </data>
+  <data name="SaveBindingsAreUnavailableForThisGame" xml:space="preserve">
+    <value>当前游戏暂不支持存档关联。</value>
+  </data>
+  <data name="SaveEnvironmentCheckedReviewTheDifferences" xml:space="preserve">
+    <value>存档环境检查完成，请查看差异</value>
+  </data>
+  <data name="SaveEnvironmentMatchesTheSnapshot" xml:space="preserve">
+    <value>存档环境检查完成，选中配置与快照一致</value>
+  </data>
+  <data name="SaveInformationLoaded" xml:space="preserve">
+    <value>已读取存档信息</value>
+  </data>
+  <data name="SavePathsAndScan" xml:space="preserve">
+    <value>保存路径并扫描</value>
+  </data>
+  <data name="SavePlaysetSnapshot" xml:space="preserve">
+    <value>保存播放集快照</value>
+  </data>
+  <data name="SaveProfile" xml:space="preserve">
+    <value>保存配置</value>
+  </data>
+  <data name="SaveRunProfile" xml:space="preserve">
+    <value>保存运行配置</value>
+  </data>
+  <data name="SaveThePackOutsideTheFoldersOf" xml:space="preserve">
+    <value>请将快照包保存到参与配置的 Mod 目录之外。</value>
+  </data>
+  <data name="SaveTheProfileAndEnabledModFiles" xml:space="preserve">
+    <value>将配置和已启用的 Mod 文件导出到本机</value>
+  </data>
+  <data name="SaveVersionModEntries" xml:space="preserve">
+    <value>存档版本：{0} · Mod 条目：{1}</value>
+  </data>
+  <data name="SavedCK3SnapshotEnabledMods" xml:space="preserve">
+    <value>已保存 CK3 {0} 快照，共 {1} 个已启用 Mod</value>
+  </data>
+  <data name="ScanCompleteModsFound" xml:space="preserve">
+    <value>扫描完成，共发现 {0} 个 Mod</value>
+  </data>
+  <data name="ScanLocalMods" xml:space="preserve">
+    <value>扫描本地 Mod</value>
+  </data>
+  <data name="ScannedAt" xml:space="preserve">
+    <value>扫描于 {0:HH:mm:ss}</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="SearchAndDownloadMods" xml:space="preserve">
+    <value>搜索和下载 Mod。</value>
+  </data>
+  <data name="SearchByNameOrBrowseThisWeek" xml:space="preserve">
+    <value>输入名称搜索，或查看本周热门 Mod。</value>
+  </data>
+  <data name="SearchLocalMods" xml:space="preserve">
+    <value>搜索本地 Mod</value>
+  </data>
+  <data name="SearchMods" xml:space="preserve">
+    <value>搜索 Mod</value>
+  </data>
+  <data name="SearchTheWorkshopFirst" xml:space="preserve">
+    <value>请先搜索工坊内容。</value>
+  </data>
+  <data name="SelectALocalCk3SaveFile" xml:space="preserve">
+    <value>请选择本机的 .ck3 存档。</value>
+  </data>
+  <data name="SelectAProfileFirst" xml:space="preserve">
+    <value>请先选择运行配置。</value>
+  </data>
+  <data name="SelectASnapshotAndBindItTo" xml:space="preserve">
+    <value>请为此存档选择并绑定快照。</value>
+  </data>
+  <data name="SelectCK3ModFolder" xml:space="preserve">
+    <value>选择 CK3 Mod 文件夹</value>
+  </data>
+  <data name="SelectCK3ModZIP" xml:space="preserve">
+    <value>选择 CK3 Mod ZIP</value>
+  </data>
+  <data name="SelectCK3PlaysetPack" xml:space="preserve">
+    <value>选择 CK3 播放集快照包</value>
+  </data>
+  <data name="SelectCK3Save" xml:space="preserve">
+    <value>选择 CK3 存档</value>
+  </data>
+  <data name="SelectGame" xml:space="preserve">
+    <value>选择游戏</value>
+  </data>
+  <data name="SelectOrCreateAProfile" xml:space="preserve">
+    <value>选择或新建运行配置</value>
+  </data>
+  <data name="SelectTheInstallFolder" xml:space="preserve">
+    <value>选择 {0} 安装目录</value>
+  </data>
+  <data name="SelectedSteamFolder" xml:space="preserve">
+    <value>指定的 Steam 目录</value>
+  </data>
+  <data name="SessionLogsPastCrashReports" xml:space="preserve">
+    <value>{0} 份会话日志 · {1} 份历史崩溃报告</value>
+  </data>
+  <data name="SessionsAndPastCrashes" xml:space="preserve">
+    <value>会话与历史崩溃</value>
+  </data>
+  <data name="SetTheCK3UserDataFolderFirst" xml:space="preserve">
+    <value>请先设置 CK3 用户数据目录。</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>⚙   路径设置</value>
+  </data>
+  <data name="Settings2" xml:space="preserve">
+    <value>{0} · 路径设置</value>
+  </data>
+  <data name="SettingsFileIsCorruptOrUsesAn" xml:space="preserve">
+    <value>配置文件 {0} 已损坏或格式不兼容。原文件已保留，请备份后修复或移走该文件。</value>
+  </data>
+  <data name="SettingsFileIsEmptyBackItUp" xml:space="preserve">
+    <value>配置文件 {0} 内容为空。原文件已保留，请备份后修复或移走该文件。</value>
+  </data>
+  <data name="ShowOptions" xml:space="preserve">
+    <value>展开选项</value>
+  </data>
+  <data name="ShowingExistingDataWhileRefreshingWorkshopDetails" xml:space="preserve">
+    <value>已显示已有资料，正在更新工坊详情…</value>
+  </data>
+  <data name="ShowingTheLastDescriptionWhileCheckingFor" xml:space="preserve">
+    <value>正在显示上次取得的介绍，并检查更新…</value>
+  </data>
+  <data name="ShowingTheLastLoadedDataWhileChecking" xml:space="preserve">
+    <value>正在显示上次取得的资料，并检查更新…</value>
+  </data>
+  <data name="ShowingTheSummaryWhileLoadingTheFull" xml:space="preserve">
+    <value>已有简介，正在补全作者介绍…</value>
+  </data>
+  <data name="ShowingUpTo32KiBAnd120" xml:space="preserve">
+    <value>只显示日志末尾的 32 KiB，最多 120 行。</value>
+  </data>
+  <data name="SizeAtInstall" xml:space="preserve">
+    <value>安装时大小 · {0}</value>
+  </data>
+  <data name="SkippedBecauseTheFileCountLimitWas" xml:space="preserve">
+    <value>#{0} {1}：达到检查文件数上限，跳过此 Mod。</value>
+  </data>
+  <data name="SkippedSymbolicLinkOrReparsePoint" xml:space="preserve">
+    <value>跳过符号链接或重解析点：{0}</value>
+  </data>
+  <data name="SkippedUnreadableModDescriptor" xml:space="preserve">
+    <value>跳过无法读取的 Mod 描述文件 {0}：{1}</value>
+  </data>
+  <data name="SnapshotAndRestoredCopiesDeleted" xml:space="preserve">
+    <value>已删除快照，并清理恢复出的本地副本</value>
+  </data>
+  <data name="SnapshotDescriptorVerificationFailed" xml:space="preserve">
+    <value>快照描述文件校验失败：{0}</value>
+  </data>
+  <data name="SnapshotModFileVerificationFailed" xml:space="preserve">
+    <value>快照 Mod 文件校验失败：{0}</value>
+  </data>
+  <data name="SomeDependenciesCouldNotBeQueued" xml:space="preserve">
+    <value>部分依赖未能排队：{0}</value>
+  </data>
+  <data name="SomeModsCouldNotBeQueued" xml:space="preserve">
+    <value>部分 Mod 未能加入下载：{0}</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="SourceFilesChangedDuringCopyingPreviewThe" xml:space="preserve">
+    <value>复制期间来源文件有变化，请重新预览。</value>
+  </data>
+  <data name="SourceInstallTo" xml:space="preserve">
+    <value>来源  {0}
+安装到  {1}</value>
+  </data>
+  <data name="SourceSteamWorkshop" xml:space="preserve">
+    <value>来源：Steam 创意工坊</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>启停</value>
+  </data>
+  <data name="StatusChecksRequireAValidWorkshopID" xml:space="preserve">
+    <value>工坊状态查询仅接受支持应用内下载的游戏中的有效工坊 ID。</value>
+  </data>
+  <data name="StatusUnknown" xml:space="preserve">
+    <value>状态未知</value>
+  </data>
+  <data name="SteamClientCommunicationIsNotReady" xml:space="preserve">
+    <value>Steam 客户端通信未就绪。</value>
+  </data>
+  <data name="SteamClientDownloadsUseYourExistingSteam" xml:space="preserve">
+    <value>Steam 客户端下载不使用独立扫码授权。</value>
+  </data>
+  <data name="SteamClientSignInDoesNotAutomatically" xml:space="preserve">
+    <value>电脑 Steam 客户端登录不会自动授权本工具。</value>
+  </data>
+  <data name="SteamClosedAndDownloadTrackingEndedReopen" xml:space="preserve">
+    <value>Steam 客户端已退出，下载跟踪已结束；重新打开 Steam 后重试。</value>
+  </data>
+  <data name="SteamClosedAndSomeItemStatusesAre" xml:space="preserve">
+    <value>Steam 客户端已退出，部分状态无法读取。</value>
+  </data>
+  <data name="SteamClosedBeforeConfirmingTheUnsubscribeRequest" xml:space="preserve">
+    <value>Steam 已退出，无法确认取消订阅。</value>
+  </data>
+  <data name="SteamCouldNotReadThisItemResult" xml:space="preserve">
+    <value>Steam 未能读取此物品（结果码 {0}）。物品可能已删除、设为私有或暂时不可用。</value>
+  </data>
+  <data name="SteamDataHasAMissingOrInvalid" xml:space="preserve">
+    <value>Steam 数据缺少或包含无效字段 {0}。</value>
+  </data>
+  <data name="SteamDataIsMissingRequiredField" xml:space="preserve">
+    <value>Steam 数据缺少必要字段 {0}。</value>
+  </data>
+  <data name="SteamDidNotAcceptTheDownloadRequest" xml:space="preserve">
+    <value>Steam 未接受下载请求，请确认已登录且该 Mod 可用。</value>
+  </data>
+  <data name="SteamDidNotAcceptTheSubscriptionRequest" xml:space="preserve">
+    <value>Steam 未接受订阅请求，请检查客户端登录状态。</value>
+  </data>
+  <data name="SteamDidNotAcceptTheUnsubscribeRequest" xml:space="preserve">
+    <value>Steam 未接受取消订阅请求。</value>
+  </data>
+  <data name="SteamDidNotConfirmThatInstallationFinished" xml:space="preserve">
+    <value>Steam 未确认内容安装完成。</value>
+  </data>
+  <data name="SteamDidNotConfirmTheSubscriptionChange" xml:space="preserve">
+    <value>Steam 未确认订阅变更，请检查客户端网络后重试。</value>
+  </data>
+  <data name="SteamDidNotConfirmTheSubscriptionIn" xml:space="preserve">
+    <value>Steam 订阅确认超时，请检查客户端网络后重试。</value>
+  </data>
+  <data name="SteamDidNotConfirmTheUnsubscribe" xml:space="preserve">
+    <value>Steam 未确认取消订阅。</value>
+  </data>
+  <data name="SteamDidNotFinishTheDownload" xml:space="preserve">
+    <value>Steam 下载未完成。</value>
+  </data>
+  <data name="SteamDidNotReturnAValidInstallation" xml:space="preserve">
+    <value>Steam 未返回有效的安装目录。</value>
+  </data>
+  <data name="SteamDidNotReturnInstallationDetailsFor" xml:space="preserve">
+    <value>Steam 未返回已完成内容的安装信息。</value>
+  </data>
+  <data name="SteamDownloadsAndUpdatesTheModIt" xml:space="preserve">
+    <value>由 Steam 下载并维护更新，安装后自动显示在本地 Mod 库。</value>
+  </data>
+  <data name="SteamFailedResult" xml:space="preserve">
+    <value>Steam {0}失败（结果 {1}）：</value>
+  </data>
+  <data name="SteamFailedToUnsubscribe" xml:space="preserve">
+    <value>Steam 取消订阅失败。</value>
+  </data>
+  <data name="SteamFinishedDownloadingAndInstallingTheMod" xml:space="preserve">
+    <value>Steam 已完成下载并安装</value>
+  </data>
+  <data name="SteamFolder" xml:space="preserve">
+    <value>Steam 目录</value>
+  </data>
+  <data name="SteamHasNotConfirmedTheUnsubscribeOr" xml:space="preserve">
+    <value>Steam 未确认取消订阅或仍在下载；请等待 Steam 完成处理后重试。</value>
+  </data>
+  <data name="SteamInstallationNotFoundSetItsFolder" xml:space="preserve">
+    <value>未发现 Steam 安装目录；可以在设置中手动指定。</value>
+  </data>
+  <data name="SteamIsClosingAndDownloadTrackingEnded" xml:space="preserve">
+    <value>Steam 客户端正在退出，下载跟踪已结束；重新打开 Steam 后重试。</value>
+  </data>
+  <data name="SteamIsOfflineCheckTheClientConnection" xml:space="preserve">
+    <value>Steam 客户端未联网，请确认客户端连接正常后重试。</value>
+  </data>
+  <data name="SteamLaunchRequestedForContinueInSteam" xml:space="preserve">
+    <value>已请求 Steam 启动 {0}，请在 Steam 或游戏启动器中继续</value>
+  </data>
+  <data name="SteamLibraryFolder" xml:space="preserve">
+    <value>Steam 库目录</value>
+  </data>
+  <data name="SteamManagesInstallationAndDownloadProgress" xml:space="preserve">
+    <value>由本机 Steam 下载并安装，进度与 Steam 同步。</value>
+  </data>
+  <data name="SteamOmittedTheStatusOfSomeItems" xml:space="preserve">
+    <value>Steam 未返回部分条目的状态。</value>
+  </data>
+  <data name="SteamProcessing" xml:space="preserve">
+    <value>Steam 正在处理</value>
+  </data>
+  <data name="SteamRequestFailedHTTPTryAgainLater" xml:space="preserve">
+    <value>Steam 查询失败：HTTP {0}。请稍后重试。</value>
+  </data>
+  <data name="SteamReturnedADifferentGameContextThe" xml:space="preserve">
+    <value>Steam 返回了其他游戏的上下文，未创建下载。</value>
+  </data>
+  <data name="SteamReturnedADifferentItemIDThan" xml:space="preserve">
+    <value>Steam 返回的物品 ID 与请求不一致。</value>
+  </data>
+  <data name="SteamReturnedAnInvalidFileSize" xml:space="preserve">
+    <value>Steam 返回的文件大小无效。</value>
+  </data>
+  <data name="SteamReturnedAnInvalidUpdateTime" xml:space="preserve">
+    <value>Steam 返回的更新时间无效。</value>
+  </data>
+  <data name="SteamReturnedContentWithoutAReadableMod" xml:space="preserve">
+    <value>Steam 返回的内容缺少可读取的 Mod 描述文件，请在 Steam 中校验或重新下载。</value>
+  </data>
+  <data name="SteamReturnedEmptyOrUnreadableContentVerify" xml:space="preserve">
+    <value>Steam 返回的订阅内容为空或无法读取，请在 Steam 中校验或重新下载。</value>
+  </data>
+  <data name="SteamReturnedIncompleteDetailsForThisWorkshop" xml:space="preserve">
+    <value>Steam 返回的数据缺少物品详情，无法读取这个工坊物品。</value>
+  </data>
+  <data name="SteamReturnedInvalidDownloadByteCounts" xml:space="preserve">
+    <value>Steam 下载计数无效。</value>
+  </data>
+  <data name="SteamRootFolder" xml:space="preserve">
+    <value>Steam 根目录</value>
+  </data>
+  <data name="SteamUnsubscribeFailedResult" xml:space="preserve">
+    <value>Steam 取消订阅失败（结果 {0}）。</value>
+  </data>
+  <data name="SteamUpdateStatusIsTemporarilyUnavailable" xml:space="preserve">
+    <value>；完成后的远端更新检查暂不可用</value>
+  </data>
+  <data name="SteamWorkshop" xml:space="preserve">
+    <value>↗   Steam 创意工坊</value>
+  </data>
+  <data name="SteamWorkshopFolder" xml:space="preserve">
+    <value>Steam 创意工坊目录</value>
+  </data>
+  <data name="StopAndRemoveTheTaskPartialFiles" xml:space="preserve">
+    <value>停止下载并移除任务记录；未完成的下载文件会一并清理，已安装内容保留。</value>
+  </data>
+  <data name="StopDownload" xml:space="preserve">
+    <value>停止下载</value>
+  </data>
+  <data name="StopThisDownloadAndKeepPartialFiles" xml:space="preserve">
+    <value>停止当前下载，保留已下载内容以便重试。</value>
+  </data>
+  <data name="StopTrackingAndRemoveTheTaskSteam" xml:space="preserve">
+    <value>停止跟踪并移除任务记录；下载文件继续由 Steam 管理。</value>
+  </data>
+  <data name="StopTrackingTheDownloadHereSteamMay" xml:space="preserve">
+    <value>停止本工具的下载跟踪；Steam 客户端可能仍会继续下载。</value>
+  </data>
+  <data name="StoppingAndRemovingDownload" xml:space="preserve">
+    <value>正在停止下载并移除任务…</value>
+  </data>
+  <data name="SubscribeAndDownload" xml:space="preserve">
+    <value>订阅并下载</value>
+  </data>
+  <data name="SubscribeInSteamOrInTheGame" xml:space="preserve">
+    <value>请在 Steam 或游戏内订阅，下载后自动检测本地内容。</value>
+  </data>
+  <data name="Subscribers" xml:space="preserve">
+    <value>{0:N0} 人订阅  ·  </value>
+  </data>
+  <data name="SubscribingToTheModInSteam" xml:space="preserve">
+    <value>正在通过 Steam 订阅 Mod</value>
+  </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>订阅</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>简介</value>
+  </data>
+  <data name="TargetGameVersion" xml:space="preserve">
+    <value>目标游戏版本</value>
+  </data>
+  <data name="TargetVersionOptional" xml:space="preserve">
+    <value>目标版本（可选）</value>
+  </data>
+  <data name="TaskRemoved" xml:space="preserve">
+    <value>任务记录已移除</value>
+  </data>
+  <data name="TaskWasNotRemoved" xml:space="preserve">
+    <value>任务未移除</value>
+  </data>
+  <data name="TheAppCannotManageThisInstallationOr" xml:space="preserve">
+    <value>此安装位置不受本工具管理，或管理方式已变化，请重新扫描。</value>
+  </data>
+  <data name="TheArrowShowsProfileOrderALater" xml:space="preserve">
+    <value>箭头表示配置顺序，靠后的 Mod 可能覆盖前面的同路径文件。</value>
+  </data>
+  <data name="TheBoundSnapshotIsMissingBindAnother" xml:space="preserve">
+    <value>绑定的快照已不存在，请重新绑定。</value>
+  </data>
+  <data name="TheBoundSnapshotIsUnavailableBindAnother" xml:space="preserve">
+    <value>绑定的快照不可用，请重新绑定。</value>
+  </data>
+  <data name="TheCK3DescriptorModIsMissingA" xml:space="preserve">
+    <value>CK3 descriptor.mod 缺少有效的 Mod 名称。</value>
+  </data>
+  <data name="TheCK3LocalModFolderForThis" xml:space="preserve">
+    <value>当前工作区的 CK3 本地 Mod 目录不可用。</value>
+  </data>
+  <data name="TheCK3SnapshotManifestIsInvalid" xml:space="preserve">
+    <value>CK3 快照清单无效。</value>
+  </data>
+  <data name="TheCurrentCK3VersionIsUnknownThe" xml:space="preserve">
+    <value>当前 CK3 版本未知，快照使用 {0}。</value>
+  </data>
+  <data name="TheCurrentModLoadOrderDiffersFrom" xml:space="preserve">
+    <value>当前配置的 Mod 加载顺序与快照不同。</value>
+  </data>
+  <data name="TheCurrentVersionChangedDetailsWereClosed" xml:space="preserve">
+    <value>当前 {0} 版本已改变，该版本不兼容，已关闭详情。</value>
+  </data>
+  <data name="TheCurrentVersionIsUnknownCheckThe" xml:space="preserve">
+    <value>未检测到有效的当前 {0} 版本，请检查游戏路径，或填写已确认的目标版本后再加载工坊。</value>
+  </data>
+  <data name="TheDescriptorHasNoNameUsingThe" xml:space="preserve">
+    <value>描述文件缺少 name，使用文件名：{0}</value>
+  </data>
+  <data name="TheDescriptorHasNoPathOrArchive" xml:space="preserve">
+    <value>描述文件缺少 path/archive，尝试同名本地目录：{0}</value>
+  </data>
+  <data name="TheDescriptorPointsToAnAbsoluteWindows" xml:space="preserve">
+    <value>描述文件指向 Windows 绝对路径，请在当前系统重新安装或导入该 Mod。</value>
+  </data>
+  <data name="TheDetailsWereOlderThanTheList" xml:space="preserve">
+    <value>返回的详情早于列表中的资料，已保留较新的列表信息。</value>
+  </data>
+  <data name="TheDownloadIsInstalledButTheLocal" xml:space="preserve">
+    <value>内容已安装，本地库刷新失败：{0}</value>
+  </data>
+  <data name="TheDownloadItemDoesNotMatchThe" xml:space="preserve">
+    <value>下载物品与所选游戏不一致。</value>
+  </data>
+  <data name="TheDownloadItemIDIsInvalid" xml:space="preserve">
+    <value>下载物品身份无效。</value>
+  </data>
+  <data name="TheDownloadStoppedMakingProgressRetryTo" xml:space="preserve">
+    <value>Steam 下载长时间没有进展，已停止跟踪；可重试查看 Steam 当前状态。</value>
+  </data>
+  <data name="TheFileExceedsThe1GiBComparison" xml:space="preserve">
+    <value>文件超过 1 GiB 比较上限。</value>
+  </data>
+  <data name="TheFileSizeChangedDuringTheCheck" xml:space="preserve">
+    <value>检查期间文件大小已变化。</value>
+  </data>
+  <data name="TheGameFolderIsMissingOrDoes" xml:space="preserve">
+    <value>指定的游戏目录不存在或缺少 {0} 游戏程序，请重新选择 {1} 安装目录。</value>
+  </data>
+  <data name="TheGameInstallationWasNotFoundCheck" xml:space="preserve">
+    <value>未找到游戏安装目录，请先检查路径设置。</value>
+  </data>
+  <data name="TheGameInstallationWasNotFoundConfirm" xml:space="preserve">
+    <value>未找到游戏安装，请在路径设置中确认目录。</value>
+  </data>
+  <data name="TheGameSSteamClientLibraryWas" xml:space="preserve">
+    <value>未找到游戏随附的 Steam 客户端接口库，请检查或修复游戏安装。</value>
+  </data>
+  <data name="TheGameSSteamLibraryIsIntel" xml:space="preserve">
+    <value>该游戏随附的 Steam 接口库只有 Intel 版本，当前 Apple Silicon 进程无法加载；请改用 Steam 客户端订阅下载。</value>
+  </data>
+  <data name="TheGameSSteamLibraryIsMissing" xml:space="preserve">
+    <value>游戏 Steam 接口缺少 {0}。</value>
+  </data>
+  <data name="TheGameVersionCouldNotBeRead" xml:space="preserve">
+    <value>未能从游戏文件读取版本号；Steam buildid 不是游戏版本，兼容状态将保持未知。</value>
+  </data>
+  <data name="TheInstallationFolderDoesNotMatchThe" xml:space="preserve">
+    <value>游戏目录与当前游戏不匹配。</value>
+  </data>
+  <data name="TheInstallationPathIsInvalid" xml:space="preserve">
+    <value>安装路径无效。</value>
+  </data>
+  <data name="TheInstallationReturnedBySteamIsUnavailable" xml:space="preserve">
+    <value>Steam 返回的安装内容不可用。</value>
+  </data>
+  <data name="TheInstallationSelectedInThisProfileIs" xml:space="preserve">
+    <value>{0}：找不到当前配置选定的安装。</value>
+  </data>
+  <data name="TheLauncherDatabaseFormatIsUnsupportedThe" xml:space="preserve">
+    <value>启动器数据库结构不受支持，原配置已保留。</value>
+  </data>
+  <data name="TheLauncherDoesNotMatchTheEnabled" xml:space="preserve">
+    <value>启动器中的启用项或加载顺序与当前配置不一致，请检查播放集后重试。</value>
+  </data>
+  <data name="TheLauncherHasMultipleActivePlaysetsChoose" xml:space="preserve">
+    <value>启动器中有多份活动播放集，请先在启动器选择一份。</value>
+  </data>
+  <data name="TheLauncherHasNotDiscoveredThisMod" xml:space="preserve">
+    <value>此 Mod 尚未被官方启动器发现，请将它放入游戏用户目录的 mod 文件夹后再应用：{0}</value>
+  </data>
+  <data name="TheLauncherSharesOrManagesThisPlayset" xml:space="preserve">
+    <value>此播放集已由启动器共享或管理，请新建一份本地配置。</value>
+  </data>
+  <data name="TheLauncherWasUpdatedButTheApp" xml:space="preserve">
+    <value>已应用到启动器，但本工具保存失败：{0}</value>
+  </data>
+  <data name="TheListContainsItemsOutsideOrHas" xml:space="preserve">
+    <value>工坊列表包含非 {0} 资源或无效分页。</value>
+  </data>
+  <data name="TheLocalContentReportedBySteamIs" xml:space="preserve">
+    <value>Steam 完成回调对应的本地内容不可用。</value>
+  </data>
+  <data name="TheLocalSnapshotDescriptorWasModified" xml:space="preserve">
+    <value>本地快照描述文件已被修改：{0}</value>
+  </data>
+  <data name="TheManifestAppIDDoesNotMatch" xml:space="preserve">
+    <value>清单的 App ID 与文件名不一致。</value>
+  </data>
+  <data name="TheManifestInstallPathIsOutsideSteam" xml:space="preserve">
+    <value>清单的安装路径超出了 Steam common 目录。</value>
+  </data>
+  <data name="TheModDescriptorChangedDuringInstallation" xml:space="preserve">
+    <value>安装期间 Mod 描述发生变化。</value>
+  </data>
+  <data name="TheModDescriptorCreatedByThisApp" xml:space="preserve">
+    <value>本工具的 Mod 描述文件已被修改，请先检查它后重试。</value>
+  </data>
+  <data name="TheModDescriptorFolderCannotBeA" xml:space="preserve">
+    <value>Mod 描述目录不能是符号链接。</value>
+  </data>
+  <data name="TheModFilesAreMissingCheckThe" xml:space="preserve">
+    <value>Mod 文件缺失，无法加入配置。请检查路径后重新扫描。</value>
+  </data>
+  <data name="TheModIsStillPresentAfterRescanning" xml:space="preserve">
+    <value>重新扫描后仍发现此 Mod，请确认 Steam 未重新订阅或安装。</value>
+  </data>
+  <data name="TheModSourceOrInstallFolderChanged" xml:space="preserve">
+    <value>Mod 来源或安装目录有变化，请重新预览。</value>
+  </data>
+  <data name="TheOfficialLauncherConfigurationWasNotFound" xml:space="preserve">
+    <value>未找到官方启动器配置，请先启动一次官方启动器。</value>
+  </data>
+  <data name="TheOriginalOrderIsKeptEnabledMod" xml:space="preserve">
+    <value>按清单顺序恢复。已启用的 Mod 从包内校验并安装，禁用项保留清单记录。</value>
+  </data>
+  <data name="ThePackChangedPreviewItAgain" xml:space="preserve">
+    <value>快照包已变化，请重新预览。</value>
+  </data>
+  <data name="ThePackContainsAPathOutsideThe" xml:space="preserve">
+    <value>快照包包含清单之外的路径：{0}</value>
+  </data>
+  <data name="ThePackContainsAnUnrecognizedEntry" xml:space="preserve">
+    <value>快照包包含未知内容：{0}</value>
+  </data>
+  <data name="ThePackIsMissingItsManifest" xml:space="preserve">
+    <value>快照包缺少清单。</value>
+  </data>
+  <data name="ThePackageContainsMoreThan500000" xml:space="preserve">
+    <value>包包含超过 50 万个文件或目录。</value>
+  </data>
+  <data name="ThePackageContainsOnlyADescriptorAnd" xml:space="preserve">
+    <value>Mod 包只有描述文件，缺少内容。</value>
+  </data>
+  <data name="ThePerModFileCountLimitWas" xml:space="preserve">
+    <value>达到单个 Mod 文件数上限。</value>
+  </data>
+  <data name="ThePlaysetContainsInvalidModInformation" xml:space="preserve">
+    <value>播放集包含无效的 Mod 信息。</value>
+  </data>
+  <data name="ThePlaysetIDConflictsWithAnotherProfile" xml:space="preserve">
+    <value>播放集标识与其他配置冲突，原配置未修改。</value>
+  </data>
+  <data name="ThePlaysetIsMissingItsIDName" xml:space="preserve">
+    <value>播放集缺少 ID、名称或 Mod 列表。</value>
+  </data>
+  <data name="TheProfileContainsAModWithAn" xml:space="preserve">
+    <value>配置包含名称为空的 Mod。</value>
+  </data>
+  <data name="TheProfileContainsDuplicateMods" xml:space="preserve">
+    <value>配置中有重复的 Mod。</value>
+  </data>
+  <data name="TheProfileContainsIndistinguishableDuplicateMods" xml:space="preserve">
+    <value>配置文件包含无法区分的重复 Mod：{0}</value>
+  </data>
+  <data name="TheProfileContainsInvalidModInformation" xml:space="preserve">
+    <value>配置文件包含无效的 Mod 信息。</value>
+  </data>
+  <data name="TheProfileExceeds1MiB" xml:space="preserve">
+    <value>配置文件超过 1 MiB。</value>
+  </data>
+  <data name="TheProfileExceeds1MiBAndCannot" xml:space="preserve">
+    <value>配置文件超过 1 MiB，无法导出。</value>
+  </data>
+  <data name="TheProfileFileIsEmpty" xml:space="preserve">
+    <value>配置文件为空。</value>
+  </data>
+  <data name="TheProfileFileIsMissingAValid" xml:space="preserve">
+    <value>配置文件缺少有效的游戏、名称或 Mod 列表。</value>
+  </data>
+  <data name="TheProfileIsEmptyChooseAMod" xml:space="preserve">
+    <value>清单为空，从上方选择 Mod 加入。</value>
+  </data>
+  <data name="TheProfileNameCannotBeEmpty" xml:space="preserve">
+    <value>配置名称不能为空。</value>
+  </data>
+  <data name="TheProfileNeedsAModList" xml:space="preserve">
+    <value>配置必须包含 Mod 清单。</value>
+  </data>
+  <data name="TheRefreshFailedShowingSavedDetailsRefresh" xml:space="preserve">
+    <value>暂时无法更新，保留已有资料；订阅前请重新更新。</value>
+  </data>
+  <data name="TheRefreshFailedShowingTheLastLoaded" xml:space="preserve">
+    <value>暂时无法更新，保留上次取得的资料。</value>
+  </data>
+  <data name="TheRestoredProfileCouldNotBeSaved" xml:space="preserve">
+    <value>保存快照配置失败，且无法清理本次恢复的文件。</value>
+  </data>
+  <data name="TheSameModCannotAppearTwiceIn" xml:space="preserve">
+    <value>同一个 Mod 不能在配置中重复出现。</value>
+  </data>
+  <data name="TheSaveChangedConfirmItsBindingAgain" xml:space="preserve">
+    <value>存档已被修改或覆盖，请重新确认绑定。</value>
+  </data>
+  <data name="TheSaveChangedConfirmItsBindingAgain2" xml:space="preserve">
+    <value>存档已发生变化，请重新确认绑定。</value>
+  </data>
+  <data name="TheSaveChangedWhileBeingReadSelect" xml:space="preserve">
+    <value>读取时存档发生变化，请稍后重新选择。</value>
+  </data>
+  <data name="TheSaveHasNoReadableModList" xml:space="preserve">
+    <value>存档未提供可读的 Mod 清单</value>
+  </data>
+  <data name="TheSaveMovedOrChangedSelectIt" xml:space="preserve">
+    <value>存档已移动或发生变化，请重新选择存档后绑定。</value>
+  </data>
+  <data name="TheSaveMovedOrIsUnavailableSelect" xml:space="preserve">
+    <value>存档已移动或不可用，请重新选择并确认绑定。</value>
+  </data>
+  <data name="TheSaveMovedOrIsUnavailableSelect2" xml:space="preserve">
+    <value>存档已移动或不可用，请重新选择。</value>
+  </data>
+  <data name="TheSaveOrBindingChangedCheckAgain" xml:space="preserve">
+    <value>存档或绑定已发生变化，请重新检查。</value>
+  </data>
+  <data name="TheSaveOrBindingChangedDuringThe" xml:space="preserve">
+    <value>检查期间存档或绑定发生变化，请重新确认。</value>
+  </data>
+  <data name="TheSaveRecordsCK3ItsBoundSnapshot" xml:space="preserve">
+    <value>存档记录 CK3 {0}，绑定快照为 {1}。</value>
+  </data>
+  <data name="TheSaveSModListIsEmpty" xml:space="preserve">
+    <value>存档记录的 Mod 清单为空</value>
+  </data>
+  <data name="TheScriptExceeds1MiB" xml:space="preserve">
+    <value>脚本超过 1 MiB。</value>
+  </data>
+  <data name="TheScriptSizeChanged" xml:space="preserve">
+    <value>脚本大小已变化。</value>
+  </data>
+  <data name="TheSelectedSnapshotIsMissingChooseAnother" xml:space="preserve">
+    <value>选择的快照已不存在，请重新选择。</value>
+  </data>
+  <data name="TheSelectedUserDataFolderIsInvalid" xml:space="preserve">
+    <value>指定的用户数据目录无效，已显示默认位置：{0}</value>
+  </data>
+  <data name="TheSettingsFileCannotBeASymbolic" xml:space="preserve">
+    <value>配置文件不能是符号链接。</value>
+  </data>
+  <data name="TheSnapshotIDIsInvalid" xml:space="preserve">
+    <value>快照身份无效。</value>
+  </data>
+  <data name="TheSnapshotManifestExceeds1MiB" xml:space="preserve">
+    <value>快照清单超过 1 MiB。</value>
+  </data>
+  <data name="TheSnapshotUsesCK3AndTheCurrent" xml:space="preserve">
+    <value>快照使用 CK3 {0}，当前为 {1}。请先在 Steam 切换游戏版本。</value>
+  </data>
+  <data name="TheSourceFolderContainsTheInstallationFolder" xml:space="preserve">
+    <value>来源文件夹包含安装目录。</value>
+  </data>
+  <data name="TheSourceReturnedADifferentItemOr" xml:space="preserve">
+    <value>下载来源返回了其他物品或缺少内容修订。</value>
+  </data>
+  <data name="TheSourceReturnedAnOlderVersionThe" xml:space="preserve">
+    <value>来源返回的版本早于已有资料，已保留原资料，尚未完成最新核验。</value>
+  </data>
+  <data name="TheSpecifiedGameFolderDoesNotExist" xml:space="preserve">
+    <value>指定的游戏目录不存在。</value>
+  </data>
+  <data name="TheSteamBridgeMessageIsEmpty" xml:space="preserve">
+    <value>Steam 桥接消息为空。</value>
+  </data>
+  <data name="TheSteamBridgeMessageIsInvalid" xml:space="preserve">
+    <value>Steam 桥接消息无效。</value>
+  </data>
+  <data name="TheSteamBridgeMessageIsTooLarge" xml:space="preserve">
+    <value>Steam 桥接消息过大。</value>
+  </data>
+  <data name="TheSteamBridgeReturnedADifferentGame" xml:space="preserve">
+    <value>Steam 桥接返回了其他游戏或物品。</value>
+  </data>
+  <data name="TheSteamBridgeReturnedAnInvalidStatus" xml:space="preserve">
+    <value>Steam 桥接返回了无效的状态消息。</value>
+  </data>
+  <data name="TheSteamBridgeReturnedAnUnexpectedMessage" xml:space="preserve">
+    <value>Steam 完成后返回了多余的任务消息。</value>
+  </data>
+  <data name="TheSteamBridgeReturnedAnUnsupportedMessage" xml:space="preserve">
+    <value>Steam 桥接消息类型不受支持。</value>
+  </data>
+  <data name="TheSteamBridgeReturnedStatusForAnother" xml:space="preserve">
+    <value>Steam 桥接返回了其他游戏的状态。</value>
+  </data>
+  <data name="TheSteamBridgeTimedOutWhileExiting" xml:space="preserve">
+    <value>Steam 桥接程序退出超时，已停止跟踪。</value>
+  </data>
+  <data name="TheSteamCallbackSizeIsInvalid" xml:space="preserve">
+    <value>Steam 回调尺寸无效。</value>
+  </data>
+  <data name="TheSteamConnectionTimedOutCheckThat" xml:space="preserve">
+    <value>连接 Steam 客户端超时，请确认 Steam 正在运行且已登录。</value>
+  </data>
+  <data name="TheSteamDownloadBridgeExitedUnexpectedlyCode" xml:space="preserve">
+    <value>Steam 下载桥接意外退出（代码 {0}）。</value>
+  </data>
+  <data name="TheSteamDownloadBridgeStoppedRespondingTracking" xml:space="preserve">
+    <value>Steam 下载桥接长时间无响应，已停止跟踪。</value>
+  </data>
+  <data name="TheSteamDownloadCallbackFormatIsUnsupported" xml:space="preserve">
+    <value>Steam 下载回调格式不受支持。</value>
+  </data>
+  <data name="TheSteamGameContextDoesNotMatch" xml:space="preserve">
+    <value>Steam 游戏上下文与下载请求不一致。</value>
+  </data>
+  <data name="TheSteamGameContextDoesNotMatch2" xml:space="preserve">
+    <value>Steam 游戏上下文与取消订阅请求不一致。</value>
+  </data>
+  <data name="TheSteamGameContextDoesNotMatch3" xml:space="preserve">
+    <value>Steam 游戏上下文与状态查询不一致。</value>
+  </data>
+  <data name="TheSteamJSONCouldNotBeParsed" xml:space="preserve">
+    <value>Steam 返回的 JSON 数据无法解析，请稍后重试。</value>
+  </data>
+  <data name="TheSteamLibraryShippedWithTheGame" xml:space="preserve">
+    <value>游戏随附的 Steam 接口库无法加载或版本不受支持，请检查安装与系统架构。</value>
+  </data>
+  <data name="TheSteamLibraryVersionShippedWithThe" xml:space="preserve">
+    <value>游戏随附的 Steam 接口版本不受支持。</value>
+  </data>
+  <data name="TheSteamRequestTimedOutCheckThe" xml:space="preserve">
+    <value>Steam 查询超时，请检查网络后重试。</value>
+  </data>
+  <data name="TheSteamRequestTimedOutCheckThe2" xml:space="preserve">
+    <value>Steam 请求超时，请检查客户端网络后重试。</value>
+  </data>
+  <data name="TheSteamStatusRequestTimedOut" xml:space="preserve">
+    <value>读取 Steam 状态超时。</value>
+  </data>
+  <data name="TheSteamSubscriptionCallbackFormatIsUnsupported" xml:space="preserve">
+    <value>Steam 订阅回调格式不受支持。</value>
+  </data>
+  <data name="TheSteamUnsubscribeResponseDoesNotMatch" xml:space="preserve">
+    <value>Steam 取消订阅响应与目标 Mod 不一致。</value>
+  </data>
+  <data name="TheSteamUnsubscribeResponseIsInvalid" xml:space="preserve">
+    <value>Steam 取消订阅响应无效。</value>
+  </data>
+  <data name="TheTaskAndItemDoNotMatch" xml:space="preserve">
+    <value>检查的任务与物品不一致。</value>
+  </data>
+  <data name="TheTaskChangedOnDiskReloadDownload" xml:space="preserve">
+    <value>磁盘记录已变化，请重新加载下载历史后再试。</value>
+  </data>
+  <data name="TheUnpackedPackageExceeds64GiB" xml:space="preserve">
+    <value>包解压后超过 64 GiB。</value>
+  </data>
+  <data name="TheVersionFilterChangedSearchAgain" xml:space="preserve">
+    <value>版本筛选已变化，请重新搜索</value>
+  </data>
+  <data name="TheVersionFilterChangedSearchAgain2" xml:space="preserve">
+    <value>版本筛选已变化，请重新搜索。</value>
+  </data>
+  <data name="TheWorkshopItemDoesNotMatchThe" xml:space="preserve">
+    <value>工坊物品与导入配置不一致。</value>
+  </data>
+  <data name="TheWorkshopReturnedADifferentItemID" xml:space="preserve">
+    <value>工坊返回的条目 ID 与请求不一致。</value>
+  </data>
+  <data name="TheWorkshopRevisionIsChanging" xml:space="preserve">
+    <value>工坊修订正在变化。</value>
+  </data>
+  <data name="TheWorkspaceFactoryReturnedAWorkspaceFor" xml:space="preserve">
+    <value>工作区工厂返回了其他游戏的工作区。</value>
+  </data>
+  <data name="TheZIPContainsALinkOrSpecial" xml:space="preserve">
+    <value>ZIP 包含符号链接或特殊文件。</value>
+  </data>
+  <data name="TheZIPContainsAnInvalidPathOr" xml:space="preserve">
+    <value>ZIP 包含无效路径或符号链接。</value>
+  </data>
+  <data name="TheZIPContentsChangedDuringTheCheck" xml:space="preserve">
+    <value>检查期间 ZIP 内容已变化。</value>
+  </data>
+  <data name="TheZIPOrFolderMustContainExactly" xml:space="preserve">
+    <value>ZIP 或文件夹必须包含一个可识别的 CK3 descriptor.mod。</value>
+  </data>
+  <data name="ThisAccountDoesNotHaveAccessTo" xml:space="preserve">
+    <value>当前账户没有访问此内容的权限。</value>
+  </data>
+  <data name="ThisAlsoUnsubscribesFromTheSteamItem" xml:space="preserve">
+    <value>也会取消 Steam 订阅。</value>
+  </data>
+  <data name="ThisContentIsMissingOrWasRemoved" xml:space="preserve">
+    <value>内容不存在或已被移除。</value>
+  </data>
+  <data name="ThisFolderContainsAnotherInstalledModCheck" xml:space="preserve">
+    <value>此目录包含另一个已安装的 Mod，请先整理安装目录。</value>
+  </data>
+  <data name="ThisFolderHasNoReadableTextLogs" xml:space="preserve">
+    <value>此目录里没有可显示的文本日志。</value>
+  </data>
+  <data name="ThisGameDoesNotSupportLocalMod" xml:space="preserve">
+    <value>当前游戏不支持本地 Mod 导入。</value>
+  </data>
+  <data name="ThisGameDoesNotSupportPlaysetPacks" xml:space="preserve">
+    <value>当前游戏不支持播放集快照包。</value>
+  </data>
+  <data name="ThisGameLoadsFoldersBeforeArchivesUse" xml:space="preserve">
+    <value>此游戏会将目录 Mod 排在压缩包之前，请先选用同一种格式以保持加载顺序。</value>
+  </data>
+  <data name="ThisGameOrUserFolderDoesNot" xml:space="preserve">
+    <value>当前游戏或用户目录无法在应用内下载依赖。</value>
+  </data>
+  <data name="ThisGameSSteamLibraryDoesNot" xml:space="preserve">
+    <value>此游戏的旧版 Steam 接口暂不支持应用内下载，请在 Steam 客户端下载。</value>
+  </data>
+  <data name="ThisItemBelongsToAppRatherThan" xml:space="preserve">
+    <value>此工坊物品属于 App {0}，不是 {1}（{2}）。</value>
+  </data>
+  <data name="ThisLogIsEmpty" xml:space="preserve">
+    <value>此日志为空。</value>
+  </data>
+  <data name="ThisModHasNoLocalInstallationThat" xml:space="preserve">
+    <value>此 Mod 没有可删除的本机安装。</value>
+  </data>
+  <data name="ThisModInstallationChangedRescanAndSelect" xml:space="preserve">
+    <value>此 Mod 的安装已变化，请重新扫描并选择。</value>
+  </data>
+  <data name="ThisModIsAlreadyBeingProcessedStop" xml:space="preserve">
+    <value>此 Mod 正在处理，请在当前任务中停止下载。</value>
+  </data>
+  <data name="ThisModIsAlreadyInTheProfile" xml:space="preserve">
+    <value>这个 Mod 已在当前清单中</value>
+  </data>
+  <data name="ThisModSTaskIsBeingRemoved" xml:space="preserve">
+    <value>此 Mod 的任务正在移除，请稍后重试。</value>
+  </data>
+  <data name="ThisModSTaskIsBeingRemoved2" xml:space="preserve">
+    <value>此 Mod 的任务正在移除。</value>
+  </data>
+  <data name="ThisPageHasNoReleasesToDisplay" xml:space="preserve">
+    <value>本页没有可显示的发布，可翻页。</value>
+  </data>
+  <data name="ThisProfileAlreadyContainsAnotherCopyOf" xml:space="preserve">
+    <value>同一工坊 Mod 已有另一份副本在当前配置中，请先移除原副本。</value>
+  </data>
+  <data name="ThisProfileBelongsToAnotherGame" xml:space="preserve">
+    <value>待导入配置属于其他游戏。</value>
+  </data>
+  <data name="ThisProfileBelongsToAnotherGameSwitch" xml:space="preserve">
+    <value>配置文件属于其他游戏。请先切换游戏再导入。</value>
+  </data>
+  <data name="ThisProfileFileVersionIsUnsupported" xml:space="preserve">
+    <value>不支持此配置文件版本。</value>
+  </data>
+  <data name="ThisProfileHasNoEnabledInstalledSteam" xml:space="preserve">
+    <value>当前配置没有已启用且已安装的 Steam 工坊 Mod。</value>
+  </data>
+  <data name="ThisReleaseIsIncompatibleOrUnverifiedChoose" xml:space="preserve">
+    <value>该版本不兼容或兼容性未知，请选择其他版本。</value>
+  </data>
+  <data name="ThisTaskWasRemovedSelectTheMod" xml:space="preserve">
+    <value>此任务已移除，请从工坊重新选择 Mod。</value>
+  </data>
+  <data name="ThisWorkshopItemDoesNotBelongTo" xml:space="preserve">
+    <value>该工坊资源不属于 {0}（{1}）。</value>
+  </data>
+  <data name="ThisWorkshopItemIsUnavailableTryRefreshing" xml:space="preserve">
+    <value>此工坊物品暂不可用，请稍后刷新。</value>
+  </data>
+  <data name="ThisWorkshopItemWasDeletedOrIs" xml:space="preserve">
+    <value>此工坊物品已删除或当前不可访问（结果码 {0}）。</value>
+  </data>
+  <data name="ThisWorkshopModIsAlreadyInThe" xml:space="preserve">
+    <value>同一工坊 Mod 已在清单中。如需更换本地版本，请先移除原来的副本。</value>
+  </data>
+  <data name="ThisWorkshopReleaseIsUnavailable" xml:space="preserve">
+    <value>该工坊发布当前不可用。</value>
+  </data>
+  <data name="TimeUnknown" xml:space="preserve">
+    <value>时间未知</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value> 等 {0} 个</value>
+  </data>
+  <data name="TrackingStopped" xml:space="preserve">
+    <value>已停止跟踪</value>
+  </data>
+  <data name="TrackingStoppedSteamCanContinueDownloadingIn" xml:space="preserve">
+    <value>已停止本应用跟踪；Steam 后台下载不受影响</value>
+  </data>
+  <data name="TraitDefinitionsDuplicateKeysScansTopLevel" xml:space="preserve">
+    <value>特质定义 · {0} 个重名键。检查 common/traits 的顶层定义。</value>
+  </data>
+  <data name="TrendingThisWeek" xml:space="preserve">
+    <value>本周热门</value>
+  </data>
+  <data name="TryAnotherSearchOrPage" xml:space="preserve">
+    <value>可换个关键词或翻页继续浏览。</value>
+  </data>
+  <data name="TypeACategoryOrOpenTheList" xml:space="preserve">
+    <value>输入类型，或点击箭头选择</value>
+  </data>
+  <data name="TypeAVersionOrOpenTheList" xml:space="preserve">
+    <value>输入版本，或点击箭头选择</value>
+  </data>
+  <data name="TypeToFilterSortOptions" xml:space="preserve">
+    <value>排序，可直接输入筛选</value>
+  </data>
+  <data name="UiLanguage" xml:space="preserve">
+    <value>界面语言</value>
+  </data>
+  <data name="UiLanguageHelp" xml:space="preserve">
+    <value>应用会在所有游戏中使用此语言。</value>
+  </data>
+  <data name="Unavailable" xml:space="preserve">
+    <value>{0} · 暂时无法读取</value>
+  </data>
+  <data name="Undeclared" xml:space="preserve">
+    <value>未声明</value>
+  </data>
+  <data name="Undetected" xml:space="preserve">
+    <value>未识别</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="UnsavedChanges" xml:space="preserve">
+    <value>有未保存更改</value>
+  </data>
+  <data name="Unsupported" xml:space="preserve">
+    <value>暂不支持</value>
+  </data>
+  <data name="UnsupportedGame" xml:space="preserve">
+    <value>不支持的游戏：{0}</value>
+  </data>
+  <data name="UnsupportedPathInThePackage" xml:space="preserve">
+    <value>不支持的包内路径：{0}</value>
+  </data>
+  <data name="UpdatePending" xml:space="preserve">
+    <value>待更新</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>最后更新 {0:yyyy-MM-dd HH:mm}</value>
+  </data>
+  <data name="UpdatedSteam" xml:space="preserve">
+    <value>{0}更新于 {1:yyyy-MM-dd}  ·  Steam</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>使用 {0} · {1} · {2}</value>
+  </data>
+  <data name="UseInstalledVersion" xml:space="preserve">
+    <value>使用本机版本</value>
+  </data>
+  <data name="UseMatchingVersion" xml:space="preserve">
+    <value>采用匹配的版本</value>
+  </data>
+  <data name="UseSelectedCopy" xml:space="preserve">
+    <value>使用所选副本</value>
+  </data>
+  <data name="UseTheSteamClientToUnsubscribeAnd" xml:space="preserve">
+    <value>此游戏的工坊 Mod 请通过 Steam 客户端取消订阅并移除。</value>
+  </data>
+  <data name="UserDataFolder" xml:space="preserve">
+    <value>{0} 用户数据目录</value>
+  </data>
+  <data name="VerifyAndRestore" xml:space="preserve">
+    <value>校验并恢复</value>
+  </data>
+  <data name="Verifying" xml:space="preserve">
+    <value>正在校验</value>
+  </data>
+  <data name="VerifyingAllFiles" xml:space="preserve">
+    <value>正在校验全部文件</value>
+  </data>
+  <data name="VersionDiffersChooseACopy" xml:space="preserve">
+    <value>版本有差异 · 待选择</value>
+  </data>
+  <data name="VersionFilterDoesNotMatchTargetChange" xml:space="preserve">
+    <value>版本筛选“{0}”与当前目标 {1} 不符，请修改目标版本或选择其他筛选。</value>
+  </data>
+  <data name="VersionUnknown" xml:space="preserve">
+    <value>版本未知</value>
+  </data>
+  <data name="WaitingForAuthorization" xml:space="preserve">
+    <value>等待下载授权</value>
+  </data>
+  <data name="WaitingForSteamToDownload" xml:space="preserve">
+    <value>等待 Steam 下载</value>
+  </data>
+  <data name="Workshop" xml:space="preserve">
+    <value>↓   创意工坊</value>
+  </data>
+  <data name="Workshop2" xml:space="preserve">
+    <value>工坊 {0}</value>
+  </data>
+  <data name="Workshop3" xml:space="preserve">
+    <value>{0} · 创意工坊</value>
+  </data>
+  <data name="Workshop4" xml:space="preserve">
+    <value>{0} · 工坊 {1}</value>
+  </data>
+  <data name="WorkshopCopies" xml:space="preserve">
+    <value>同工坊副本</value>
+  </data>
+  <data name="WorkshopDataCouldNotRefreshSeeThe" xml:space="preserve">
+    <value>工坊资料未能更新，请查看提示</value>
+  </data>
+  <data name="WorkshopDataIsUnavailableTryAgainLater" xml:space="preserve">
+    <value>未能取得工坊资料，请稍后重试。</value>
+  </data>
+  <data name="WorkshopDependencies" xml:space="preserve">
+    <value>工坊声明依赖：{0}</value>
+  </data>
+  <data name="WorkshopDependenciesCouldNotBeVerified" xml:space="preserve">
+    <value>{0}：工坊依赖暂时无法核对。</value>
+  </data>
+  <data name="WorkshopDetailsAreUnavailableTryAgainLater" xml:space="preserve">
+    <value>未能取得工坊详情，请稍后重试。</value>
+  </data>
+  <data name="WorkshopDetailsLoaded" xml:space="preserve">
+    <value>已读取工坊详情</value>
+  </data>
+  <data name="WorkshopID" xml:space="preserve">
+    <value>{0} · 工坊 ID {1}</value>
+  </data>
+  <data name="WorkshopItemIDsMustBeGreaterThan" xml:space="preserve">
+    <value>工坊物品 ID 必须大于零。</value>
+  </data>
+  <data name="WorkshopModHasNoDescriptorModMod" xml:space="preserve">
+    <value>创意工坊 Mod {0} 缺少 descriptor.mod、.mod 或 .metadata/metadata.json：{1}</value>
+  </data>
+  <data name="WorkshopModsCheckedUpdatesPending" xml:space="preserve">
+    <value>已检查 {0} 个工坊 Mod，{1} 个待更新</value>
+  </data>
+  <data name="WorkshopModsCheckedUpdatesPendingUnknown" xml:space="preserve">
+    <value>已检查 {0} 个工坊 Mod，{1} 个待更新，{2} 个状态未知</value>
+  </data>
+  <data name="WorkshopRequestCancelledExistingDataWasKept" xml:space="preserve">
+    <value>工坊读取已取消，已保留现有资料</value>
+  </data>
+</root>

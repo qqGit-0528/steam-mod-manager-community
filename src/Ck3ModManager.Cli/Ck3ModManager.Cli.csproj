@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Ck3ModManager.Application/Ck3ModManager.Application.csproj" />
+    <ProjectReference Include="../Ck3ModManager.Infrastructure/Ck3ModManager.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

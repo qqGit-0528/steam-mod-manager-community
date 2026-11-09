@@ -1,0 +1,38 @@
+.DS_Store
+Thumbs.db
+
+# 本地开发配置
+.idea/
+.vscode/
+.vs/
+.env
+.env.*
+!.env.example
+
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+target/
+bin/
+obj/
+.venv/
+__pycache__/
+*.py[cod]
+
+# 临时文件与运行日志
+*.log
+*.tmp
+*.bak
+
+# 本地工具、测试结果与发布文件
+.tools/
+artifacts/
+TestResults/
+*.user
+*.suo
+
+# 私人工作记录，保留本地但不提交
+log.md
+progress.md
+task_plan.md

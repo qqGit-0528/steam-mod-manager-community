@@ -1,0 +1,34 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Ck3ModManager.Desktop.App"
+             RequestedThemeVariant="Light">
+  <Application.Resources>
+    <!-- 红色阶：主色取自 PCL 的红色主题，向浅色方向展开 -->
+    <Color x:Key="AccentColor">#F04A3E</Color>
+    <Color x:Key="AccentHoverColor">#DA392C</Color>
+    <Color x:Key="AccentPressedColor">#C22F23</Color>
+    <Color x:Key="AccentSoftColor">#FDEDEA</Color>
+    <Color x:Key="AccentSoftHoverColor">#FBE1DD</Color>
+    <Color x:Key="AccentLineColor">#F5D2CC</Color>
+
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="AccentHoverBrush" Color="{StaticResource AccentHoverColor}" />
+    <SolidColorBrush x:Key="AccentPressedBrush" Color="{StaticResource AccentPressedColor}" />
+    <SolidColorBrush x:Key="AccentSoftBrush" Color="{StaticResource AccentSoftColor}" />
+    <SolidColorBrush x:Key="AccentSoftHoverBrush" Color="{StaticResource AccentSoftHoverColor}" />
+    <SolidColorBrush x:Key="AccentLineBrush" Color="{StaticResource AccentLineColor}" />
+
+    <!-- 灰阶：沿用 PCL 的 Text1..Line 层次 -->
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#3D3D3D" />
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#757575" />
+    <SolidColorBrush x:Key="TextTertiaryBrush" Color="#9A9A9A" />
+    <SolidColorBrush x:Key="LineBrush" Color="#EDEDED" />
+    <SolidColorBrush x:Key="LineStrongBrush" Color="#E2E2E2" />
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="CanvasBrush" Color="#F5F6F7" />
+    <SolidColorBrush x:Key="SubtleBrush" Color="#FAFAFA" />
+  </Application.Resources>
+  <Application.Styles>
+    <FluentTheme />
+  </Application.Styles>
+</Application>

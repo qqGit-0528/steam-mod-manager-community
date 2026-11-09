@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data name="ADependencyHasAnInvalidIDOr" xml:space="preserve">
+    <value>A dependency has an invalid ID or belongs to another game.</value>
+  </data>
+  <data name="ALocalRestoreFolderWithThisID" xml:space="preserve">
+    <value>A local restore folder with this ID already exists.</value>
+  </data>
+  <data name="AModIsMissingTheMetadataJson" xml:space="preserve">
+    <value>A mod is missing the metadata.json required by this game. {0}</value>
+  </data>
+  <data name="AModMayAppearOnlyOnceIn" xml:space="preserve">
+    <value>A mod may appear only once in a playset.</value>
+  </data>
+  <data name="ANewerWorkshopEntryWasFoundRefresh" xml:space="preserve">
+    <value>A newer Workshop entry was found. Refresh to load its full description.</value>
+  </data>
+  <data name="AProfileCanContainUpTo1" xml:space="preserve">
+    <value>A profile can contain up to 1,000 mods.</value>
+  </data>
+  <data name="AProfileCannotContainTwoLocalCopies" xml:space="preserve">
+    <value>A profile cannot contain two local copies of the same Workshop mod.</value>
+  </data>
+  <data name="ASnapshotSupportsUpTo1000" xml:space="preserve">
+    <value>A snapshot supports up to 1,000 items and requires unique mods.</value>
+  </data>
+  <data name="AZIPDirectoryContainsFileData" xml:space="preserve">
+    <value>A ZIP directory contains file data.</value>
+  </data>
+  <data name="ActiveProfile" xml:space="preserve">
+    <value>Active profile: {0}</value>
+  </data>
+  <data name="ActiveProfile2" xml:space="preserve">
+    <value>Active profile</value>
+  </data>
+  <data name="AddToProfile" xml:space="preserve">
+    <value>Add to profile</value>
+  </data>
+  <data name="AllCategories" xml:space="preserve">
+    <value>All categories</value>
+  </data>
+  <data name="AllVersions" xml:space="preserve">
+    <value>All versions</value>
+  </data>
+  <data name="AlreadyUpToDate" xml:space="preserve">
+    <value>Already up to date</value>
+  </data>
+  <data name="AlsoEnabledInTheCurrentProfile" xml:space="preserve">
+    <value>Also enabled in the current profile. {0}</value>
+  </data>
+  <data name="AnEnabledModIsMissingFiles" xml:space="preserve">
+    <value>An enabled mod is missing files. {0}</value>
+  </data>
+  <data name="AnEnabledSnapshotItemIsMissingFrom" xml:space="preserve">
+    <value>An enabled snapshot item is missing from the current profile. {0}</value>
+  </data>
+  <data name="AnImportWithThisNameAndVersion" xml:space="preserve">
+    <value>An import with this name and version already exists. The existing files were kept.</value>
+  </data>
+  <data name="AnUpdateIsAvailableOnSteamSelect" xml:space="preserve">
+    <value>. An update is available on Steam. Select Update to download it.</value>
+  </data>
+  <data name="AnotherAppInstanceIsWritingAProfile" xml:space="preserve">
+    <value>Another app instance is writing a profile. Try again shortly.</value>
+  </data>
+  <data name="AppManaged" xml:space="preserve">
+    <value>App-managed</value>
+  </data>
+  <data name="Applied" xml:space="preserve">
+    <value>Applied</value>
+  </data>
+  <data name="ApplyGameProfile" xml:space="preserve">
+    <value>Apply game profile</value>
+  </data>
+  <data name="ApplyTheProfileAndLaunchViaSteam" xml:space="preserve">
+    <value>Apply the profile and launch {0} via Steam</value>
+  </data>
+  <data name="ApplyToGame" xml:space="preserve">
+    <value>Apply to game</value>
+  </data>
+  <data name="AuthorDescription" xml:space="preserve">
+    <value>Author description</value>
+  </data>
+  <data name="AutomaticallyFindSteam" xml:space="preserve">
+    <value>Automatically find Steam</value>
+  </data>
+  <data name="AvailableReleases" xml:space="preserve">
+    <value>Available releases: {0}</value>
+  </data>
+  <data name="BackToResults" xml:space="preserve">
+    <value>‹ Back to results</value>
+  </data>
+  <data name="BatchWorkshopStatusChecksAreUnavailableFor" xml:space="preserve">
+    <value>Batch Workshop status checks are unavailable for this game.</value>
+  </data>
+  <data name="BindASnapshotToThisSaveFirst" xml:space="preserve">
+    <value>Bind a snapshot to this save first.</value>
+  </data>
+  <data name="BindSaveToSnapshot" xml:space="preserve">
+    <value>Bind save to snapshot</value>
+  </data>
+  <data name="BoundTo" xml:space="preserve">
+    <value>Bound to {0}</value>
+  </data>
+  <data name="BrowseWorkshop" xml:space="preserve">
+    <value>Browse Workshop</value>
+  </data>
+  <data name="CK3CrashesAndLogs" xml:space="preserve">
+    <value>CK3 crashes and logs</value>
+  </data>
+  <data name="CK3Diagnostics" xml:space="preserve">
+    <value>⊕   CK3 diagnostics</value>
+  </data>
+  <data name="CK3DiffersFromSnapshotVersion" xml:space="preserve">
+    <value>CK3 {0} differs from snapshot version {1}.</value>
+  </data>
+  <data name="CK3EnabledMods" xml:space="preserve">
+    <value>CK3 {0} · Enabled mods: {1}</value>
+  </data>
+  <data name="CK3LogDiagnosticsAreUnavailableForThis" xml:space="preserve">
+    <value>CK3 log diagnostics are unavailable for this game.</value>
+  </data>
+  <data name="CK3LogsLoaded" xml:space="preserve">
+    <value>CK3 logs loaded</value>
+  </data>
+  <data name="CK3PlaysetCk3pack" xml:space="preserve">
+    <value>CK3 Playset.ck3pack</value>
+  </data>
+  <data name="CK3PlaysetPack" xml:space="preserve">
+    <value>CK3 playset pack</value>
+  </data>
+  <data name="CK3Save" xml:space="preserve">
+    <value>CK3 save</value>
+  </data>
+  <data name="CK3VersionEnabledModsFilesAndLoad" xml:space="preserve">
+    <value>CK3 version, enabled mods, files and load order match the bound snapshot.</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="CannotReproduceThisModBecauseThePack" xml:space="preserve">
+    <value>Cannot reproduce this mod because the pack is missing files: {0}</value>
+  </data>
+  <data name="CheckConflicts" xml:space="preserve">
+    <value>Check conflicts</value>
+  </data>
+  <data name="CheckDependencies" xml:space="preserve">
+    <value>Check dependencies</value>
+  </data>
+  <data name="CheckForUpdates" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="CheckPaths" xml:space="preserve">
+    <value>Check paths</value>
+  </data>
+  <data name="CheckSaveEnvironment" xml:space="preserve">
+    <value>Check save environment</value>
+  </data>
+  <data name="CheckTheSteamClientSStatusAnd" xml:space="preserve">
+    <value>Check the Steam client's status and try again.</value>
+  </data>
+  <data name="CheckThisModInTheOfficialLauncher" xml:space="preserve">
+    <value>Check this mod in the official launcher first. {0}</value>
+  </data>
+  <data name="CheckUpToWorkshopModsAtA" xml:space="preserve">
+    <value>Check up to {0} Workshop mods at a time.</value>
+  </data>
+  <data name="CheckUpdates" xml:space="preserve">
+    <value>Check updates</value>
+  </data>
+  <data name="CheckedFindingsAvailableMissingWorkshopItems" xml:space="preserve">
+    <value>Checked: {0} · Findings: {1} · Available missing Workshop items: {2}</value>
+  </data>
+  <data name="Checking" xml:space="preserve">
+    <value>Checking…</value>
+  </data>
+  <data name="CheckingExistingFiles" xml:space="preserve">
+    <value>Checking existing files</value>
+  </data>
+  <data name="CheckingForUpdates" xml:space="preserve">
+    <value>Checking for updates…</value>
+  </data>
+  <data name="CheckingTheCurrentSteamContent" xml:space="preserve">
+    <value>Checking the current Steam content</value>
+  </data>
+  <data name="ChooseALocalCK3SaveFile" xml:space="preserve">
+    <value>Choose a local CK3 save file.</value>
+  </data>
+  <data name="ChooseALocalCk3packFile" xml:space="preserve">
+    <value>Choose a local .ck3pack file.</value>
+  </data>
+  <data name="ChooseALocalFileOrFolder" xml:space="preserve">
+    <value>Choose a local file or folder.</value>
+  </data>
+  <data name="ChooseALocalFolderToOpen" xml:space="preserve">
+    <value>Choose a local folder to open.</value>
+  </data>
+  <data name="ChooseALocalZIPOrFolder" xml:space="preserve">
+    <value>Choose a local ZIP or folder.</value>
+  </data>
+  <data name="ChooseAVersion" xml:space="preserve">
+    <value>Choose a version</value>
+  </data>
+  <data name="ChooseAZIPWithOneCK3Mod" xml:space="preserve">
+    <value>Choose a ZIP with one CK3 mod.</value>
+  </data>
+  <data name="ChooseFromLocalMods" xml:space="preserve">
+    <value>Choose from local mods</value>
+  </data>
+  <data name="ClickAgainToDelete" xml:space="preserve">
+    <value>Click again to delete</value>
+  </data>
+  <data name="ClickAgainToDeleteTheSnapshotAnd" xml:space="preserve">
+    <value>Click again to delete the snapshot and its restored copies</value>
+  </data>
+  <data name="ClickTheDeleteButtonForAgainTo" xml:space="preserve">
+    <value>Click the delete button for “{0}” again to confirm</value>
+  </data>
+  <data name="CloseTheGameAndParadoxLauncherBefore" xml:space="preserve">
+    <value>Close the game and Paradox Launcher before applying the profile.</value>
+  </data>
+  <data name="CommunicationWithSteamFailedReopenTheClient" xml:space="preserve">
+    <value>Communication with Steam failed. Reopen the client and try again.</value>
+  </data>
+  <data name="ComparisonUnavailable" xml:space="preserve">
+    <value>Comparison unavailable</value>
+  </data>
+  <data name="Compatible" xml:space="preserve">
+    <value>Compatible</value>
+  </data>
+  <data name="ConfirmDeletion" xml:space="preserve">
+    <value>Confirm deletion</value>
+  </data>
+  <data name="ConfirmDependencyDownloads" xml:space="preserve">
+    <value>Confirm dependency downloads ({0})</value>
+  </data>
+  <data name="ConfirmImport" xml:space="preserve">
+    <value>Confirm import</value>
+  </data>
+  <data name="ConfirmInstall" xml:space="preserve">
+    <value>Confirm install</value>
+  </data>
+  <data name="ConfirmTheGameUserDataFolderIn" xml:space="preserve">
+    <value>Confirm the game user data folder in Settings first.</value>
+  </data>
+  <data name="ConfirmTheUserDataFolderFirst" xml:space="preserve">
+    <value>Confirm the user data folder first.</value>
+  </data>
+  <data name="ConfirmYourLocalCK3InstallationAndGame" xml:space="preserve">
+    <value>Confirm your local CK3 installation and game version first.</value>
+  </data>
+  <data name="ConnectedToTheLocalSteamClient" xml:space="preserve">
+    <value>Connected to the local Steam client</value>
+  </data>
+  <data name="ConnectingToTheLocalSteamClient" xml:space="preserve">
+    <value>Connecting to the local Steam client</value>
+  </data>
+  <data name="ContainsAnUnrecognizedReplacePathEntry" xml:space="preserve">
+    <value>#{0} {1} contains an unrecognized replace_path entry.</value>
+  </data>
+  <data name="CouldNotBeListed" xml:space="preserve">
+    <value>#{0} {1} could not be listed. {2}</value>
+  </data>
+  <data name="CouldNotCheckDirectoryReplacement" xml:space="preserve">
+    <value>#{0} {1} could not check directory replacement. {2}</value>
+  </data>
+  <data name="CouldNotCompare" xml:space="preserve">
+    <value>#{0} {1} could not compare {2}. {3}</value>
+  </data>
+  <data name="CouldNotConfirmThatTheLauncherClosed" xml:space="preserve">
+    <value>Could not confirm that the launcher closed. Close it and try again.</value>
+  </data>
+  <data name="CouldNotConnectToSteamOpenThe" xml:space="preserve">
+    <value>Could not connect to Steam. Open the client, sign in, and check that this account owns the game.</value>
+  </data>
+  <data name="CouldNotCreateTheDownloadTask" xml:space="preserve">
+    <value>Could not create the download task: {0}</value>
+  </data>
+  <data name="CouldNotLaunchTheGameCheckThe" xml:space="preserve">
+    <value>Could not launch the game. Check the Steam installation: {0}</value>
+  </data>
+  <data name="CouldNotLoadDownloadHistory" xml:space="preserve">
+    <value>Could not load download history: {0}</value>
+  </data>
+  <data name="CouldNotLocateTheApplicationEntryAssembly" xml:space="preserve">
+    <value>Could not locate the application entry assembly.</value>
+  </data>
+  <data name="CouldNotLocateTheDownloadBridgeExecutable" xml:space="preserve">
+    <value>Could not locate the download bridge executable.</value>
+  </data>
+  <data name="CouldNotOpenTheDiagnosticsFolder" xml:space="preserve">
+    <value>Could not open the diagnostics folder: {0}</value>
+  </data>
+  <data name="CouldNotOpenTheProfileFile" xml:space="preserve">
+    <value>Could not open the profile file: {0}</value>
+  </data>
+  <data name="CouldNotParse" xml:space="preserve">
+    <value>#{0} {1} could not parse {2}. {3}</value>
+  </data>
+  <data name="CouldNotReadAsText" xml:space="preserve">
+    <value>{0} · Could not read as text</value>
+  </data>
+  <data name="CouldNotReadDefinitionsInTheZIP" xml:space="preserve">
+    <value>#{0} {1} could not read definitions in the ZIP. {2}</value>
+  </data>
+  <data name="CouldNotReadFullWorkshopDetails" xml:space="preserve">
+    <value>Could not read full Workshop details.</value>
+  </data>
+  <data name="CouldNotReadGameVersionFile" xml:space="preserve">
+    <value>Could not read game version file {0}: {1}</value>
+  </data>
+  <data name="CouldNotReadModMetadataJsonAt" xml:space="preserve">
+    <value>Could not read mod metadata.json at {0}. {1}</value>
+  </data>
+  <data name="CouldNotReadSteamLibraryManifest" xml:space="preserve">
+    <value>Could not read Steam library manifest {0}: {1}</value>
+  </data>
+  <data name="CouldNotReadSteamStatus" xml:space="preserve">
+    <value>Could not read Steam status.</value>
+  </data>
+  <data name="CouldNotReadTheInstallManifest" xml:space="preserve">
+    <value>Could not read the {0} install manifest {1}: {2}</value>
+  </data>
+  <data name="CouldNotReadTheLocalDescriptorMod" xml:space="preserve">
+    <value>Could not read the local descriptor.mod at {0}. Using the outer descriptor. {1}</value>
+  </data>
+  <data name="CouldNotReadThePrisonArchitectMod" xml:space="preserve">
+    <value>Could not read the Prison Architect mod manifest at {0}. {1}</value>
+  </data>
+  <data name="CouldNotReadTheSpecifiedGameFolder" xml:space="preserve">
+    <value>Could not read the specified game folder: {0}</value>
+  </data>
+  <data name="CouldNotReadTheWorkshopList" xml:space="preserve">
+    <value>Could not read the Workshop list.</value>
+  </data>
+  <data name="CouldNotRefreshTheWorkshopList" xml:space="preserve">
+    <value>Could not refresh the Workshop list. {0}</value>
+  </data>
+  <data name="CouldNotRefreshWorkshopData" xml:space="preserve">
+    <value>Could not refresh Workshop data: {0}</value>
+  </data>
+  <data name="CouldNotRefreshWorkshopDetails" xml:space="preserve">
+    <value>Could not refresh Workshop details: {0}</value>
+  </data>
+  <data name="CouldNotRefreshWorkshopDetails2" xml:space="preserve">
+    <value>Could not refresh Workshop details. {0}</value>
+  </data>
+  <data name="CouldNotRemoveTheTask" xml:space="preserve">
+    <value>Could not remove the task: {0}</value>
+  </data>
+  <data name="CouldNotReopenTheZIP" xml:space="preserve">
+    <value>#{0} {1} could not reopen the ZIP. {2}</value>
+  </data>
+  <data name="CouldNotRetryTheDownload" xml:space="preserve">
+    <value>Could not retry the download: {0}</value>
+  </data>
+  <data name="CouldNotSaveTheProfileFile" xml:space="preserve">
+    <value>Could not save the profile file: {0}</value>
+  </data>
+  <data name="CouldNotScanFolder" xml:space="preserve">
+    <value>Could not scan folder {0}. {1}</value>
+  </data>
+  <data name="CouldNotScanThePrisonArchitectMod" xml:space="preserve">
+    <value>Could not scan the Prison Architect mod folder at {0}. {1}</value>
+  </data>
+  <data name="CouldNotSelectASave" xml:space="preserve">
+    <value>Could not select a save: {0}</value>
+  </data>
+  <data name="CouldNotSelectTheFileOrFolder" xml:space="preserve">
+    <value>Could not select the file or folder: {0}</value>
+  </data>
+  <data name="CouldNotStartTheSteamClientBridge" xml:space="preserve">
+    <value>Could not start the Steam client bridge.</value>
+  </data>
+  <data name="CouldNotVerifyTheFilesFor" xml:space="preserve">
+    <value>Could not verify the files for {0}. ({1})</value>
+  </data>
+  <data name="CreateAProfileForYourNextCampaign" xml:space="preserve">
+    <value>Create a profile for your next campaign</value>
+  </data>
+  <data name="CreateOrSelectAProfileFirst" xml:space="preserve">
+    <value>Create or select a profile first.</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current {0} {1}</value>
+  </data>
+  <data name="CurrentGame" xml:space="preserve">
+    <value>Current game</value>
+  </data>
+  <data name="CurrentGameProfileLoaded" xml:space="preserve">
+    <value>Current game profile loaded</value>
+  </data>
+  <data name="CurrentInstallationNotFound" xml:space="preserve">
+    <value>#{0} {1}: current installation not found</value>
+  </data>
+  <data name="CurrentInstallationUnconfirmed" xml:space="preserve">
+    <value>Current installation unconfirmed</value>
+  </data>
+  <data name="CurrentProfileLocalSteamStatus" xml:space="preserve">
+    <value>Current profile · Local Steam status</value>
+  </data>
+  <data name="CurrentSeeTheAuthorSCompatibilityNotes" xml:space="preserve">
+    <value>Current {0} {1} · See the author’s compatibility notes</value>
+  </data>
+  <data name="CurrentUserDataPaths" xml:space="preserve">
+    <value>Current user data paths</value>
+  </data>
+  <data name="CurrentVersion" xml:space="preserve">
+    <value>Current {0} version</value>
+  </data>
+  <data name="CurrentlyInstalled" xml:space="preserve">
+    <value>Currently installed</value>
+  </data>
+  <data name="CurrentlyNotInstalled" xml:space="preserve">
+    <value>Currently not installed</value>
+  </data>
+  <data name="DeclaredDependencies" xml:space="preserve">
+    <value>Declared dependencies: {0}</value>
+  </data>
+  <data name="DeleteMod" xml:space="preserve">
+    <value>Delete mod</value>
+  </data>
+  <data name="DeletePlaysetSnapshot" xml:space="preserve">
+    <value>Delete playset snapshot</value>
+  </data>
+  <data name="DeleteRunProfile" xml:space="preserve">
+    <value>Delete run profile</value>
+  </data>
+  <data name="DeleteSelectedProfile" xml:space="preserve">
+    <value>Delete selected profile</value>
+  </data>
+  <data name="DeleteSnapshot" xml:space="preserve">
+    <value>Delete snapshot</value>
+  </data>
+  <data name="DeleteThisProfile" xml:space="preserve">
+    <value>Delete this profile</value>
+  </data>
+  <data name="DeletedFromDisk" xml:space="preserve">
+    <value>Deleted “{0}” from disk</value>
+  </data>
+  <data name="DeletedProfile" xml:space="preserve">
+    <value>Deleted profile “{0}”</value>
+  </data>
+  <data name="DependenciesAreUnconfirmedCheckTheAuthorS" xml:space="preserve">
+    <value>Dependencies are unconfirmed. Check the author’s notes and the Workshop requirements.</value>
+  </data>
+  <data name="DependenciesEnabledMods" xml:space="preserve">
+    <value>Dependencies · Enabled mods</value>
+  </data>
+  <data name="DependencyCheckComplete" xml:space="preserve">
+    <value>Dependency check complete</value>
+  </data>
+  <data name="DependencyCycle" xml:space="preserve">
+    <value>Dependency cycle: {0}</value>
+  </data>
+  <data name="DependencyDeclaredByTheLocalDescriptorIs" xml:space="preserve">
+    <value>{0} → {1}: dependency declared by the local descriptor is missing.</value>
+  </data>
+  <data name="DependencyDownloadsQueued" xml:space="preserve">
+    <value>Dependency downloads queued: {0}</value>
+  </data>
+  <data name="DetailSeparator" xml:space="preserve">
+    <value> · </value>
+  </data>
+  <data name="DetectAutomaticallyOrEnterTheFullMod" xml:space="preserve">
+    <value>Detect automatically or enter the full mod path</value>
+  </data>
+  <data name="DetectPathsAutomaticallyOrSetYourOwn" xml:space="preserve">
+    <value>Detect paths automatically or set your own.</value>
+  </data>
+  <data name="DifferentContent" xml:space="preserve">
+    <value>Different content</value>
+  </data>
+  <data name="DirectoryOverridesReplacePath" xml:space="preserve">
+    <value>Directory overrides · replace_path</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="Disabled2" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="DisabledListEntry" xml:space="preserve">
+    <value>Disabled · List entry</value>
+  </data>
+  <data name="DiscoverModsInTheWorkshop" xml:space="preserve">
+    <value>Discover mods in the Workshop</value>
+  </data>
+  <data name="DoesNotExist" xml:space="preserve">
+    <value>{0} does not exist: {1}</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>download</value>
+  </data>
+  <data name="DownloadAgain" xml:space="preserve">
+    <value>Download again</value>
+  </data>
+  <data name="DownloadCanceledVerifiedContentIsAvailableFor" xml:space="preserve">
+    <value>Download canceled. Verified content is available for retry.</value>
+  </data>
+  <data name="DownloadComplete" xml:space="preserve">
+    <value>Download complete</value>
+  </data>
+  <data name="DownloadCompleteFilesVerifiedAndInstalled" xml:space="preserve">
+    <value>Download complete. Files verified and installed.</value>
+  </data>
+  <data name="DownloadFailed" xml:space="preserve">
+    <value>Download failed</value>
+  </data>
+  <data name="DownloadInstalledAndLocalLibraryRefreshed" xml:space="preserve">
+    <value>Download installed and local library refreshed</value>
+  </data>
+  <data name="DownloadPlan" xml:space="preserve">
+    <value>Download plan</value>
+  </data>
+  <data name="DownloadQueuedFollowItsProgressInThe" xml:space="preserve">
+    <value>Download queued. Follow its progress in the app.</value>
+  </data>
+  <data name="DownloadedEnableItFromTheGameS" xml:space="preserve">
+    <value>Downloaded. Enable it from the game's Mods menu.</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Downloading</value>
+  </data>
+  <data name="DownloadingInSteam" xml:space="preserve">
+    <value>Downloading in Steam</value>
+  </data>
+  <data name="Downloads" xml:space="preserve">
+    <value>⇩   Downloads</value>
+  </data>
+  <data name="Downloads2" xml:space="preserve">
+    <value>{0} · Downloads</value>
+  </data>
+  <data name="DownloadsAreUnavailableInThisEnvironment" xml:space="preserve">
+    <value>Downloads are unavailable in this environment.</value>
+  </data>
+  <data name="DownloadsAreUnavailableInThisWorkspace" xml:space="preserve">
+    <value>Downloads are unavailable in this workspace.</value>
+  </data>
+  <data name="DragToChangeLoadOrder" xml:space="preserve">
+    <value>Drag to change load order</value>
+  </data>
+  <data name="DuplicateFilePath" xml:space="preserve">
+    <value>Duplicate file path {0}</value>
+  </data>
+  <data name="DuplicateOrCaseConflictingPackagePath" xml:space="preserve">
+    <value>Duplicate or case-conflicting package path: {0}</value>
+  </data>
+  <data name="DuplicatePlaysetIDsWereFound" xml:space="preserve">
+    <value>Duplicate playset IDs were found.</value>
+  </data>
+  <data name="EarlierModPathsInThisDirectory" xml:space="preserve">
+    <value>#{0} {1} · Earlier mod paths in this directory: {2}</value>
+  </data>
+  <data name="EnableTheModsYouWantToSave" xml:space="preserve">
+    <value>Enable the mods you want to save first.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="Enabled2" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="EnabledFilesIncluded" xml:space="preserve">
+    <value>Enabled · Files included</value>
+  </data>
+  <data name="EnabledModsTheChangeTakesEffectThe" xml:space="preserve">
+    <value>Enabled mods: {0}. The change takes effect the next time the game starts.</value>
+  </data>
+  <data name="EnterAModNameOrWorkshopLink" xml:space="preserve">
+    <value>Enter a mod name or Workshop link</value>
+  </data>
+  <data name="EnterANonzeroWorkshopIDOrA" xml:space="preserve">
+    <value>Enter a nonzero Workshop ID or a steamcommunity.com Workshop item link.</value>
+  </data>
+  <data name="EnterAPageNumberAndPressEnter" xml:space="preserve">
+    <value>Enter a page number and press Enter</value>
+  </data>
+  <data name="EnterAProfileName" xml:space="preserve">
+    <value>Enter a profile name.</value>
+  </data>
+  <data name="EnterAProfileNameFirst" xml:space="preserve">
+    <value>Enter a profile name first.</value>
+  </data>
+  <data name="ExistingFilesPassedVerification" xml:space="preserve">
+    <value>Existing files passed verification</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="ExportCK3PackWithEnabledModFiles" xml:space="preserve">
+    <value>Export CK3 pack with enabled mod files</value>
+  </data>
+  <data name="ExportPack" xml:space="preserve">
+    <value>Export pack</value>
+  </data>
+  <data name="ExportProfile" xml:space="preserve">
+    <value>Export profile</value>
+  </data>
+  <data name="ExportProfileFile" xml:space="preserve">
+    <value>Export profile file</value>
+  </data>
+  <data name="ExternalPath" xml:space="preserve">
+    <value>External path</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>{0} failed: {1}</value>
+  </data>
+  <data name="FileConflictCheckComplete" xml:space="preserve">
+    <value>File conflict check complete</value>
+  </data>
+  <data name="FileConflictChecksAreUnavailableForThis" xml:space="preserve">
+    <value>File conflict checks are unavailable for this game.</value>
+  </data>
+  <data name="FileConflictsEnabledMods" xml:space="preserve">
+    <value>File conflicts · Enabled mods</value>
+  </data>
+  <data name="FileExceedsItsDeclaredLength" xml:space="preserve">
+    <value>File exceeds its declared length: {0}</value>
+  </data>
+  <data name="FileLengthChanged" xml:space="preserve">
+    <value>File length changed: {0}</value>
+  </data>
+  <data name="FileSizeMB" xml:space="preserve">
+    <value>File size {0:N1} MB</value>
+  </data>
+  <data name="FilesAvailable" xml:space="preserve">
+    <value>Files available</value>
+  </data>
+  <data name="FilesChangedWhileSavingWaitForThe" xml:space="preserve">
+    <value>Files changed while saving {0}. Wait for the update to finish and try again.</value>
+  </data>
+  <data name="FilesForInTheSteamManifestAre" xml:space="preserve">
+    <value>Files for {0} in the Steam manifest are unavailable: {1}</value>
+  </data>
+  <data name="FilesMissing" xml:space="preserve">
+    <value>Files missing</value>
+  </data>
+  <data name="FilesSavedButTheLocalLibraryCould" xml:space="preserve">
+    <value>Files saved, but the local library could not refresh: {0}</value>
+  </data>
+  <data name="FilesVerifiedAndRestoredToASeparate" xml:space="preserve">
+    <value>Files verified and restored to a separate profile. Choose Apply to game to use it.</value>
+  </data>
+  <data name="FolderNotFound" xml:space="preserve">
+    <value>Folder not found: {0}</value>
+  </data>
+  <data name="Game" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="GameAndModPaths" xml:space="preserve">
+    <value>Game and mod paths</value>
+  </data>
+  <data name="GameFolder" xml:space="preserve">
+    <value>{0} game folder</value>
+  </data>
+  <data name="GameFolderNotFoundCheckSettings" xml:space="preserve">
+    <value>Game folder not found. Check Settings.</value>
+  </data>
+  <data name="GameLaunchRequestFailedSeeTheError" xml:space="preserve">
+    <value>Game launch request failed. See the error details.</value>
+  </data>
+  <data name="GameVersion" xml:space="preserve">
+    <value>Game version</value>
+  </data>
+  <data name="GameVersion2" xml:space="preserve">
+    <value> · Game version {0}</value>
+  </data>
+  <data name="GameVersionUndeclared" xml:space="preserve">
+    <value>Game version undeclared</value>
+  </data>
+  <data name="GameVersionUnknownBrowseTheWorkshopAnd" xml:space="preserve">
+    <value>Game version unknown · Browse the Workshop and check the author’s notes</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="ImportAndDownload" xml:space="preserve">
+    <value>Import and download ({0})</value>
+  </data>
+  <data name="ImportPack" xml:space="preserve">
+    <value>Import pack</value>
+  </data>
+  <data name="ImportPreview" xml:space="preserve">
+    <value>Import preview</value>
+  </data>
+  <data name="ImportProfile" xml:space="preserve">
+    <value>Import profile</value>
+  </data>
+  <data name="ImportProfileFile" xml:space="preserve">
+    <value>Import profile file</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>In progress · {0}…</value>
+  </data>
+  <data name="Incompatible" xml:space="preserve">
+    <value>Incompatible</value>
+  </data>
+  <data name="InitializeWorkspace" xml:space="preserve">
+    <value>Initialize workspace</value>
+  </data>
+  <data name="InstallFromFolder" xml:space="preserve">
+    <value>Install from folder…</value>
+  </data>
+  <data name="InstallFromZIP" xml:space="preserve">
+    <value>Install from ZIP…</value>
+  </data>
+  <data name="InstallLocalMod" xml:space="preserve">
+    <value>Install local mod</value>
+  </data>
+  <data name="Installed" xml:space="preserve">
+    <value>Installed “{0}”</value>
+  </data>
+  <data name="InstalledButDisabled" xml:space="preserve">
+    <value>{0} → {1}: installed but disabled.</value>
+  </data>
+  <data name="InstalledLocally" xml:space="preserve">
+    <value>Installed locally</value>
+  </data>
+  <data name="InstalledMods" xml:space="preserve">
+    <value>Installed mods</value>
+  </data>
+  <data name="Installing" xml:space="preserve">
+    <value>Installing</value>
+  </data>
+  <data name="InstallingToTheLocalLibrary" xml:space="preserve">
+    <value>Installing to the local library</value>
+  </data>
+  <data name="InvalidDescriptorOrLargerThan1MiB" xml:space="preserve">
+    <value>Invalid descriptor or larger than 1 MiB: {0}</value>
+  </data>
+  <data name="InvalidGameVersionField" xml:space="preserve">
+    <value>Invalid game version field.</value>
+  </data>
+  <data name="InvalidProfileFileFormat" xml:space="preserve">
+    <value>Invalid profile file format.</value>
+  </data>
+  <data name="InvalidUserDataFolder" xml:space="preserve">
+    <value>Invalid user data folder {0}</value>
+  </data>
+  <data name="InvalidWorkshopFolder" xml:space="preserve">
+    <value>Invalid Workshop folder {0}</value>
+  </data>
+  <data name="IsInvalid" xml:space="preserve">
+    <value>{0} is invalid: {1}</value>
+  </data>
+  <data name="ItemsPending" xml:space="preserve">
+    <value>{0}{1} · Items: {2} · Pending: {3}</value>
+  </data>
+  <data name="KeepPending" xml:space="preserve">
+    <value>Keep pending</value>
+  </data>
+  <data name="LanguageChanged" xml:space="preserve">
+    <value>Interface language changed</value>
+  </data>
+  <data name="LanguageSaveFailed" xml:space="preserve">
+    <value>Could not save the interface language: {0}</value>
+  </data>
+  <data name="LatestSessionLogs" xml:space="preserve">
+    <value>Latest session logs</value>
+  </data>
+  <data name="LaunchGame" xml:space="preserve">
+    <value>Launch game</value>
+  </data>
+  <data name="LaunchViaSteam" xml:space="preserve">
+    <value>Launch {0} via Steam ({1})</value>
+  </data>
+  <data name="LauncherFormatIsUnsupported" xml:space="preserve">
+    <value>Launcher format {0} is unsupported.</value>
+  </data>
+  <data name="LauncherProfileWritesAreUnavailableForThis" xml:space="preserve">
+    <value>Launcher profile writes are unavailable for this game.</value>
+  </data>
+  <data name="LeaveBlankToDetectAutomaticallySavingRefreshes" xml:space="preserve">
+    <value>Leave blank to detect automatically. Saving refreshes local content.</value>
+  </data>
+  <data name="LinkOrSpecialFileIsUnsupported" xml:space="preserve">
+    <value>Link or special file is unsupported: {0}</value>
+  </data>
+  <data name="LinkOrSpecialFileSkipped" xml:space="preserve">
+    <value>{0} · Link or special file skipped</value>
+  </data>
+  <data name="ListSeparator" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="LoadSteamWorkshopListings" xml:space="preserve">
+    <value>Load Steam Workshop listings</value>
+  </data>
+  <data name="LoadWorkshopDetails" xml:space="preserve">
+    <value>Load Workshop details</value>
+  </data>
+  <data name="LoadedSteamWorkshopPageWithCompatibleVersions" xml:space="preserve">
+    <value>Loaded Steam Workshop page {0}, with compatible versions first.</value>
+  </data>
+  <data name="Local" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="LocalEnvironmentLoaded" xml:space="preserve">
+    <value>Local environment loaded</value>
+  </data>
+  <data name="LocalEnvironmentLoadedTheLauncherProfileCould" xml:space="preserve">
+    <value>Local environment loaded. The launcher profile could not be read: {0}</value>
+  </data>
+  <data name="LocalFilesPendingRequestedVersion" xml:space="preserve">
+    <value>Local files pending · Requested version {0}</value>
+  </data>
+  <data name="LocalInstallPreview" xml:space="preserve">
+    <value>Local install preview</value>
+  </data>
+  <data name="LocalModFolder" xml:space="preserve">
+    <value>Local mod folder</value>
+  </data>
+  <data name="LocalMods" xml:space="preserve">
+    <value>▤   Local mods</value>
+  </data>
+  <data name="LocalMods2" xml:space="preserve">
+    <value>Local mods</value>
+  </data>
+  <data name="LocalMods3" xml:space="preserve">
+    <value>{0} · Local mods</value>
+  </data>
+  <data name="LocalModsChangedReviewTheMissingItems" xml:space="preserve">
+    <value>Local mods changed. Review the missing items again.</value>
+  </data>
+  <data name="LocalModsChangedReviewVersionsAndMissing" xml:space="preserve">
+    <value>Local mods changed. Review versions and missing items again.</value>
+  </data>
+  <data name="LocalSaveBindingStored" xml:space="preserve">
+    <value>Local save binding stored</value>
+  </data>
+  <data name="LocalStatus" xml:space="preserve">
+    <value>Local status</value>
+  </data>
+  <data name="MANAGE" xml:space="preserve">
+    <value>MANAGE</value>
+  </data>
+  <data name="ManageAnOrderedModListForEach" xml:space="preserve">
+    <value>Manage an ordered mod list for each campaign.</value>
+  </data>
+  <data name="ManageInstalledModsAndGameVersions" xml:space="preserve">
+    <value>Manage installed mods and game versions.</value>
+  </data>
+  <data name="ManageModsAndProfilesSeparatelyForEach" xml:space="preserve">
+    <value>Manage mods and profiles separately for each game</value>
+  </data>
+  <data name="ManifestTxtIsMissingName" xml:space="preserve">
+    <value>manifest.txt is missing Name.</value>
+  </data>
+  <data name="MatchingUsesTheVersionDeclaredByEach" xml:space="preserve">
+    <value>Matching uses the version declared by each mod.</value>
+  </data>
+  <data name="MissingAppStateNode" xml:space="preserve">
+    <value>Missing AppState node.</value>
+  </data>
+  <data name="MissingDisabled" xml:space="preserve">
+    <value>Missing · Disabled</value>
+  </data>
+  <data name="MissingDownloadAfterConfirmation" xml:space="preserve">
+    <value>Missing · Download after confirmation</value>
+  </data>
+  <data name="MissingInstallManually" xml:space="preserve">
+    <value>Missing · Install manually</value>
+  </data>
+  <data name="MissingInstalldir" xml:space="preserve">
+    <value>Missing installdir.</value>
+  </data>
+  <data name="MissingLibraryfoldersNode" xml:space="preserve">
+    <value>Missing libraryfolders node.</value>
+  </data>
+  <data name="ModCK3Files" xml:space="preserve">
+    <value>{0} · Mod {1} · CK3 {2} · Files: {3} · {4}</value>
+  </data>
+  <data name="ModContentIsMissingOrHasNot" xml:space="preserve">
+    <value>Mod content is missing or has not downloaded. {0} ({1})</value>
+  </data>
+  <data name="ModFilesAreMissing" xml:space="preserve">
+    <value>Mod files are missing. {0}</value>
+  </data>
+  <data name="ModFilesAreMissingDownloadOrDisable" xml:space="preserve">
+    <value>Mod files are missing. Download or disable this mod: {0}</value>
+  </data>
+  <data name="ModFilesOrDescriptorDiffer" xml:space="preserve">
+    <value>Mod files or descriptor differ. {0}</value>
+  </data>
+  <data name="ModGame" xml:space="preserve">
+    <value>Mod {0} · Game {1} · {2}</value>
+  </data>
+  <data name="ModInstallationsAccessedThroughSymbolicLinksCannot" xml:space="preserve">
+    <value>Mod installations accessed through symbolic links cannot be removed.</value>
+  </data>
+  <data name="ModList" xml:space="preserve">
+    <value>Mod list</value>
+  </data>
+  <data name="ModMetadataJsonMustBeAJSON" xml:space="preserve">
+    <value>Mod metadata.json must be a JSON object.</value>
+  </data>
+  <data name="ModProfileJson" xml:space="preserve">
+    <value>Mod profile.json</value>
+  </data>
+  <data name="ModRemovalIsUnavailableInThisEnvironment" xml:space="preserve">
+    <value>Mod removal is unavailable in this environment.</value>
+  </data>
+  <data name="ModZIPsInThePackExceedThe" xml:space="preserve">
+    <value>Mod ZIPs in the pack exceed the combined size or file count limit.</value>
+  </data>
+  <data name="ModsDownloadedFromTheWorkshopAppearHere" xml:space="preserve">
+    <value>Mods downloaded from the Workshop appear here after installation.</value>
+  </data>
+  <data name="ModsOnThisPageSteamReleases" xml:space="preserve">
+    <value>Mods on this page: {0} · Steam releases: {1:N0}{2}</value>
+  </data>
+  <data name="ModsScannedSharedPathsDifferentContent" xml:space="preserve">
+    <value>Mods scanned: {0} · Shared paths: {1} · Different content: {2}{3}</value>
+  </data>
+  <data name="MostSubscribed" xml:space="preserve">
+    <value>Most subscribed</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Move down ↓</value>
+  </data>
+  <data name="MoveTheOuterModFileForThis" xml:space="preserve">
+    <value>Move the outer .mod file for this mod to the game's user mod folder. {0}</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Move up ↑</value>
+  </data>
+  <data name="MultiGameModManager" xml:space="preserve">
+    <value>Multi-game mod manager</value>
+  </data>
+  <data name="MultiGamePreview" xml:space="preserve">
+    <value>Multi-game · Preview</value>
+  </data>
+  <data name="MultipleCopiesChooseOne" xml:space="preserve">
+    <value>Multiple copies · Choose one</value>
+  </data>
+  <data name="MultipleCopiesMatchChooseOneInThe" xml:space="preserve">
+    <value>{0} → {1}: multiple copies match. Choose one in the profile.</value>
+  </data>
+  <data name="MyProfiles" xml:space="preserve">
+    <value>My profiles</value>
+  </data>
+  <data name="NewProfile" xml:space="preserve">
+    <value>＋ New profile</value>
+  </data>
+  <data name="NewProfile2" xml:space="preserve">
+    <value>New profile</value>
+  </data>
+  <data name="NewProfileIsUnsavedAddModsFrom" xml:space="preserve">
+    <value>New profile is unsaved. Add mods from the local library.</value>
+  </data>
+  <data name="NewRunProfile" xml:space="preserve">
+    <value>New run profile</value>
+  </data>
+  <data name="NewestReleases" xml:space="preserve">
+    <value>Newest releases</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoDependenciesAreListedInTheWorkshop" xml:space="preserve">
+    <value>No dependencies are listed in the Workshop. Check the author’s notes.</value>
+  </data>
+  <data name="NoDependenciesDeclaredInTheDescriptor" xml:space="preserve">
+    <value>No dependencies declared in the descriptor</value>
+  </data>
+  <data name="NoDependenciesNeedDownloading" xml:space="preserve">
+    <value>No dependencies need downloading</value>
+  </data>
+  <data name="NoDownloadTasksYetChooseAMod" xml:space="preserve">
+    <value>No download tasks yet. Choose a mod in the Workshop and start a download.</value>
+  </data>
+  <data name="NoDownloadedWorkshopFolders" xml:space="preserve">
+    <value>No downloaded Workshop folders</value>
+  </data>
+  <data name="NoInstallationOfWasFoundSetThe" xml:space="preserve">
+    <value>No installation of {0} was found. Set the game folder manually.</value>
+  </data>
+  <data name="NoLauncherPlaysetFound" xml:space="preserve">
+    <value>No launcher playset found.</value>
+  </data>
+  <data name="NoLocalModFolderFound" xml:space="preserve">
+    <value>No local mod folder found</value>
+  </data>
+  <data name="NoMatchingInstallation" xml:space="preserve">
+    <value>No matching installation</value>
+  </data>
+  <data name="NoMatchingMods" xml:space="preserve">
+    <value>No matching mods</value>
+  </data>
+  <data name="NoModsFound" xml:space="preserve">
+    <value>No mods found</value>
+  </data>
+  <data name="NoPendingUpdate" xml:space="preserve">
+    <value>No pending update</value>
+  </data>
+  <data name="NoReleasesToDisplayOnThisPage" xml:space="preserve">
+    <value>No releases to display on this page</value>
+  </data>
+  <data name="NoSaveSelected" xml:space="preserve">
+    <value>No save selected</value>
+  </data>
+  <data name="NoSessionLogsOrCrashReportsWere" xml:space="preserve">
+    <value>No session logs or crash reports were found.</value>
+  </data>
+  <data name="NoWorkshopBrowsingSourceIsConfigured" xml:space="preserve">
+    <value>No Workshop browsing source is configured.</value>
+  </data>
+  <data name="NotScannedYet" xml:space="preserve">
+    <value>Not scanned yet</value>
+  </data>
+  <data name="OpenFolder" xml:space="preserve">
+    <value>Open folder</value>
+  </data>
+  <data name="OpenInSteam" xml:space="preserve">
+    <value>Open in Steam</value>
+  </data>
+  <data name="OpenInstallFolder" xml:space="preserve">
+    <value>Open install folder</value>
+  </data>
+  <data name="OpenSteamWorkshop" xml:space="preserve">
+    <value>Open Steam Workshop</value>
+  </data>
+  <data name="OpenSteamWorkshop2" xml:space="preserve">
+    <value>Open Steam Workshop</value>
+  </data>
+  <data name="OpenTheOfficialLauncherOnceToDiscover" xml:space="preserve">
+    <value>Open the official launcher once to discover local mods before applying.</value>
+  </data>
+  <data name="OpenTheSteamClientFirst" xml:space="preserve">
+    <value>Open the Steam client first.</value>
+  </data>
+  <data name="OpenWorkshop" xml:space="preserve">
+    <value>Open Workshop</value>
+  </data>
+  <data name="OperationCancelled" xml:space="preserve">
+    <value>Operation cancelled</value>
+  </data>
+  <data name="OperationFailedSeeTheErrorDetails" xml:space="preserve">
+    <value>Operation failed. See the error details.</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="PackPreview" xml:space="preserve">
+    <value>Pack preview</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PageNumberMustBeGreaterThanZero" xml:space="preserve">
+    <value>Page number must be greater than zero.</value>
+  </data>
+  <data name="PageOf" xml:space="preserve">
+    <value>Page {0} of {1}</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>/ {0} pages</value>
+  </data>
+  <data name="PartialCheck" xml:space="preserve">
+    <value> · Partial check</value>
+  </data>
+  <data name="PathsSavedAndLocalEnvironmentRefreshed" xml:space="preserve">
+    <value>Paths saved and local environment refreshed</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="PermanentlyDeleteFromDiskExitTheGame" xml:space="preserve">
+    <value>Permanently delete “{0}” from disk? {1}Exit the game first and update profiles that use this mod.
+{2}</value>
+  </data>
+  <data name="PlaysetFileIsInvalidAndWasPreserved" xml:space="preserve">
+    <value>Playset file {0} is invalid and was preserved. {1}</value>
+  </data>
+  <data name="PlaysetPackExported" xml:space="preserve">
+    <value>Playset pack exported</value>
+  </data>
+  <data name="PlaysetSnapshotsAreUnavailableForThisGame" xml:space="preserve">
+    <value>Playset snapshots are unavailable for this game.</value>
+  </data>
+  <data name="PossibleDuplicate" xml:space="preserve">
+    <value>Possible duplicate</value>
+  </data>
+  <data name="PrepareGameLaunch" xml:space="preserve">
+    <value>Prepare game launch</value>
+  </data>
+  <data name="PreparingDownload" xml:space="preserve">
+    <value>Preparing download</value>
+  </data>
+  <data name="PreparingToDiscoverLocalContent" xml:space="preserve">
+    <value>Preparing to discover local content</value>
+  </data>
+  <data name="PreviewLocalMod" xml:space="preserve">
+    <value>Preview local mod</value>
+  </data>
+  <data name="PreviewPlaysetPack" xml:space="preserve">
+    <value>Preview playset pack</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="PreviousDownloadInterrupted" xml:space="preserve">
+    <value>Previous download interrupted</value>
+  </data>
+  <data name="PreviousFilterResults" xml:space="preserve">
+    <value> · Previous filter results</value>
+  </data>
+  <data name="PrisonArchitectDoesNotUseParadoxPlaysets" xml:space="preserve">
+    <value>Prison Architect does not use Paradox playsets, so this feature is unavailable.</value>
+  </data>
+  <data name="ProfileExported" xml:space="preserve">
+    <value>Profile exported</value>
+  </data>
+  <data name="ProfileFileJSON" xml:space="preserve">
+    <value>Profile file (JSON)</value>
+  </data>
+  <data name="ProfileImported" xml:space="preserve">
+    <value>Profile imported</value>
+  </data>
+  <data name="ProfileImportedFollowDownloadsInTheApp" xml:space="preserve">
+    <value>Profile imported. Follow downloads in the app.</value>
+  </data>
+  <data name="ProfileLoaded" xml:space="preserve">
+    <value>Profile loaded</value>
+  </data>
+  <data name="ProfileModIDsCannotBeEmpty" xml:space="preserve">
+    <value>Profile mod IDs cannot be empty.</value>
+  </data>
+  <data name="ProfileName" xml:space="preserve">
+    <value>Profile name</value>
+  </data>
+  <data name="ProfileNameEGNorthernCampaign" xml:space="preserve">
+    <value>Profile name, e.g. Northern Campaign</value>
+  </data>
+  <data name="ProfileSaved" xml:space="preserve">
+    <value>Profile saved</value>
+  </data>
+  <data name="Profiles" xml:space="preserve">
+    <value>☷   Profiles</value>
+  </data>
+  <data name="Profiles2" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
+  <data name="Profiles3" xml:space="preserve">
+    <value>{0} · Profiles</value>
+  </data>
+  <data name="ProfilesAreStoredSeparatelyChangesToThe" xml:space="preserve">
+    <value>Profiles are stored separately. Changes to the game or launcher require an explicit action.</value>
+  </data>
+  <data name="QueueDependencyDownloads" xml:space="preserve">
+    <value>Queue dependency downloads</value>
+  </data>
+  <data name="Queued" xml:space="preserve">
+    <value>Queued</value>
+  </data>
+  <data name="QueuedInSteam" xml:space="preserve">
+    <value>Queued in Steam</value>
+  </data>
+  <data name="QueuedInSteam2" xml:space="preserve">
+    <value>Queued in Steam</value>
+  </data>
+  <data name="ReachedTheItemLimitSomeDependenciesWere" xml:space="preserve">
+    <value>Reached the {0}-item limit. Some dependencies were not checked.</value>
+  </data>
+  <data name="ReadCK3Logs" xml:space="preserve">
+    <value>Read CK3 logs</value>
+  </data>
+  <data name="ReadCK3Save" xml:space="preserve">
+    <value>Read CK3 save</value>
+  </data>
+  <data name="ReadGameProfile" xml:space="preserve">
+    <value>Read game profile</value>
+  </data>
+  <data name="ReadLogs" xml:space="preserve">
+    <value>Read logs</value>
+  </data>
+  <data name="ReadProfile" xml:space="preserve">
+    <value>Read profile</value>
+  </data>
+  <data name="ReadRecentSessionLogsAndPastCrash" xml:space="preserve">
+    <value>Read recent session logs and past crash reports from the CK3 user folder.</value>
+  </data>
+  <data name="RecentlyUpdated" xml:space="preserve">
+    <value>Recently updated</value>
+  </data>
+  <data name="Recommended" xml:space="preserve">
+    <value>Recommended · </value>
+  </data>
+  <data name="RecordTheTargetGameVersionAndMod" xml:space="preserve">
+    <value>Record the target game version and mod load order.</value>
+  </data>
+  <data name="RefreshData" xml:space="preserve">
+    <value>Refresh data</value>
+  </data>
+  <data name="Releases" xml:space="preserve">
+    <value>Releases: {0}</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RequestedInstalled" xml:space="preserve">
+    <value>Requested {0} · Installed {1}</value>
+  </data>
+  <data name="RequiredModIsMissing" xml:space="preserve">
+    <value>{0} → {1}: required mod is missing.</value>
+  </data>
+  <data name="RequiresCK3InstalledGame" xml:space="preserve">
+    <value>{0} · Requires CK3 {1} · Installed game {2} · {3}</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="RestoreAPackAsASeparateLocal" xml:space="preserve">
+    <value>Restore a pack as a separate local profile</value>
+  </data>
+  <data name="RestoreBoundSnapshot" xml:space="preserve">
+    <value>Restore bound snapshot</value>
+  </data>
+  <data name="RestorePlaysetSnapshot" xml:space="preserve">
+    <value>Restore playset snapshot</value>
+  </data>
+  <data name="RestoredASeparateLocalProfileChooseApply" xml:space="preserve">
+    <value>Restored a separate local profile. Choose Apply to game to use it.</value>
+  </data>
+  <data name="RestoredModFilesHaveChangedForMove" xml:space="preserve">
+    <value>Restored mod files have changed for {0}. Move the old copy out of {1} first.</value>
+  </data>
+  <data name="RetryDownload" xml:space="preserve">
+    <value>Retry download</value>
+  </data>
+  <data name="ReusingTheSteamInstallation" xml:space="preserve">
+    <value>Reusing the Steam installation</value>
+  </data>
+  <data name="ReviewEnabledModsLoadOrderAndVersion" xml:space="preserve">
+    <value>Review enabled mods, load order and version differences</value>
+  </data>
+  <data name="ReviewTheCK3VersionEnabledModsAnd" xml:space="preserve">
+    <value>Review the CK3 version, enabled mods and order</value>
+  </data>
+  <data name="ReviewTheModSourceAndInstallationPath" xml:space="preserve">
+    <value>Review the mod source and installation path</value>
+  </data>
+  <data name="SameContent" xml:space="preserve">
+    <value>Same content</value>
+  </data>
+  <data name="SaveAndRescan" xml:space="preserve">
+    <value>Save and rescan</value>
+  </data>
+  <data name="SaveBindingsAreUnavailableForThisGame" xml:space="preserve">
+    <value>Save bindings are unavailable for this game.</value>
+  </data>
+  <data name="SaveEnvironmentCheckedReviewTheDifferences" xml:space="preserve">
+    <value>Save environment checked. Review the differences.</value>
+  </data>
+  <data name="SaveEnvironmentMatchesTheSnapshot" xml:space="preserve">
+    <value>Save environment matches the snapshot</value>
+  </data>
+  <data name="SaveInformationLoaded" xml:space="preserve">
+    <value>Save information loaded</value>
+  </data>
+  <data name="SavePathsAndScan" xml:space="preserve">
+    <value>Save paths and scan</value>
+  </data>
+  <data name="SavePlaysetSnapshot" xml:space="preserve">
+    <value>Save playset snapshot</value>
+  </data>
+  <data name="SaveProfile" xml:space="preserve">
+    <value>Save profile</value>
+  </data>
+  <data name="SaveRunProfile" xml:space="preserve">
+    <value>Save run profile</value>
+  </data>
+  <data name="SaveThePackOutsideTheFoldersOf" xml:space="preserve">
+    <value>Save the pack outside the folders of mods used by the profile.</value>
+  </data>
+  <data name="SaveTheProfileAndEnabledModFiles" xml:space="preserve">
+    <value>Save the profile and enabled mod files locally</value>
+  </data>
+  <data name="SaveVersionModEntries" xml:space="preserve">
+    <value>Save version: {0} · Mod entries: {1}</value>
+  </data>
+  <data name="SavedCK3SnapshotEnabledMods" xml:space="preserve">
+    <value>Saved CK3 {0} snapshot · Enabled mods: {1}</value>
+  </data>
+  <data name="ScanCompleteModsFound" xml:space="preserve">
+    <value>Scan complete · Mods found: {0}</value>
+  </data>
+  <data name="ScanLocalMods" xml:space="preserve">
+    <value>Scan local mods</value>
+  </data>
+  <data name="ScannedAt" xml:space="preserve">
+    <value>Scanned at {0:HH:mm:ss}</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchAndDownloadMods" xml:space="preserve">
+    <value>Search and download mods.</value>
+  </data>
+  <data name="SearchByNameOrBrowseThisWeek" xml:space="preserve">
+    <value>Search by name or browse this week’s trending mods.</value>
+  </data>
+  <data name="SearchLocalMods" xml:space="preserve">
+    <value>Search local mods</value>
+  </data>
+  <data name="SearchMods" xml:space="preserve">
+    <value>Search mods</value>
+  </data>
+  <data name="SearchTheWorkshopFirst" xml:space="preserve">
+    <value>Search the Workshop first.</value>
+  </data>
+  <data name="SelectALocalCk3SaveFile" xml:space="preserve">
+    <value>Select a local .ck3 save file.</value>
+  </data>
+  <data name="SelectAProfileFirst" xml:space="preserve">
+    <value>Select a profile first.</value>
+  </data>
+  <data name="SelectASnapshotAndBindItTo" xml:space="preserve">
+    <value>Select a snapshot and bind it to this save.</value>
+  </data>
+  <data name="SelectCK3ModFolder" xml:space="preserve">
+    <value>Select CK3 mod folder</value>
+  </data>
+  <data name="SelectCK3ModZIP" xml:space="preserve">
+    <value>Select CK3 mod ZIP</value>
+  </data>
+  <data name="SelectCK3PlaysetPack" xml:space="preserve">
+    <value>Select CK3 playset pack</value>
+  </data>
+  <data name="SelectCK3Save" xml:space="preserve">
+    <value>Select CK3 save</value>
+  </data>
+  <data name="SelectGame" xml:space="preserve">
+    <value>Select game</value>
+  </data>
+  <data name="SelectOrCreateAProfile" xml:space="preserve">
+    <value>Select or create a profile</value>
+  </data>
+  <data name="SelectTheInstallFolder" xml:space="preserve">
+    <value>Select the {0} install folder</value>
+  </data>
+  <data name="SelectedSteamFolder" xml:space="preserve">
+    <value>Selected Steam folder</value>
+  </data>
+  <data name="SessionLogsPastCrashReports" xml:space="preserve">
+    <value>Session logs: {0} · Past crash reports: {1}</value>
+  </data>
+  <data name="SessionsAndPastCrashes" xml:space="preserve">
+    <value>Sessions and past crashes</value>
+  </data>
+  <data name="SetTheCK3UserDataFolderFirst" xml:space="preserve">
+    <value>Set the CK3 user data folder first.</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>⚙   Settings</value>
+  </data>
+  <data name="Settings2" xml:space="preserve">
+    <value>{0} · Settings</value>
+  </data>
+  <data name="SettingsFileIsCorruptOrUsesAn" xml:space="preserve">
+    <value>Settings file {0} is corrupt or uses an incompatible format. Back it up before repairing or moving it.</value>
+  </data>
+  <data name="SettingsFileIsEmptyBackItUp" xml:space="preserve">
+    <value>Settings file {0} is empty. Back it up before repairing or moving it.</value>
+  </data>
+  <data name="ShowOptions" xml:space="preserve">
+    <value>Show options</value>
+  </data>
+  <data name="ShowingExistingDataWhileRefreshingWorkshopDetails" xml:space="preserve">
+    <value>Showing existing data while refreshing Workshop details…</value>
+  </data>
+  <data name="ShowingTheLastDescriptionWhileCheckingFor" xml:space="preserve">
+    <value>Showing the last description while checking for updates…</value>
+  </data>
+  <data name="ShowingTheLastLoadedDataWhileChecking" xml:space="preserve">
+    <value>Showing the last loaded data while checking for updates…</value>
+  </data>
+  <data name="ShowingTheSummaryWhileLoadingTheFull" xml:space="preserve">
+    <value>Showing the summary while loading the full description…</value>
+  </data>
+  <data name="ShowingUpTo32KiBAnd120" xml:space="preserve">
+    <value>Showing up to 32 KiB and 120 lines from the end of the log.</value>
+  </data>
+  <data name="SizeAtInstall" xml:space="preserve">
+    <value>Size at install · {0}</value>
+  </data>
+  <data name="SkippedBecauseTheFileCountLimitWas" xml:space="preserve">
+    <value>#{0} {1} skipped because the file count limit was reached.</value>
+  </data>
+  <data name="SkippedSymbolicLinkOrReparsePoint" xml:space="preserve">
+    <value>Skipped symbolic link or reparse point {0}</value>
+  </data>
+  <data name="SkippedUnreadableModDescriptor" xml:space="preserve">
+    <value>Skipped unreadable mod descriptor {0}. {1}</value>
+  </data>
+  <data name="SnapshotAndRestoredCopiesDeleted" xml:space="preserve">
+    <value>Snapshot and restored copies deleted</value>
+  </data>
+  <data name="SnapshotDescriptorVerificationFailed" xml:space="preserve">
+    <value>Snapshot descriptor verification failed. {0}</value>
+  </data>
+  <data name="SnapshotModFileVerificationFailed" xml:space="preserve">
+    <value>Snapshot mod file verification failed. {0}</value>
+  </data>
+  <data name="SomeDependenciesCouldNotBeQueued" xml:space="preserve">
+    <value>Some dependencies could not be queued: {0}</value>
+  </data>
+  <data name="SomeModsCouldNotBeQueued" xml:space="preserve">
+    <value>Some mods could not be queued: {0}</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="SourceFilesChangedDuringCopyingPreviewThe" xml:space="preserve">
+    <value>Source files changed during copying. Preview the mod again.</value>
+  </data>
+  <data name="SourceInstallTo" xml:space="preserve">
+    <value>Source  {0}
+Install to  {1}</value>
+  </data>
+  <data name="SourceSteamWorkshop" xml:space="preserve">
+    <value>Source · Steam Workshop</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="StatusChecksRequireAValidWorkshopID" xml:space="preserve">
+    <value>Status checks require a valid Workshop ID for a game that supports in-app downloads.</value>
+  </data>
+  <data name="StatusUnknown" xml:space="preserve">
+    <value>Status unknown</value>
+  </data>
+  <data name="SteamClientCommunicationIsNotReady" xml:space="preserve">
+    <value>Steam client communication is not ready.</value>
+  </data>
+  <data name="SteamClientDownloadsUseYourExistingSteam" xml:space="preserve">
+    <value>Steam client downloads use your existing Steam session.</value>
+  </data>
+  <data name="SteamClientSignInDoesNotAutomatically" xml:space="preserve">
+    <value>Steam client sign-in does not automatically authorize this tool.</value>
+  </data>
+  <data name="SteamClosedAndDownloadTrackingEndedReopen" xml:space="preserve">
+    <value>Steam closed and download tracking ended. Reopen Steam and try again.</value>
+  </data>
+  <data name="SteamClosedAndSomeItemStatusesAre" xml:space="preserve">
+    <value>Steam closed and some item statuses are unavailable.</value>
+  </data>
+  <data name="SteamClosedBeforeConfirmingTheUnsubscribeRequest" xml:space="preserve">
+    <value>Steam closed before confirming the unsubscribe request.</value>
+  </data>
+  <data name="SteamCouldNotReadThisItemResult" xml:space="preserve">
+    <value>Steam could not read this item (result {0}). It may be deleted, private or temporarily unavailable.</value>
+  </data>
+  <data name="SteamDataHasAMissingOrInvalid" xml:space="preserve">
+    <value>Steam data has a missing or invalid field {0}.</value>
+  </data>
+  <data name="SteamDataIsMissingRequiredField" xml:space="preserve">
+    <value>Steam data is missing required field {0}.</value>
+  </data>
+  <data name="SteamDidNotAcceptTheDownloadRequest" xml:space="preserve">
+    <value>Steam did not accept the download request. Check that you are signed in and the mod is available.</value>
+  </data>
+  <data name="SteamDidNotAcceptTheSubscriptionRequest" xml:space="preserve">
+    <value>Steam did not accept the subscription request. Check that you are signed in.</value>
+  </data>
+  <data name="SteamDidNotAcceptTheUnsubscribeRequest" xml:space="preserve">
+    <value>Steam did not accept the unsubscribe request.</value>
+  </data>
+  <data name="SteamDidNotConfirmThatInstallationFinished" xml:space="preserve">
+    <value>Steam did not confirm that installation finished.</value>
+  </data>
+  <data name="SteamDidNotConfirmTheSubscriptionChange" xml:space="preserve">
+    <value>Steam did not confirm the subscription change. Check the client connection and try again.</value>
+  </data>
+  <data name="SteamDidNotConfirmTheSubscriptionIn" xml:space="preserve">
+    <value>Steam did not confirm the subscription in time. Check your connection and try again.</value>
+  </data>
+  <data name="SteamDidNotConfirmTheUnsubscribe" xml:space="preserve">
+    <value>Steam did not confirm the unsubscribe.</value>
+  </data>
+  <data name="SteamDidNotFinishTheDownload" xml:space="preserve">
+    <value>Steam did not finish the download.</value>
+  </data>
+  <data name="SteamDidNotReturnAValidInstallation" xml:space="preserve">
+    <value>Steam did not return a valid installation folder.</value>
+  </data>
+  <data name="SteamDidNotReturnInstallationDetailsFor" xml:space="preserve">
+    <value>Steam did not return installation details for the completed download.</value>
+  </data>
+  <data name="SteamDownloadsAndUpdatesTheModIt" xml:space="preserve">
+    <value>Steam downloads and updates the mod. It appears in the local library after installation.</value>
+  </data>
+  <data name="SteamFailedResult" xml:space="preserve">
+    <value>Steam {0} failed (result {1}). </value>
+  </data>
+  <data name="SteamFailedToUnsubscribe" xml:space="preserve">
+    <value>Steam failed to unsubscribe.</value>
+  </data>
+  <data name="SteamFinishedDownloadingAndInstallingTheMod" xml:space="preserve">
+    <value>Steam finished downloading and installing the mod</value>
+  </data>
+  <data name="SteamFolder" xml:space="preserve">
+    <value>Steam folder</value>
+  </data>
+  <data name="SteamHasNotConfirmedTheUnsubscribeOr" xml:space="preserve">
+    <value>Steam has not confirmed the unsubscribe or is still downloading. Wait for Steam to finish and try again.</value>
+  </data>
+  <data name="SteamInstallationNotFoundSetItsFolder" xml:space="preserve">
+    <value>Steam installation not found. Set its folder in Settings.</value>
+  </data>
+  <data name="SteamIsClosingAndDownloadTrackingEnded" xml:space="preserve">
+    <value>Steam is closing and download tracking ended. Reopen Steam and try again.</value>
+  </data>
+  <data name="SteamIsOfflineCheckTheClientConnection" xml:space="preserve">
+    <value>Steam is offline. Check the client connection and try again.</value>
+  </data>
+  <data name="SteamLaunchRequestedForContinueInSteam" xml:space="preserve">
+    <value>Steam launch requested for {0}. Continue in Steam or the launcher.</value>
+  </data>
+  <data name="SteamLibraryFolder" xml:space="preserve">
+    <value>Steam library folder</value>
+  </data>
+  <data name="SteamManagesInstallationAndDownloadProgress" xml:space="preserve">
+    <value>Steam manages installation and download progress.</value>
+  </data>
+  <data name="SteamOmittedTheStatusOfSomeItems" xml:space="preserve">
+    <value>Steam omitted the status of some items.</value>
+  </data>
+  <data name="SteamProcessing" xml:space="preserve">
+    <value>Steam processing</value>
+  </data>
+  <data name="SteamRequestFailedHTTPTryAgainLater" xml:space="preserve">
+    <value>Steam request failed (HTTP {0}). Try again later.</value>
+  </data>
+  <data name="SteamReturnedADifferentGameContextThe" xml:space="preserve">
+    <value>Steam returned a different game context. The download was not created.</value>
+  </data>
+  <data name="SteamReturnedADifferentItemIDThan" xml:space="preserve">
+    <value>Steam returned a different item ID than requested.</value>
+  </data>
+  <data name="SteamReturnedAnInvalidFileSize" xml:space="preserve">
+    <value>Steam returned an invalid file size.</value>
+  </data>
+  <data name="SteamReturnedAnInvalidUpdateTime" xml:space="preserve">
+    <value>Steam returned an invalid update time.</value>
+  </data>
+  <data name="SteamReturnedContentWithoutAReadableMod" xml:space="preserve">
+    <value>Steam returned content without a readable mod descriptor. Verify or download it again in Steam.</value>
+  </data>
+  <data name="SteamReturnedEmptyOrUnreadableContentVerify" xml:space="preserve">
+    <value>Steam returned empty or unreadable content. Verify or download it again in Steam.</value>
+  </data>
+  <data name="SteamReturnedIncompleteDetailsForThisWorkshop" xml:space="preserve">
+    <value>Steam returned incomplete details for this Workshop item.</value>
+  </data>
+  <data name="SteamReturnedInvalidDownloadByteCounts" xml:space="preserve">
+    <value>Steam returned invalid download byte counts.</value>
+  </data>
+  <data name="SteamRootFolder" xml:space="preserve">
+    <value>Steam root folder</value>
+  </data>
+  <data name="SteamUnsubscribeFailedResult" xml:space="preserve">
+    <value>Steam unsubscribe failed (result {0}).</value>
+  </data>
+  <data name="SteamUpdateStatusIsTemporarilyUnavailable" xml:space="preserve">
+    <value>. Steam update status is temporarily unavailable.</value>
+  </data>
+  <data name="SteamWorkshop" xml:space="preserve">
+    <value>↗   Steam Workshop</value>
+  </data>
+  <data name="SteamWorkshopFolder" xml:space="preserve">
+    <value>Steam Workshop folder</value>
+  </data>
+  <data name="StopAndRemoveTheTaskPartialFiles" xml:space="preserve">
+    <value>Stop and remove the task. Partial files are removed and installed content is kept.</value>
+  </data>
+  <data name="StopDownload" xml:space="preserve">
+    <value>Stop download</value>
+  </data>
+  <data name="StopThisDownloadAndKeepPartialFiles" xml:space="preserve">
+    <value>Stop this download and keep partial files for retry.</value>
+  </data>
+  <data name="StopTrackingAndRemoveTheTaskSteam" xml:space="preserve">
+    <value>Stop tracking and remove the task. Steam continues to manage the files.</value>
+  </data>
+  <data name="StopTrackingTheDownloadHereSteamMay" xml:space="preserve">
+    <value>Stop tracking the download here. Steam may keep downloading in the background.</value>
+  </data>
+  <data name="StoppingAndRemovingDownload" xml:space="preserve">
+    <value>Stopping and removing download…</value>
+  </data>
+  <data name="SubscribeAndDownload" xml:space="preserve">
+    <value>Subscribe and download</value>
+  </data>
+  <data name="SubscribeInSteamOrInTheGame" xml:space="preserve">
+    <value>Subscribe in Steam or in the game. Installed content is detected automatically.</value>
+  </data>
+  <data name="Subscribers" xml:space="preserve">
+    <value>Subscribers: {0:N0} · </value>
+  </data>
+  <data name="SubscribingToTheModInSteam" xml:space="preserve">
+    <value>Subscribing to the mod in Steam</value>
+  </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>subscription</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="TargetGameVersion" xml:space="preserve">
+    <value>Target game version</value>
+  </data>
+  <data name="TargetVersionOptional" xml:space="preserve">
+    <value>Target version (optional)</value>
+  </data>
+  <data name="TaskRemoved" xml:space="preserve">
+    <value>Task removed</value>
+  </data>
+  <data name="TaskWasNotRemoved" xml:space="preserve">
+    <value>Task was not removed</value>
+  </data>
+  <data name="TheAppCannotManageThisInstallationOr" xml:space="preserve">
+    <value>The app cannot manage this installation, or its management mode changed. Scan again.</value>
+  </data>
+  <data name="TheArrowShowsProfileOrderALater" xml:space="preserve">
+    <value>The arrow shows profile order. A later mod may override the same path.</value>
+  </data>
+  <data name="TheBoundSnapshotIsMissingBindAnother" xml:space="preserve">
+    <value>The bound snapshot is missing. Bind another snapshot.</value>
+  </data>
+  <data name="TheBoundSnapshotIsUnavailableBindAnother" xml:space="preserve">
+    <value>The bound snapshot is unavailable. Bind another snapshot.</value>
+  </data>
+  <data name="TheCK3DescriptorModIsMissingA" xml:space="preserve">
+    <value>The CK3 descriptor.mod is missing a valid mod name.</value>
+  </data>
+  <data name="TheCK3LocalModFolderForThis" xml:space="preserve">
+    <value>The CK3 local mod folder for this workspace is unavailable.</value>
+  </data>
+  <data name="TheCK3SnapshotManifestIsInvalid" xml:space="preserve">
+    <value>The CK3 snapshot manifest is invalid.</value>
+  </data>
+  <data name="TheCurrentCK3VersionIsUnknownThe" xml:space="preserve">
+    <value>The current CK3 version is unknown. The snapshot uses {0}.</value>
+  </data>
+  <data name="TheCurrentModLoadOrderDiffersFrom" xml:space="preserve">
+    <value>The current mod load order differs from the snapshot.</value>
+  </data>
+  <data name="TheCurrentVersionChangedDetailsWereClosed" xml:space="preserve">
+    <value>The current {0} version changed. Details were closed because the release is incompatible.</value>
+  </data>
+  <data name="TheCurrentVersionIsUnknownCheckThe" xml:space="preserve">
+    <value>The current {0} version is unknown. Check the game path or enter a confirmed target version before browsing.</value>
+  </data>
+  <data name="TheDescriptorHasNoNameUsingThe" xml:space="preserve">
+    <value>The descriptor has no name. Using the filename {0}.</value>
+  </data>
+  <data name="TheDescriptorHasNoPathOrArchive" xml:space="preserve">
+    <value>The descriptor has no path or archive. Trying the local folder named {0}.</value>
+  </data>
+  <data name="TheDescriptorPointsToAnAbsoluteWindows" xml:space="preserve">
+    <value>The descriptor points to an absolute Windows path. Reinstall or import the mod on this system.</value>
+  </data>
+  <data name="TheDetailsWereOlderThanTheList" xml:space="preserve">
+    <value>The details were older than the list entry. The newer list entry was kept.</value>
+  </data>
+  <data name="TheDownloadIsInstalledButTheLocal" xml:space="preserve">
+    <value>The download is installed, but the local library could not refresh: {0}</value>
+  </data>
+  <data name="TheDownloadItemDoesNotMatchThe" xml:space="preserve">
+    <value>The download item does not match the selected game.</value>
+  </data>
+  <data name="TheDownloadItemIDIsInvalid" xml:space="preserve">
+    <value>The download item ID is invalid.</value>
+  </data>
+  <data name="TheDownloadStoppedMakingProgressRetryTo" xml:space="preserve">
+    <value>The download stopped making progress. Retry to check its current Steam status.</value>
+  </data>
+  <data name="TheFileExceedsThe1GiBComparison" xml:space="preserve">
+    <value>The file exceeds the 1 GiB comparison limit.</value>
+  </data>
+  <data name="TheFileSizeChangedDuringTheCheck" xml:space="preserve">
+    <value>The file size changed during the check.</value>
+  </data>
+  <data name="TheGameFolderIsMissingOrDoes" xml:space="preserve">
+    <value>The game folder is missing or does not contain {0}. Select the {1} install folder again.</value>
+  </data>
+  <data name="TheGameInstallationWasNotFoundCheck" xml:space="preserve">
+    <value>The game installation was not found. Check the path settings.</value>
+  </data>
+  <data name="TheGameInstallationWasNotFoundConfirm" xml:space="preserve">
+    <value>The game installation was not found. Confirm the folder in Settings.</value>
+  </data>
+  <data name="TheGameSSteamClientLibraryWas" xml:space="preserve">
+    <value>The game's Steam client library was not found. Verify or repair the game installation.</value>
+  </data>
+  <data name="TheGameSSteamLibraryIsIntel" xml:space="preserve">
+    <value>The game's Steam library is Intel-only and cannot load in this Apple Silicon process. Subscribe and download in the Steam client.</value>
+  </data>
+  <data name="TheGameSSteamLibraryIsMissing" xml:space="preserve">
+    <value>The game's Steam library is missing {0}.</value>
+  </data>
+  <data name="TheGameVersionCouldNotBeRead" xml:space="preserve">
+    <value>The game version could not be read. Steam build IDs differ from game versions, so compatibility is unknown.</value>
+  </data>
+  <data name="TheInstallationFolderDoesNotMatchThe" xml:space="preserve">
+    <value>The installation folder does not match the selected game.</value>
+  </data>
+  <data name="TheInstallationPathIsInvalid" xml:space="preserve">
+    <value>The installation path is invalid.</value>
+  </data>
+  <data name="TheInstallationReturnedBySteamIsUnavailable" xml:space="preserve">
+    <value>The installation returned by Steam is unavailable.</value>
+  </data>
+  <data name="TheInstallationSelectedInThisProfileIs" xml:space="preserve">
+    <value>{0}: the installation selected in this profile is missing.</value>
+  </data>
+  <data name="TheLauncherDatabaseFormatIsUnsupportedThe" xml:space="preserve">
+    <value>The launcher database format is unsupported. The original profile was preserved.</value>
+  </data>
+  <data name="TheLauncherDoesNotMatchTheEnabled" xml:space="preserve">
+    <value>The launcher does not match the enabled mods or load order. Check the playset and retry.</value>
+  </data>
+  <data name="TheLauncherHasMultipleActivePlaysetsChoose" xml:space="preserve">
+    <value>The launcher has multiple active playsets. Choose one in the launcher first.</value>
+  </data>
+  <data name="TheLauncherHasNotDiscoveredThisMod" xml:space="preserve">
+    <value>The launcher has not discovered this mod. Move it to the game's user mod folder before applying. {0}</value>
+  </data>
+  <data name="TheLauncherSharesOrManagesThisPlayset" xml:space="preserve">
+    <value>The launcher shares or manages this playset. Create a new local profile.</value>
+  </data>
+  <data name="TheLauncherWasUpdatedButTheApp" xml:space="preserve">
+    <value>The launcher was updated, but the app could not save the profile: {0}</value>
+  </data>
+  <data name="TheListContainsItemsOutsideOrHas" xml:space="preserve">
+    <value>The list contains items outside {0} or has invalid pagination.</value>
+  </data>
+  <data name="TheLocalContentReportedBySteamIs" xml:space="preserve">
+    <value>The local content reported by Steam is unavailable.</value>
+  </data>
+  <data name="TheLocalSnapshotDescriptorWasModified" xml:space="preserve">
+    <value>The local snapshot descriptor was modified. {0}</value>
+  </data>
+  <data name="TheManifestAppIDDoesNotMatch" xml:space="preserve">
+    <value>The manifest App ID does not match the filename.</value>
+  </data>
+  <data name="TheManifestInstallPathIsOutsideSteam" xml:space="preserve">
+    <value>The manifest install path is outside Steam common.</value>
+  </data>
+  <data name="TheModDescriptorChangedDuringInstallation" xml:space="preserve">
+    <value>The mod descriptor changed during installation.</value>
+  </data>
+  <data name="TheModDescriptorCreatedByThisApp" xml:space="preserve">
+    <value>The mod descriptor created by this app was modified. Check it and try again.</value>
+  </data>
+  <data name="TheModDescriptorFolderCannotBeA" xml:space="preserve">
+    <value>The mod descriptor folder cannot be a symbolic link.</value>
+  </data>
+  <data name="TheModFilesAreMissingCheckThe" xml:space="preserve">
+    <value>The mod files are missing. Check the path and rescan before adding it.</value>
+  </data>
+  <data name="TheModIsStillPresentAfterRescanning" xml:space="preserve">
+    <value>The mod is still present after rescanning. Check whether Steam reinstalled it.</value>
+  </data>
+  <data name="TheModSourceOrInstallFolderChanged" xml:space="preserve">
+    <value>The mod source or install folder changed. Preview it again.</value>
+  </data>
+  <data name="TheOfficialLauncherConfigurationWasNotFound" xml:space="preserve">
+    <value>The official launcher configuration was not found. Open the official launcher once first.</value>
+  </data>
+  <data name="TheOriginalOrderIsKeptEnabledMod" xml:space="preserve">
+    <value>The original order is kept. Enabled mod files are verified and installed. Disabled entries remain in the list.</value>
+  </data>
+  <data name="ThePackChangedPreviewItAgain" xml:space="preserve">
+    <value>The pack changed. Preview it again.</value>
+  </data>
+  <data name="ThePackContainsAPathOutsideThe" xml:space="preserve">
+    <value>The pack contains a path outside the manifest: {0}</value>
+  </data>
+  <data name="ThePackContainsAnUnrecognizedEntry" xml:space="preserve">
+    <value>The pack contains an unrecognized entry: {0}</value>
+  </data>
+  <data name="ThePackIsMissingItsManifest" xml:space="preserve">
+    <value>The pack is missing its manifest.</value>
+  </data>
+  <data name="ThePackageContainsMoreThan500000" xml:space="preserve">
+    <value>The package contains more than 500,000 files or folders.</value>
+  </data>
+  <data name="ThePackageContainsOnlyADescriptorAnd" xml:space="preserve">
+    <value>The package contains only a descriptor and no mod content.</value>
+  </data>
+  <data name="ThePerModFileCountLimitWas" xml:space="preserve">
+    <value>The per-mod file count limit was reached.</value>
+  </data>
+  <data name="ThePlaysetContainsInvalidModInformation" xml:space="preserve">
+    <value>The playset contains invalid mod information.</value>
+  </data>
+  <data name="ThePlaysetIDConflictsWithAnotherProfile" xml:space="preserve">
+    <value>The playset ID conflicts with another profile. The original profile was preserved.</value>
+  </data>
+  <data name="ThePlaysetIsMissingItsIDName" xml:space="preserve">
+    <value>The playset is missing its ID, name, or mod list.</value>
+  </data>
+  <data name="TheProfileContainsAModWithAn" xml:space="preserve">
+    <value>The profile contains a mod with an empty name.</value>
+  </data>
+  <data name="TheProfileContainsDuplicateMods" xml:space="preserve">
+    <value>The profile contains duplicate mods.</value>
+  </data>
+  <data name="TheProfileContainsIndistinguishableDuplicateMods" xml:space="preserve">
+    <value>The profile contains indistinguishable duplicate mods: {0}</value>
+  </data>
+  <data name="TheProfileContainsInvalidModInformation" xml:space="preserve">
+    <value>The profile contains invalid mod information.</value>
+  </data>
+  <data name="TheProfileExceeds1MiB" xml:space="preserve">
+    <value>The profile exceeds 1 MiB.</value>
+  </data>
+  <data name="TheProfileExceeds1MiBAndCannot" xml:space="preserve">
+    <value>The profile exceeds 1 MiB and cannot be exported.</value>
+  </data>
+  <data name="TheProfileFileIsEmpty" xml:space="preserve">
+    <value>The profile file is empty.</value>
+  </data>
+  <data name="TheProfileFileIsMissingAValid" xml:space="preserve">
+    <value>The profile file is missing a valid game, name or mod list.</value>
+  </data>
+  <data name="TheProfileIsEmptyChooseAMod" xml:space="preserve">
+    <value>The profile is empty. Choose a mod above to add it.</value>
+  </data>
+  <data name="TheProfileNameCannotBeEmpty" xml:space="preserve">
+    <value>The profile name cannot be empty.</value>
+  </data>
+  <data name="TheProfileNeedsAModList" xml:space="preserve">
+    <value>The profile needs a mod list.</value>
+  </data>
+  <data name="TheRefreshFailedShowingSavedDetailsRefresh" xml:space="preserve">
+    <value>The refresh failed. Showing saved details. Refresh again before subscribing.</value>
+  </data>
+  <data name="TheRefreshFailedShowingTheLastLoaded" xml:space="preserve">
+    <value>The refresh failed. Showing the last loaded data.</value>
+  </data>
+  <data name="TheRestoredProfileCouldNotBeSaved" xml:space="preserve">
+    <value>The restored profile could not be saved and its new files could not be cleaned up.</value>
+  </data>
+  <data name="TheSameModCannotAppearTwiceIn" xml:space="preserve">
+    <value>The same mod cannot appear twice in a profile.</value>
+  </data>
+  <data name="TheSaveChangedConfirmItsBindingAgain" xml:space="preserve">
+    <value>The save changed. Confirm its binding again.</value>
+  </data>
+  <data name="TheSaveChangedConfirmItsBindingAgain2" xml:space="preserve">
+    <value>The save changed. Confirm its binding again.</value>
+  </data>
+  <data name="TheSaveChangedWhileBeingReadSelect" xml:space="preserve">
+    <value>The save changed while being read. Select it again shortly.</value>
+  </data>
+  <data name="TheSaveHasNoReadableModList" xml:space="preserve">
+    <value>The save has no readable mod list</value>
+  </data>
+  <data name="TheSaveMovedOrChangedSelectIt" xml:space="preserve">
+    <value>The save moved or changed. Select it again before binding.</value>
+  </data>
+  <data name="TheSaveMovedOrIsUnavailableSelect" xml:space="preserve">
+    <value>The save moved or is unavailable. Select it again and confirm the binding.</value>
+  </data>
+  <data name="TheSaveMovedOrIsUnavailableSelect2" xml:space="preserve">
+    <value>The save moved or is unavailable. Select it again.</value>
+  </data>
+  <data name="TheSaveOrBindingChangedCheckAgain" xml:space="preserve">
+    <value>The save or binding changed. Check again.</value>
+  </data>
+  <data name="TheSaveOrBindingChangedDuringThe" xml:space="preserve">
+    <value>The save or binding changed during the check. Confirm again.</value>
+  </data>
+  <data name="TheSaveRecordsCK3ItsBoundSnapshot" xml:space="preserve">
+    <value>The save records CK3 {0}; its bound snapshot uses {1}.</value>
+  </data>
+  <data name="TheSaveSModListIsEmpty" xml:space="preserve">
+    <value>The save’s mod list is empty</value>
+  </data>
+  <data name="TheScriptExceeds1MiB" xml:space="preserve">
+    <value>The script exceeds 1 MiB.</value>
+  </data>
+  <data name="TheScriptSizeChanged" xml:space="preserve">
+    <value>The script size changed.</value>
+  </data>
+  <data name="TheSelectedSnapshotIsMissingChooseAnother" xml:space="preserve">
+    <value>The selected snapshot is missing. Choose another.</value>
+  </data>
+  <data name="TheSelectedUserDataFolderIsInvalid" xml:space="preserve">
+    <value>The selected user data folder is invalid. Showing the default path: {0}</value>
+  </data>
+  <data name="TheSettingsFileCannotBeASymbolic" xml:space="preserve">
+    <value>The settings file cannot be a symbolic link.</value>
+  </data>
+  <data name="TheSnapshotIDIsInvalid" xml:space="preserve">
+    <value>The snapshot ID is invalid.</value>
+  </data>
+  <data name="TheSnapshotManifestExceeds1MiB" xml:space="preserve">
+    <value>The snapshot manifest exceeds 1 MiB.</value>
+  </data>
+  <data name="TheSnapshotUsesCK3AndTheCurrent" xml:space="preserve">
+    <value>The snapshot uses CK3 {0}, and the current version is {1}. Switch the game version in Steam first.</value>
+  </data>
+  <data name="TheSourceFolderContainsTheInstallationFolder" xml:space="preserve">
+    <value>The source folder contains the installation folder.</value>
+  </data>
+  <data name="TheSourceReturnedADifferentItemOr" xml:space="preserve">
+    <value>The source returned a different item or omitted its content revision.</value>
+  </data>
+  <data name="TheSourceReturnedAnOlderVersionThe" xml:space="preserve">
+    <value>The source returned an older version. The existing details were kept and the latest version is still unverified.</value>
+  </data>
+  <data name="TheSpecifiedGameFolderDoesNotExist" xml:space="preserve">
+    <value>The specified game folder does not exist.</value>
+  </data>
+  <data name="TheSteamBridgeMessageIsEmpty" xml:space="preserve">
+    <value>The Steam bridge message is empty.</value>
+  </data>
+  <data name="TheSteamBridgeMessageIsInvalid" xml:space="preserve">
+    <value>The Steam bridge message is invalid.</value>
+  </data>
+  <data name="TheSteamBridgeMessageIsTooLarge" xml:space="preserve">
+    <value>The Steam bridge message is too large.</value>
+  </data>
+  <data name="TheSteamBridgeReturnedADifferentGame" xml:space="preserve">
+    <value>The Steam bridge returned a different game or item.</value>
+  </data>
+  <data name="TheSteamBridgeReturnedAnInvalidStatus" xml:space="preserve">
+    <value>The Steam bridge returned an invalid status message.</value>
+  </data>
+  <data name="TheSteamBridgeReturnedAnUnexpectedMessage" xml:space="preserve">
+    <value>The Steam bridge returned an unexpected message after completing the task.</value>
+  </data>
+  <data name="TheSteamBridgeReturnedAnUnsupportedMessage" xml:space="preserve">
+    <value>The Steam bridge returned an unsupported message type.</value>
+  </data>
+  <data name="TheSteamBridgeReturnedStatusForAnother" xml:space="preserve">
+    <value>The Steam bridge returned status for another game.</value>
+  </data>
+  <data name="TheSteamBridgeTimedOutWhileExiting" xml:space="preserve">
+    <value>The Steam bridge timed out while exiting. Tracking ended.</value>
+  </data>
+  <data name="TheSteamCallbackSizeIsInvalid" xml:space="preserve">
+    <value>The Steam callback size is invalid.</value>
+  </data>
+  <data name="TheSteamConnectionTimedOutCheckThat" xml:space="preserve">
+    <value>The Steam connection timed out. Check that Steam is running and you are signed in.</value>
+  </data>
+  <data name="TheSteamDownloadBridgeExitedUnexpectedlyCode" xml:space="preserve">
+    <value>The Steam download bridge exited unexpectedly (code {0}).</value>
+  </data>
+  <data name="TheSteamDownloadBridgeStoppedRespondingTracking" xml:space="preserve">
+    <value>The Steam download bridge stopped responding. Tracking ended.</value>
+  </data>
+  <data name="TheSteamDownloadCallbackFormatIsUnsupported" xml:space="preserve">
+    <value>The Steam download callback format is unsupported.</value>
+  </data>
+  <data name="TheSteamGameContextDoesNotMatch" xml:space="preserve">
+    <value>The Steam game context does not match the download request.</value>
+  </data>
+  <data name="TheSteamGameContextDoesNotMatch2" xml:space="preserve">
+    <value>The Steam game context does not match the unsubscribe request.</value>
+  </data>
+  <data name="TheSteamGameContextDoesNotMatch3" xml:space="preserve">
+    <value>The Steam game context does not match the status request.</value>
+  </data>
+  <data name="TheSteamJSONCouldNotBeParsed" xml:space="preserve">
+    <value>The Steam JSON could not be parsed. Try again later.</value>
+  </data>
+  <data name="TheSteamLibraryShippedWithTheGame" xml:space="preserve">
+    <value>The Steam library shipped with the game failed to load or is unsupported. Check the game installation and system architecture.</value>
+  </data>
+  <data name="TheSteamLibraryVersionShippedWithThe" xml:space="preserve">
+    <value>The Steam library version shipped with the game is unsupported.</value>
+  </data>
+  <data name="TheSteamRequestTimedOutCheckThe" xml:space="preserve">
+    <value>The Steam request timed out. Check the network and try again.</value>
+  </data>
+  <data name="TheSteamRequestTimedOutCheckThe2" xml:space="preserve">
+    <value>The Steam request timed out. Check the client connection and try again.</value>
+  </data>
+  <data name="TheSteamStatusRequestTimedOut" xml:space="preserve">
+    <value>The Steam status request timed out.</value>
+  </data>
+  <data name="TheSteamSubscriptionCallbackFormatIsUnsupported" xml:space="preserve">
+    <value>The Steam subscription callback format is unsupported.</value>
+  </data>
+  <data name="TheSteamUnsubscribeResponseDoesNotMatch" xml:space="preserve">
+    <value>The Steam unsubscribe response does not match the selected mod.</value>
+  </data>
+  <data name="TheSteamUnsubscribeResponseIsInvalid" xml:space="preserve">
+    <value>The Steam unsubscribe response is invalid.</value>
+  </data>
+  <data name="TheTaskAndItemDoNotMatch" xml:space="preserve">
+    <value>The task and item do not match.</value>
+  </data>
+  <data name="TheTaskChangedOnDiskReloadDownload" xml:space="preserve">
+    <value>The task changed on disk. Reload download history and try again.</value>
+  </data>
+  <data name="TheUnpackedPackageExceeds64GiB" xml:space="preserve">
+    <value>The unpacked package exceeds 64 GiB.</value>
+  </data>
+  <data name="TheVersionFilterChangedSearchAgain" xml:space="preserve">
+    <value>The version filter changed. Search again.</value>
+  </data>
+  <data name="TheVersionFilterChangedSearchAgain2" xml:space="preserve">
+    <value>The version filter changed. Search again.</value>
+  </data>
+  <data name="TheWorkshopItemDoesNotMatchThe" xml:space="preserve">
+    <value>The Workshop item does not match the imported profile.</value>
+  </data>
+  <data name="TheWorkshopReturnedADifferentItemID" xml:space="preserve">
+    <value>The Workshop returned a different item ID.</value>
+  </data>
+  <data name="TheWorkshopRevisionIsChanging" xml:space="preserve">
+    <value>The Workshop revision is changing.</value>
+  </data>
+  <data name="TheWorkspaceFactoryReturnedAWorkspaceFor" xml:space="preserve">
+    <value>The workspace factory returned a workspace for a different game.</value>
+  </data>
+  <data name="TheZIPContainsALinkOrSpecial" xml:space="preserve">
+    <value>The ZIP contains a link or special file.</value>
+  </data>
+  <data name="TheZIPContainsAnInvalidPathOr" xml:space="preserve">
+    <value>The ZIP contains an invalid path or symbolic link.</value>
+  </data>
+  <data name="TheZIPContentsChangedDuringTheCheck" xml:space="preserve">
+    <value>The ZIP contents changed during the check.</value>
+  </data>
+  <data name="TheZIPOrFolderMustContainExactly" xml:space="preserve">
+    <value>The ZIP or folder must contain exactly one recognized CK3 descriptor.mod.</value>
+  </data>
+  <data name="ThisAccountDoesNotHaveAccessTo" xml:space="preserve">
+    <value>This account does not have access to the content.</value>
+  </data>
+  <data name="ThisAlsoUnsubscribesFromTheSteamItem" xml:space="preserve">
+    <value>This also unsubscribes from the Steam item. </value>
+  </data>
+  <data name="ThisContentIsMissingOrWasRemoved" xml:space="preserve">
+    <value>This content is missing or was removed.</value>
+  </data>
+  <data name="ThisFolderContainsAnotherInstalledModCheck" xml:space="preserve">
+    <value>This folder contains another installed mod. Check the installation layout first.</value>
+  </data>
+  <data name="ThisFolderHasNoReadableTextLogs" xml:space="preserve">
+    <value>This folder has no readable text logs.</value>
+  </data>
+  <data name="ThisGameDoesNotSupportLocalMod" xml:space="preserve">
+    <value>This game does not support local mod import.</value>
+  </data>
+  <data name="ThisGameDoesNotSupportPlaysetPacks" xml:space="preserve">
+    <value>This game does not support playset packs.</value>
+  </data>
+  <data name="ThisGameLoadsFoldersBeforeArchivesUse" xml:space="preserve">
+    <value>This game loads folders before archives. Use the same format to preserve the load order.</value>
+  </data>
+  <data name="ThisGameOrUserFolderDoesNot" xml:space="preserve">
+    <value>This game or user folder does not support in-app dependency downloads.</value>
+  </data>
+  <data name="ThisGameSSteamLibraryDoesNot" xml:space="preserve">
+    <value>This game's Steam library does not support in-app downloads. Download through the Steam client.</value>
+  </data>
+  <data name="ThisItemBelongsToAppRatherThan" xml:space="preserve">
+    <value>This item belongs to App {0} rather than {1} ({2}).</value>
+  </data>
+  <data name="ThisLogIsEmpty" xml:space="preserve">
+    <value>This log is empty.</value>
+  </data>
+  <data name="ThisModHasNoLocalInstallationThat" xml:space="preserve">
+    <value>This mod has no local installation that can be removed.</value>
+  </data>
+  <data name="ThisModInstallationChangedRescanAndSelect" xml:space="preserve">
+    <value>This mod installation changed. Rescan and select it again.</value>
+  </data>
+  <data name="ThisModIsAlreadyBeingProcessedStop" xml:space="preserve">
+    <value>This mod is already being processed. Stop the current download from its task.</value>
+  </data>
+  <data name="ThisModIsAlreadyInTheProfile" xml:space="preserve">
+    <value>This mod is already in the profile</value>
+  </data>
+  <data name="ThisModSTaskIsBeingRemoved" xml:space="preserve">
+    <value>This mod's task is being removed. Try again shortly.</value>
+  </data>
+  <data name="ThisModSTaskIsBeingRemoved2" xml:space="preserve">
+    <value>This mod's task is being removed.</value>
+  </data>
+  <data name="ThisPageHasNoReleasesToDisplay" xml:space="preserve">
+    <value>This page has no releases to display. Try another page.</value>
+  </data>
+  <data name="ThisProfileAlreadyContainsAnotherCopyOf" xml:space="preserve">
+    <value>This profile already contains another copy of this Workshop mod. Remove that copy first.</value>
+  </data>
+  <data name="ThisProfileBelongsToAnotherGame" xml:space="preserve">
+    <value>This profile belongs to another game.</value>
+  </data>
+  <data name="ThisProfileBelongsToAnotherGameSwitch" xml:space="preserve">
+    <value>This profile belongs to another game. Switch games before importing it.</value>
+  </data>
+  <data name="ThisProfileFileVersionIsUnsupported" xml:space="preserve">
+    <value>This profile file version is unsupported.</value>
+  </data>
+  <data name="ThisProfileHasNoEnabledInstalledSteam" xml:space="preserve">
+    <value>This profile has no enabled, installed Steam Workshop mods.</value>
+  </data>
+  <data name="ThisReleaseIsIncompatibleOrUnverifiedChoose" xml:space="preserve">
+    <value>This release is incompatible or unverified. Choose another version.</value>
+  </data>
+  <data name="ThisTaskWasRemovedSelectTheMod" xml:space="preserve">
+    <value>This task was removed. Select the mod again in the Workshop.</value>
+  </data>
+  <data name="ThisWorkshopItemDoesNotBelongTo" xml:space="preserve">
+    <value>This Workshop item does not belong to {0} ({1}).</value>
+  </data>
+  <data name="ThisWorkshopItemIsUnavailableTryRefreshing" xml:space="preserve">
+    <value>This Workshop item is unavailable. Try refreshing shortly.</value>
+  </data>
+  <data name="ThisWorkshopItemWasDeletedOrIs" xml:space="preserve">
+    <value>This Workshop item was deleted or is unavailable (result {0}).</value>
+  </data>
+  <data name="ThisWorkshopModIsAlreadyInThe" xml:space="preserve">
+    <value>This Workshop mod is already in the profile. Remove the previous copy to change versions.</value>
+  </data>
+  <data name="ThisWorkshopReleaseIsUnavailable" xml:space="preserve">
+    <value>This Workshop release is unavailable.</value>
+  </data>
+  <data name="TimeUnknown" xml:space="preserve">
+    <value>Time unknown</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value> ({0} total)</value>
+  </data>
+  <data name="TrackingStopped" xml:space="preserve">
+    <value>Tracking stopped</value>
+  </data>
+  <data name="TrackingStoppedSteamCanContinueDownloadingIn" xml:space="preserve">
+    <value>Tracking stopped. Steam can continue downloading in the background.</value>
+  </data>
+  <data name="TraitDefinitionsDuplicateKeysScansTopLevel" xml:space="preserve">
+    <value>Trait definitions · Duplicate keys: {0}. Scans top-level definitions in common/traits.</value>
+  </data>
+  <data name="TrendingThisWeek" xml:space="preserve">
+    <value>Trending this week</value>
+  </data>
+  <data name="TryAnotherSearchOrPage" xml:space="preserve">
+    <value>Try another search or page.</value>
+  </data>
+  <data name="TypeACategoryOrOpenTheList" xml:space="preserve">
+    <value>Type a category or open the list</value>
+  </data>
+  <data name="TypeAVersionOrOpenTheList" xml:space="preserve">
+    <value>Type a version or open the list</value>
+  </data>
+  <data name="TypeToFilterSortOptions" xml:space="preserve">
+    <value>Type to filter sort options</value>
+  </data>
+  <data name="UiLanguage" xml:space="preserve">
+    <value>Interface language</value>
+  </data>
+  <data name="UiLanguageHelp" xml:space="preserve">
+    <value>This language applies to every game workspace.</value>
+  </data>
+  <data name="Unavailable" xml:space="preserve">
+    <value>{0} · Unavailable</value>
+  </data>
+  <data name="Undeclared" xml:space="preserve">
+    <value>Undeclared</value>
+  </data>
+  <data name="Undetected" xml:space="preserve">
+    <value>Undetected</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="UnsavedChanges" xml:space="preserve">
+    <value>Unsaved changes</value>
+  </data>
+  <data name="Unsupported" xml:space="preserve">
+    <value>Unsupported</value>
+  </data>
+  <data name="UnsupportedGame" xml:space="preserve">
+    <value>Unsupported game: {0}</value>
+  </data>
+  <data name="UnsupportedPathInThePackage" xml:space="preserve">
+    <value>Unsupported path in the package: {0}</value>
+  </data>
+  <data name="UpdatePending" xml:space="preserve">
+    <value>Update pending</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Updated {0:yyyy-MM-dd HH:mm}</value>
+  </data>
+  <data name="UpdatedSteam" xml:space="preserve">
+    <value>{0}Updated {1:yyyy-MM-dd} · Steam</value>
+  </data>
+  <data name="Use" xml:space="preserve">
+    <value>Use {0} · {1} · {2}</value>
+  </data>
+  <data name="UseInstalledVersion" xml:space="preserve">
+    <value>Use installed version</value>
+  </data>
+  <data name="UseMatchingVersion" xml:space="preserve">
+    <value>Use matching version</value>
+  </data>
+  <data name="UseSelectedCopy" xml:space="preserve">
+    <value>Use selected copy</value>
+  </data>
+  <data name="UseTheSteamClientToUnsubscribeAnd" xml:space="preserve">
+    <value>Use the Steam client to unsubscribe and remove Workshop mods for this game.</value>
+  </data>
+  <data name="UserDataFolder" xml:space="preserve">
+    <value>{0} user data folder</value>
+  </data>
+  <data name="VerifyAndRestore" xml:space="preserve">
+    <value>Verify and restore</value>
+  </data>
+  <data name="Verifying" xml:space="preserve">
+    <value>Verifying</value>
+  </data>
+  <data name="VerifyingAllFiles" xml:space="preserve">
+    <value>Verifying all files</value>
+  </data>
+  <data name="VersionDiffersChooseACopy" xml:space="preserve">
+    <value>Version differs · Choose a copy</value>
+  </data>
+  <data name="VersionFilterDoesNotMatchTargetChange" xml:space="preserve">
+    <value>Version filter “{0}” does not match target {1}. Change the target or choose another filter.</value>
+  </data>
+  <data name="VersionUnknown" xml:space="preserve">
+    <value>Version unknown</value>
+  </data>
+  <data name="WaitingForAuthorization" xml:space="preserve">
+    <value>Waiting for authorization</value>
+  </data>
+  <data name="WaitingForSteamToDownload" xml:space="preserve">
+    <value>Waiting for Steam to download</value>
+  </data>
+  <data name="Workshop" xml:space="preserve">
+    <value>↓   Workshop</value>
+  </data>
+  <data name="Workshop2" xml:space="preserve">
+    <value>Workshop {0}</value>
+  </data>
+  <data name="Workshop3" xml:space="preserve">
+    <value>{0} · Workshop</value>
+  </data>
+  <data name="Workshop4" xml:space="preserve">
+    <value>{0} · Workshop {1}</value>
+  </data>
+  <data name="WorkshopCopies" xml:space="preserve">
+    <value>Workshop copies</value>
+  </data>
+  <data name="WorkshopDataCouldNotRefreshSeeThe" xml:space="preserve">
+    <value>Workshop data could not refresh. See the details.</value>
+  </data>
+  <data name="WorkshopDataIsUnavailableTryAgainLater" xml:space="preserve">
+    <value>Workshop data is unavailable. Try again later.</value>
+  </data>
+  <data name="WorkshopDependencies" xml:space="preserve">
+    <value>Workshop dependencies: {0}</value>
+  </data>
+  <data name="WorkshopDependenciesCouldNotBeVerified" xml:space="preserve">
+    <value>{0}: Workshop dependencies could not be verified.</value>
+  </data>
+  <data name="WorkshopDetailsAreUnavailableTryAgainLater" xml:space="preserve">
+    <value>Workshop details are unavailable. Try again later.</value>
+  </data>
+  <data name="WorkshopDetailsLoaded" xml:space="preserve">
+    <value>Workshop details loaded</value>
+  </data>
+  <data name="WorkshopID" xml:space="preserve">
+    <value>{0} · Workshop ID {1}</value>
+  </data>
+  <data name="WorkshopItemIDsMustBeGreaterThan" xml:space="preserve">
+    <value>Workshop item IDs must be greater than zero.</value>
+  </data>
+  <data name="WorkshopModHasNoDescriptorModMod" xml:space="preserve">
+    <value>Workshop mod {0} has no descriptor.mod, .mod file, or .metadata/metadata.json at {1}.</value>
+  </data>
+  <data name="WorkshopModsCheckedUpdatesPending" xml:space="preserve">
+    <value>Workshop mods checked: {0} · Updates pending: {1}</value>
+  </data>
+  <data name="WorkshopModsCheckedUpdatesPendingUnknown" xml:space="preserve">
+    <value>Workshop mods checked: {0} · Updates pending: {1} · Unknown: {2}</value>
+  </data>
+  <data name="WorkshopRequestCancelledExistingDataWasKept" xml:space="preserve">
+    <value>Workshop request cancelled. Existing data was kept.</value>
+  </data>
+</root>

@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Ck3ModManager.Core/Ck3ModManager.Core.csproj" />
+  </ItemGroup>
+</Project>

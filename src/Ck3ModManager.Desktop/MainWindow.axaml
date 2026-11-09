@@ -1,0 +1,1343 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converters="using:Avalonia.Data.Converters"
+        xmlns:local="using:Ck3ModManager.Desktop"
+        x:Class="Ck3ModManager.Desktop.MainWindow" Title="{Binding WindowTitle}"
+        Width="1180" Height="800" MinWidth="1000" MinHeight="690"
+        Background="{StaticResource CanvasBrush}" Foreground="{StaticResource TextPrimaryBrush}"
+        FontSize="13" FontFamily="PingFang SC, Microsoft YaHei UI, Segoe UI, sans-serif">
+  <Window.Resources>
+    <local:SteamGameIconConverter x:Key="SteamGameIcon" />
+    <local:LocalizedGameNameConverter x:Key="LocalizedGameName" />
+    <ControlTheme x:Key="WorkshopFilterOptionTheme" TargetType="ListBoxItem">
+      <Setter Property="MinHeight" Value="36" />
+      <Setter Property="Padding" Value="10,8" />
+      <Setter Property="Margin" Value="0,1" />
+      <Setter Property="CornerRadius" Value="6" />
+      <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="FocusAdorner" Value="{x:Null}" />
+      <Setter Property="Template">
+        <ControlTemplate>
+          <Border x:Name="OptionBackground" Background="{TemplateBinding Background}"
+                  CornerRadius="{TemplateBinding CornerRadius}" Padding="{TemplateBinding Padding}">
+            <Grid ColumnDefinitions="*,24">
+              <ContentPresenter Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}"
+                                VerticalAlignment="Center" />
+              <PathIcon Grid.Column="1" Width="12" Height="10" HorizontalAlignment="Right"
+                        Foreground="{DynamicResource AccentBrush}" IsVisible="{TemplateBinding IsSelected}"
+                        Data="M 0,4 L 4,8 L 11,0 L 12.5,1.3 L 4,11 L -1.5,5.5 Z" />
+            </Grid>
+          </Border>
+        </ControlTemplate>
+      </Setter>
+      <Style Selector="^:pointerover /template/ Border#OptionBackground">
+        <Setter Property="Background" Value="{StaticResource CanvasBrush}" />
+      </Style>
+      <Style Selector="^:selected /template/ Border#OptionBackground">
+        <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+      </Style>
+      <Style Selector="^:selected:pointerover /template/ Border#OptionBackground">
+        <Setter Property="Background" Value="{DynamicResource AccentSoftHoverBrush}" />
+      </Style>
+      <Style Selector="^:focus-visible /template/ Border#OptionBackground">
+        <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+      </Style>
+    </ControlTheme>
+  </Window.Resources>
+  <Window.Styles>
+    <Style Selector="ToggleButton.modActivation">
+      <Setter Property="Width" Value="68" />
+      <Setter Property="Height" Value="28" />
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="Background" Value="#D4D4D4" />
+      <Setter Property="Foreground" Value="#8A8A8A" />
+      <Setter Property="Template">
+        <ControlTemplate>
+          <Grid ColumnDefinitions="16,6,46" VerticalAlignment="Center">
+            <PathIcon Width="14" Height="14" Foreground="{TemplateBinding Foreground}"
+                      Data="M13,3H11V13H13V3 M17.83,5.17L16.41,6.59A7,7 0 1,1 7.59,6.59L6.17,5.17A9,9 0 1,0 17.83,5.17Z" />
+            <Border Grid.Column="2" Background="{TemplateBinding Background}" Height="24" CornerRadius="12">
+              <Ellipse x:Name="ActivationThumb" Width="18" Height="18" Fill="White" HorizontalAlignment="Left" Margin="3" />
+            </Border>
+          </Grid>
+        </ControlTemplate>
+      </Setter>
+    </Style>
+    <Style Selector="ToggleButton.modActivation:checked">
+      <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentBrush}" />
+    </Style>
+    <Style Selector="ToggleButton.modActivation:checked /template/ Ellipse#ActivationThumb">
+      <Setter Property="HorizontalAlignment" Value="Right" />
+    </Style>
+    <Style Selector="ToggleButton.modActivation:disabled"><Setter Property="Opacity" Value="0.45" /></Style>
+    <Style Selector="TextBlock"><Setter Property="TextWrapping" Value="Wrap" /></Style>
+    <Style Selector="TextBlock.muted">
+      <Setter Property="Foreground" Value="{StaticResource TextTertiaryBrush}" />
+      <Setter Property="FontSize" Value="12" />
+    </Style>
+    <Style Selector="TextBlock.label">
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}" />
+      <Setter Property="Margin" Value="2,0,2,6" />
+    </Style>
+    <Style Selector="TextBlock.heading">
+      <Setter Property="FontSize" Value="15" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Foreground" Value="#2E2E2E" />
+    </Style>
+    <Style Selector="TextBlock.pageTitle">
+      <Setter Property="FontSize" Value="22" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Foreground" Value="#2B2B2B" />
+    </Style>
+    <Style Selector="TextBlock.metric">
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Foreground" Value="{StaticResource TextTertiaryBrush}" />
+      <Setter Property="Margin" Value="0,0,0,6" />
+    </Style>
+    <Style Selector="TextBlock.metricValue">
+      <Setter Property="FontSize" Value="27" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Foreground" Value="#2B2B2B" />
+    </Style>
+    <Style Selector="TextBlock.metricValue.accent">
+      <Setter Property="Foreground" Value="#1F1F1F" />
+    </Style>
+    <Style Selector="TextBlock.recommendation">
+      <Setter Property="Foreground" Value="{StaticResource TextTertiaryBrush}" />
+    </Style>
+    <Style Selector="TextBlock.recommendation.matched">
+      <Setter Property="Foreground" Value="#2F9E6E" />
+    </Style>
+    <Style Selector="TextBlock.recommendation.mismatched">
+      <Setter Property="Foreground" Value="#D9453A" />
+    </Style>
+
+    <Style Selector="Border.card">
+      <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+      <Setter Property="CornerRadius" Value="10" />
+      <Setter Property="BorderBrush" Value="#EFEFEF" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="BoxShadow" Value="0 1 2 0 #0A000000, 0 4 14 0 #07000000" />
+      <Setter Property="Padding" Value="22" />
+    </Style>
+    <Style Selector="Border.divider">
+      <Setter Property="Height" Value="1" />
+      <Setter Property="Background" Value="{StaticResource LineBrush}" />
+    </Style>
+
+    <Style Selector="Button">
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="Padding" Value="15,8" />
+      <Setter Property="Cursor" Value="Hand" />
+      <Setter Property="FontSize" Value="13" />
+      <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+      <Setter Property="Foreground" Value="#4A4A4A" />
+      <Setter Property="BorderBrush" Value="{StaticResource LineStrongBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style Selector="Button:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="#F7F7F7" />
+      <Setter Property="Foreground" Value="#2E2E2E" />
+      <Setter Property="BorderBrush" Value="#D6D6D6" />
+    </Style>
+    <Style Selector="Button:pressed /template/ ContentPresenter">
+      <Setter Property="Background" Value="#EFEFEF" />
+      <Setter Property="Foreground" Value="#2E2E2E" />
+      <Setter Property="BorderBrush" Value="#D6D6D6" />
+    </Style>
+    <Style Selector="Button:disabled /template/ ContentPresenter">
+      <Setter Property="Background" Value="#F4F4F4" />
+      <Setter Property="Foreground" Value="#B5B5B5" />
+    </Style>
+
+    <Style Selector="Button.primary">
+      <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Padding" Value="17,9" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    <Style Selector="Button.primary:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentHoverBrush}" />
+      <Setter Property="Foreground" Value="White" />
+    </Style>
+    <Style Selector="Button.primary:pressed /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentPressedBrush}" />
+      <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style Selector="Button.rowdelete">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="#B8B8B8" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Padding" Value="6,2" />
+      <Setter Property="MinWidth" Value="0" />
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="CornerRadius" Value="6" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+    <Style Selector="Button.rowdelete:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentBrush}" />
+    </Style>
+
+    <Style Selector="Button.danger">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentBrush}" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+      <Setter Property="Padding" Value="15,9" />
+    </Style>
+    <Style Selector="Button.danger:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentPressedBrush}" />
+    </Style>
+    <Style Selector="Button.danger:pressed /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftHoverBrush}" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentPressedBrush}" />
+    </Style>
+
+    <Style Selector="Button.launch">
+      <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Padding" Value="20,10" />
+      <Setter Property="FontSize" Value="13.5" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    <Style Selector="Button.launch:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentHoverBrush}" />
+      <Setter Property="Foreground" Value="White" />
+    </Style>
+    <Style Selector="Button.launch:pressed /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentPressedBrush}" />
+      <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style Selector="Button.side">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="#5E5E5E" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="HorizontalContentAlignment" Value="Left" />
+      <Setter Property="Padding" Value="14,10" />
+      <Setter Property="Margin" Value="0,1" />
+      <Setter Property="FontSize" Value="13.5" />
+    </Style>
+    <Style Selector="Button.side:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="#F0F0F0" />
+      <Setter Property="Foreground" Value="#2E2E2E" />
+    </Style>
+    <Style Selector="Button.side.active">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentPressedBrush}" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    <Style Selector="Button.side.active:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftHoverBrush}" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentPressedBrush}" />
+    </Style>
+
+    <Style Selector="Button.resource">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+      <Setter Property="Padding" Value="8" />
+    </Style>
+    <Style Selector="Button.resource:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="#FAF7F6" />
+    </Style>
+    <Style Selector="Button.resource:pressed /template/ ContentPresenter">
+      <Setter Property="Background" Value="#F6EFED" />
+    </Style>
+
+    <Style Selector="TextBox">
+      <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+      <Setter Property="BorderBrush" Value="{StaticResource LineStrongBrush}" />
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="Padding" Value="11,8" />
+      <Setter Property="MinHeight" Value="37" />
+    </Style>
+    <Style Selector="TextBox:pointerover /template/ Border#PART_BorderElement">
+      <Setter Property="BorderBrush" Value="#CFCFCF" />
+    </Style>
+    <Style Selector="TextBox:focus /template/ Border#PART_BorderElement">
+      <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}" />
+    </Style>
+
+    <Style Selector="ComboBox">
+      <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+      <Setter Property="BorderBrush" Value="{StaticResource LineStrongBrush}" />
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="MinHeight" Value="37" />
+      <Setter Property="Padding" Value="11,6" />
+    </Style>
+    <Style Selector="ComboBox:pointerover /template/ Border#Background">
+      <Setter Property="BorderBrush" Value="#CFCFCF" />
+    </Style>
+
+    <Style Selector="AutoCompleteBox">
+      <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+      <Setter Property="BorderBrush" Value="{StaticResource LineStrongBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="MinHeight" Value="37" />
+      <Setter Property="Padding" Value="11,6" />
+    </Style>
+    <Style Selector="AutoCompleteBox:pointerover /template/ Border#PART_BorderElement">
+      <Setter Property="BorderBrush" Value="#CFCFCF" />
+    </Style>
+    <Style Selector="AutoCompleteBox:focus /template/ Border#PART_BorderElement">
+      <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}" />
+    </Style>
+
+    <!-- 可输入筛选框：固定细边框，避免内部 TextBox 的 Fluent 焦点样式加粗。 -->
+    <Style Selector="AutoCompleteBox.workshopFilter">
+      <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+      <Setter Property="FontSize" Value="13" />
+      <Setter Property="MinHeight" Value="38" />
+      <Setter Property="Padding" Value="12,6" />
+    </Style>
+    <Style Selector="AutoCompleteBox.workshopFilter /template/ TextBox#PART_TextBox">
+      <Setter Property="VerticalContentAlignment" Value="Center" />
+      <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+      <Setter Property="SelectionBrush" Value="{DynamicResource AccentSoftHoverBrush}" />
+      <Setter Property="SelectionForegroundBrush" Value="{StaticResource TextPrimaryBrush}" />
+      <Setter Property="CaretBrush" Value="{DynamicResource AccentBrush}" />
+    </Style>
+    <Style Selector="AutoCompleteBox.workshopFilter /template/ TextBox#PART_TextBox /template/ Border#PART_BorderElement">
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+    </Style>
+    <Style Selector="AutoCompleteBox.workshopFilter /template/ TextBox#PART_TextBox:focus /template/ Border#PART_BorderElement">
+      <Setter Property="BorderBrush" Value="{DynamicResource AccentLineBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style Selector="AutoCompleteBox.workshopFilter:dropdownopen /template/ TextBox#PART_TextBox /template/ Border#PART_BorderElement">
+      <Setter Property="BorderBrush" Value="{DynamicResource AccentLineBrush}" />
+    </Style>
+    <Style Selector="AutoCompleteBox.workshopFilter /template/ Popup#PART_Popup">
+      <Setter Property="VerticalOffset" Value="6" />
+    </Style>
+    <Style Selector="AutoCompleteBox.workshopFilter /template/ Border#PART_SuggestionsContainer">
+      <Setter Property="Padding" Value="5" />
+      <Setter Property="CornerRadius" Value="10" />
+      <Setter Property="Background" Value="{StaticResource SurfaceBrush}" />
+      <Setter Property="BorderBrush" Value="{StaticResource LineBrush}" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="BoxShadow" Value="0 6 18 0 #18000000" />
+    </Style>
+    <Style Selector="AutoCompleteBox.workshopFilter /template/ ListBox#PART_SelectingItemsControl">
+      <Setter Property="Margin" Value="0" />
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="ItemContainerTheme" Value="{StaticResource WorkshopFilterOptionTheme}" />
+    </Style>
+    <Style Selector="Button.filterArrow">
+      <Setter Property="Foreground" Value="{StaticResource TextSecondaryBrush}" />
+      <Setter Property="CornerRadius" Value="5" />
+      <Setter Property="FocusAdorner" Value="{x:Null}" />
+    </Style>
+    <Style Selector="Button.filterArrow:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{StaticResource CanvasBrush}" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+    </Style>
+    <Style Selector="Button.filterArrow:pressed /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+      <Setter Property="Foreground" Value="{DynamicResource AccentBrush}" />
+    </Style>
+
+    <Style Selector="ComboBoxItem">
+      <Setter Property="Padding" Value="10,7" />
+      <Setter Property="CornerRadius" Value="6" />
+      <Setter Property="Margin" Value="4,1" />
+    </Style>
+
+    <Style Selector="ListBox">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="0" />
+    </Style>
+    <Style Selector="ListBoxItem">
+      <Setter Property="Padding" Value="10" />
+      <Setter Property="Margin" Value="0,2" />
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    </Style>
+    <Style Selector="ListBoxItem:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="#FAFAFA" />
+    </Style>
+    <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+    </Style>
+    <Style Selector="ComboBoxItem:selected /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftBrush}" />
+    </Style>
+    <Style Selector="ComboBoxItem:selected:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource AccentSoftHoverBrush}" />
+    </Style>
+  </Window.Styles>
+
+  <Grid RowDefinitions="66,*,30">
+    <!-- 标题栏与游戏选择器使用 Steam 原色图标，强调色随当前游戏切换。 -->
+    <Border Background="{StaticResource SurfaceBrush}" BorderBrush="{StaticResource LineBrush}" BorderThickness="0,0,0,1">
+      <Grid ColumnDefinitions="*,Auto" Margin="24,0,20,0">
+        <StackPanel Orientation="Horizontal" Spacing="11" VerticalAlignment="Center">
+          <Border CornerRadius="6" Width="34" Height="34" ClipToBounds="True">
+            <Image x:Name="HeaderGameIcon" Width="32" Height="32" Stretch="Uniform"
+                   Source="{Binding SelectedGame, Converter={StaticResource SteamGameIcon}}"
+                   AutomationProperties.Name="{Binding GameDisplayName}" />
+          </Border>
+          <StackPanel VerticalAlignment="Center" Spacing="1">
+            <TextBlock Text="Steam Mod Manager" FontSize="15.5" FontWeight="SemiBold" Foreground="#2B2B2B" />
+            <TextBlock Text="{DynamicResource Text.MultiGameModManager}" FontSize="10.5" Foreground="#A3A3A3" />
+          </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+          <Border Background="{StaticResource SubtleBrush}" CornerRadius="8" Padding="11,7" BorderBrush="{StaticResource LineBrush}" BorderThickness="1">
+            <StackPanel Orientation="Horizontal" Spacing="7">
+              <Image x:Name="CurrentGameIcon" Width="20" Height="20" Stretch="Uniform" VerticalAlignment="Center"
+                     Source="{Binding SelectedGame, Converter={StaticResource SteamGameIcon}}"
+                     AutomationProperties.Name="{Binding GameDisplayName}" />
+              <TextBlock Text="{Binding GameDisplayName}" FontSize="12.5" Foreground="#5E5E5E" VerticalAlignment="Center" />
+            </StackPanel>
+          </Border>
+          <Button x:Name="LaunchGameButton" Classes="launch" VerticalAlignment="Center"
+                  Command="{Binding LaunchGameCommand}" ToolTip.Tip="{Binding LaunchGameTooltip}"
+                  AutomationProperties.Name="{DynamicResource Text.LaunchGame}">
+            <StackPanel Orientation="Horizontal" Spacing="9">
+              <PathIcon Data="M 2,1 L 12,7 L 2,13 Z" Width="10" Height="12" VerticalAlignment="Center" />
+              <TextBlock Text="{DynamicResource Text.LaunchGame}" VerticalAlignment="Center" />
+            </StackPanel>
+          </Button>
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <Grid Grid.Row="1" ColumnDefinitions="238,*">
+      <!-- 侧边栏 -->
+      <Border Background="{StaticResource SubtleBrush}" BorderBrush="{StaticResource LineBrush}" BorderThickness="0,0,1,0">
+        <Grid RowDefinitions="Auto,*,Auto" Margin="14,20,14,16">
+          <StackPanel Spacing="5">
+            <TextBlock Text="{DynamicResource Text.CurrentGame}" FontSize="11" Foreground="{StaticResource TextTertiaryBrush}" Margin="4,0,0,8" LetterSpacing="0.4" />
+            <Border Background="{StaticResource SurfaceBrush}" CornerRadius="10" BorderBrush="{StaticResource LineStrongBrush}" BorderThickness="1"
+                    BoxShadow="0 1 2 0 #08000000" Margin="0,0,0,22">
+              <ComboBox x:Name="GameSelector" DropDownOpened="RefreshGameSelector" ItemsSource="{Binding Games}"
+                        SelectedItem="{Binding SelectedGame, Mode=TwoWay}"
+                        Background="Transparent" BorderThickness="0" CornerRadius="10"
+                        MinHeight="58" MaxDropDownHeight="440" Padding="12,7"
+                        AutomationProperties.Name="{DynamicResource Text.SelectGame}"
+                        ToolTip.Tip="{DynamicResource Text.ManageModsAndProfilesSeparatelyForEach}">
+                <ComboBox.ItemTemplate>
+                  <DataTemplate>
+                    <Grid ColumnDefinitions="28,*" ColumnSpacing="9">
+                      <Image Width="28" Height="28" Stretch="Uniform" VerticalAlignment="Center"
+                             Source="{Binding Converter={StaticResource SteamGameIcon}}"
+                             AutomationProperties.Name="{Binding DisplayName}" />
+                      <StackPanel Grid.Column="1" Spacing="2" VerticalAlignment="Center">
+                        <TextBlock FontSize="13.5" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" Foreground="#2E2E2E">
+                          <TextBlock.Text>
+                            <MultiBinding Converter="{StaticResource LocalizedGameName}">
+                              <Binding />
+                              <Binding Path="Language" Source="{x:Static local:UiLocale.Source}" />
+                            </MultiBinding>
+                          </TextBlock.Text>
+                        </TextBlock>
+                        <TextBlock Text="{Binding ShortName}" FontSize="10.5" Foreground="{StaticResource TextTertiaryBrush}" />
+                      </StackPanel>
+                    </Grid>
+                  </DataTemplate>
+                </ComboBox.ItemTemplate>
+              </ComboBox>
+            </Border>
+
+            <TextBlock Text="{DynamicResource Text.MANAGE}" FontSize="11" Foreground="{StaticResource TextTertiaryBrush}" Margin="14,0,0,8" LetterSpacing="0.4" />
+            <Button Classes="side" Classes.active="{Binding IsOverview}" Content="{DynamicResource Text.LocalMods}" Command="{Binding NavigateCommand}" CommandParameter="overview" />
+            <Button Classes="side" Classes.active="{Binding IsWorkshop}" Content="{DynamicResource Text.Workshop}" IsVisible="{Binding !Game.IsDiscovered}" Command="{Binding NavigateCommand}" CommandParameter="workshop" />
+            <Button Classes="side" Content="{DynamicResource Text.SteamWorkshop}" IsVisible="{Binding CanOpenDiscoveredWorkshop}" Command="{Binding OpenDiscoveredWorkshopCommand}" />
+            <Button Classes="side" Classes.active="{Binding IsDownloads}" IsVisible="{Binding !Game.IsDiscovered}" Content="{DynamicResource Text.Downloads}" Command="{Binding NavigateCommand}" CommandParameter="downloads" />
+            <Button Classes="side" Classes.active="{Binding IsProfiles}" Content="{DynamicResource Text.Profiles}" Command="{Binding NavigateCommand}" CommandParameter="profiles" />
+            <Button Classes="side" Classes.active="{Binding IsDiagnostics}" IsVisible="{Binding SupportsCk3Diagnostics}"
+                    Content="{DynamicResource Text.CK3Diagnostics}" Command="{Binding NavigateCommand}" CommandParameter="diagnostics" />
+            <Button Classes="side" Classes.active="{Binding IsSettings}" Content="{DynamicResource Text.Settings}" Command="{Binding NavigateCommand}" CommandParameter="settings" />
+          </StackPanel>
+
+          <StackPanel Grid.Row="2" Spacing="6" Margin="10,0">
+            <Border Classes="divider" Margin="0,0,0,8" />
+            <TextBlock Text="PARADOX GAMES" Foreground="#B0B0B0" FontSize="9.5" LetterSpacing="1.2" />
+            <TextBlock Text="{DynamicResource Text.MultiGamePreview}" Foreground="#B0B0B0" FontSize="10.5" />
+          </StackPanel>
+        </Grid>
+      </Border>
+
+      <!-- 主内容区 -->
+      <Grid Grid.Column="1" RowDefinitions="Auto,Auto,*" Margin="28,24,28,24">
+        <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,20">
+          <StackPanel Spacing="6">
+            <TextBlock Text="{Binding SectionTitle}" Classes="pageTitle" />
+            <TextBlock Text="{Binding SectionSubtitle}" Classes="muted" FontSize="12.5" />
+          </StackPanel>
+          <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+            <Button Content="{DynamicResource Text.Cancel}" IsVisible="{Binding CanCancelOperation}" Command="{Binding CancelCommand}" />
+          </StackPanel>
+        </Grid>
+
+        <Border Grid.Row="1" IsVisible="{Binding HasError}" Background="{DynamicResource AccentSoftBrush}"
+                BorderBrush="{DynamicResource AccentLineBrush}" BorderThickness="1" CornerRadius="8" Padding="14,11" Margin="0,0,0,16">
+          <TextBlock Text="{Binding ErrorMessage}" Foreground="{DynamicResource AccentPressedBrush}" FontSize="12.5" />
+        </Border>
+
+        <Grid Grid.Row="2">
+          <!-- 本地 Mod 库 -->
+          <Grid IsVisible="{Binding IsOverview}" RowDefinitions="Auto,Auto,*">
+            <Border Classes="card" Margin="0,0,0,18">
+              <StackPanel Spacing="18">
+                <Grid ColumnDefinitions="*,Auto,*,Auto,*">
+                  <StackPanel Spacing="4">
+                    <TextBlock Text="{DynamicResource Text.GameVersion}" Classes="metric" />
+                    <TextBlock Text="{Binding GameVersionText}" Classes="metricValue accent" />
+                  </StackPanel>
+                  <Border Grid.Column="1" Width="1" Background="{StaticResource LineBrush}" Margin="0,4,0,4" />
+                  <StackPanel Grid.Column="2" Spacing="4" Margin="24,0,0,0">
+                    <TextBlock Text="{DynamicResource Text.LocalMods2}" Classes="metric" />
+                    <TextBlock Text="{Binding ModCountText}" Classes="metricValue" />
+                  </StackPanel>
+                  <Border Grid.Column="3" Width="1" Background="{StaticResource LineBrush}" Margin="0,4,0,4" />
+                  <StackPanel Grid.Column="4" Spacing="4" Margin="24,0,0,0">
+                    <TextBlock Text="{DynamicResource Text.Profiles2}" Classes="metric" />
+                    <TextBlock Text="{Binding ProfileCountText}" Classes="metricValue" />
+                  </StackPanel>
+                </Grid>
+                <Border Classes="divider" />
+                <StackPanel Spacing="6">
+                  <TextBlock Text="{Binding GameDirectoryText}" Classes="muted" FontSize="11.5" />
+                </StackPanel>
+              </StackPanel>
+            </Border>
+
+            <Border Grid.Row="1" IsVisible="{Binding HasWarnings}" Background="#FFF9EC" BorderBrush="#F3E5C4"
+                    BorderThickness="1" CornerRadius="8" Padding="14,10" Margin="0,0,0,16">
+              <ItemsControl ItemsSource="{Binding Warnings}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate>
+                    <TextBlock Text="{Binding}" FontSize="11.5" Foreground="#8A6D2F" Margin="0,2" />
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+            </Border>
+
+            <Border Grid.Row="2" Classes="card" Padding="18">
+              <Grid RowDefinitions="Auto,*,Auto">
+                <Grid ColumnDefinitions="*,Auto,250" RowDefinitions="Auto,Auto,Auto,Auto" Margin="4,0,4,16">
+                  <StackPanel VerticalAlignment="Center" Spacing="4">
+                    <TextBlock Text="{DynamicResource Text.InstalledMods}" Classes="heading" />
+                    <TextBlock Text="{Binding LastScan}" Classes="muted" FontSize="10.5" />
+                  </StackPanel>
+                  <Button x:Name="OpenLocalModImportButton" Grid.Column="1" Content="{DynamicResource Text.InstallLocalMod}" Margin="0,0,8,0"
+                          IsVisible="{Binding SupportsLocalModImport}" IsEnabled="{Binding CanPreviewLocalModImport}">
+                    <Button.Flyout>
+                      <MenuFlyout>
+                        <MenuItem Header="{DynamicResource Text.InstallFromZIP}" Click="PickLocalModZip" />
+                        <MenuItem Header="{DynamicResource Text.InstallFromFolder}" Click="PickLocalModFolder" />
+                      </MenuFlyout>
+                    </Button.Flyout>
+                  </Button>
+                  <TextBox Grid.Column="2" Text="{Binding LocalSearch}" PlaceholderText="{DynamicResource Text.SearchLocalMods}" />
+                  <Grid Grid.Row="1" Grid.ColumnSpan="3" ColumnDefinitions="*,Auto" Margin="0,14,0,0">
+                    <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+                      <TextBlock Text="{Binding ActiveProfileLabel}" Classes="muted" MaxWidth="230" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
+                      <TextBlock Text="{Binding GameActivationState}" Classes="muted" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8">
+                      <Button x:Name="PrepareInstalledModRemovalButton" Content="{DynamicResource Text.DeleteMod}"
+                              Classes="danger" Command="{Binding PrepareInstalledModRemovalCommand}" />
+                      <Button Content="{DynamicResource Text.ReadGameProfile}" Command="{Binding ReadGameProfileCommand}" />
+                      <Button x:Name="ApplyLocalGameProfileButton" Content="{DynamicResource Text.ApplyToGame}" Classes="primary" Command="{Binding ApplyGameProfileCommand}" />
+                    </StackPanel>
+                  </Grid>
+                  <Grid Grid.Row="2" Grid.ColumnSpan="3" ColumnDefinitions="*,Auto" Margin="0,12,0,0"
+                        IsVisible="{Binding HasPendingInstalledModRemoval}">
+                    <TextBlock Text="{Binding InstalledModRemovalPrompt}" TextWrapping="Wrap" Classes="muted"
+                               VerticalAlignment="Center" Margin="0,0,12,0" />
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                      <Button Content="{DynamicResource Text.Cancel}" Command="{Binding CancelInstalledModRemovalCommand}" />
+                      <Button x:Name="ConfirmInstalledModRemovalButton" Content="{DynamicResource Text.ConfirmDeletion}"
+                              Classes="danger" Command="{Binding DeleteInstalledModCommand}" />
+                    </StackPanel>
+                  </Grid>
+                  <Border Grid.Row="3" Grid.ColumnSpan="3" Classes="card" Margin="0,12,0,0" Padding="12"
+                          IsVisible="{Binding HasLocalModImportPreview}">
+                    <StackPanel Spacing="6">
+                      <TextBlock Text="{DynamicResource Text.LocalInstallPreview}" FontWeight="SemiBold" />
+                      <TextBlock Text="{Binding LocalModImportSummary}" TextWrapping="Wrap" />
+                      <TextBlock Text="{Binding LocalModImportPaths}" Classes="muted" TextWrapping="Wrap" />
+                      <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Right">
+                        <Button Content="{DynamicResource Text.Cancel}" Command="{Binding CancelLocalModInstallCommand}" />
+                        <Button x:Name="ConfirmLocalModInstallButton" Content="{DynamicResource Text.ConfirmInstall}" Classes="primary"
+                                Command="{Binding ConfirmLocalModInstallCommand}" />
+                      </StackPanel>
+                    </StackPanel>
+                  </Border>
+                </Grid>
+
+                <ListBox Grid.Row="1" ItemsSource="{Binding FilteredMods}" SelectedItem="{Binding SelectedInstalledMod}" IsEnabled="{Binding !IsBusy}"
+                         IsVisible="{Binding !IsLibraryEmpty}">
+                  <ListBox.ItemTemplate>
+                    <DataTemplate>
+                      <Border BorderBrush="{StaticResource LineBrush}" BorderThickness="0,0,0,1" Padding="4,6,4,14">
+                        <Grid ColumnDefinitions="*,110,65,76">
+                          <StackPanel Spacing="5">
+                            <TextBlock Text="{Binding Name}" FontWeight="SemiBold" FontSize="13.5" Foreground="#2E2E2E" />
+                            <TextBlock Text="{Binding Detail}" Classes="muted" FontSize="11.5" />
+                            <TextBlock Text="{Binding DuplicateLabel}" IsVisible="{Binding HasDuplicateCopies}"
+                                       ToolTip.Tip="{Binding DuplicateDetails}" Foreground="{DynamicResource AccentBrush}"
+                                       FontSize="11.5" FontWeight="SemiBold" />
+                          </StackPanel>
+                          <StackPanel Grid.Column="1" Spacing="5" Margin="10,0">
+                            <TextBlock Text="{Binding SupportedVersion}" FontSize="12.5" />
+                            <TextBlock Text="{Binding Availability}" Classes="muted" FontSize="11.5" />
+                          </StackPanel>
+                          <TextBlock Grid.Column="2" Text="{Binding Compatibility}" FontSize="11.5"
+                                     Classes="recommendation" Classes.matched="{Binding IsCompatibilityMatched}"
+                                     Classes.mismatched="{Binding IsCompatibilityMismatch}" VerticalAlignment="Center" />
+                          <ToggleButton Grid.Column="3" Classes="modActivation" IsChecked="{Binding Enabled, Mode=TwoWay}"
+                                        IsEnabled="{Binding $parent[Window].DataContext.SupportsGameActivation}"
+                                        ToolTip.Tip="{Binding EnableText}" AutomationProperties.Name="{Binding Name}" VerticalAlignment="Center" />
+                        </Grid>
+                      </Border>
+                    </DataTemplate>
+                  </ListBox.ItemTemplate>
+                </ListBox>
+
+                <StackPanel Grid.Row="1" IsVisible="{Binding IsLibraryEmpty}" VerticalAlignment="Center"
+                            HorizontalAlignment="Center" Spacing="14">
+                  <TextBlock Text="{DynamicResource Text.NoModsFound}" FontSize="18" FontWeight="SemiBold" Foreground="#2E2E2E" HorizontalAlignment="Center" />
+                  <TextBlock Text="{DynamicResource Text.ModsDownloadedFromTheWorkshopAppearHere}" Classes="muted" HorizontalAlignment="Center" />
+                  <Button Content="{DynamicResource Text.CheckPaths}" Command="{Binding NavigateCommand}" CommandParameter="settings" HorizontalAlignment="Center" />
+                </StackPanel>
+                <TextBlock Grid.Row="1" Text="{DynamicResource Text.NoMatchingMods}" Classes="muted" IsVisible="{Binding NoSearchResults}"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                <Grid Grid.Row="2" ColumnDefinitions="*,Auto" Margin="6,12,6,0" IsVisible="{Binding !IsLibraryEmpty}">
+                  <TextBlock Text="{Binding LocalPageLabel}" Classes="muted" VerticalAlignment="Center" />
+                  <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8">
+                    <Button x:Name="PreviousLocalPageButton" Content="{DynamicResource Text.Previous}" Command="{Binding PreviousLocalPageCommand}" IsEnabled="{Binding CanGoPreviousLocalPage}" />
+                    <Button x:Name="NextLocalPageButton" Content="{DynamicResource Text.Next}" Command="{Binding NextLocalPageCommand}" IsEnabled="{Binding CanGoNextLocalPage}" />
+                  </StackPanel>
+                </Grid>
+              </Grid>
+            </Border>
+          </Grid>
+
+          <!-- 创意工坊：搜索 → 结果行 → 应用内详情 -->
+          <Grid IsVisible="{Binding IsWorkshop}">
+            <Grid IsVisible="{Binding !HasWorkshopItem}" RowDefinitions="Auto,18,*">
+              <Border Classes="card">
+                <StackPanel Spacing="12">
+                  <Grid ColumnDefinitions="*,Auto,14,Auto">
+                    <TextBlock Text="{DynamicResource Text.SearchMods}" Classes="heading" VerticalAlignment="Center" />
+                    <TextBlock Grid.Column="1" Text="{DynamicResource Text.SourceSteamWorkshop}" Classes="muted" VerticalAlignment="Center" />
+                    <Button Grid.Column="3" Content="{DynamicResource Text.UseInstalledVersion}" Padding="10,5" FontSize="11" Command="{Binding UseInstalledVersionCommand}" />
+                  </Grid>
+                  <Grid ColumnDefinitions="*,14,150,14,150">
+                    <TextBox x:Name="WorkshopReferenceInput" Text="{Binding WorkshopInput}" PlaceholderText="{DynamicResource Text.EnterAModNameOrWorkshopLink}">
+                      <TextBox.KeyBindings>
+                        <KeyBinding Gesture="Enter" Command="{Binding LookupWorkshopCommand}" />
+                      </TextBox.KeyBindings>
+                    </TextBox>
+                    <AutoCompleteBox Grid.Column="2" ItemsSource="{Binding WorkshopSorts}" SelectedItem="{Binding SelectedWorkshopSort}"
+                                     FilterMode="Contains" MinimumPrefixLength="0" IsTextCompletionEnabled="False"
+                                     Watermark="{DynamicResource Text.Sort}" ToolTip.Tip="{DynamicResource Text.TypeToFilterSortOptions}" />
+                    <TextBox x:Name="WorkshopTargetVersionInput" Grid.Column="4" Text="{Binding WorkshopTargetVersion}"
+                             PlaceholderText="{Binding WorkshopTargetVersionLabel}" IsEnabled="{Binding !IsBusy}" />
+                  </Grid>
+                  <Grid ColumnDefinitions="*,14,*,18,Auto,8,Auto">
+                    <local:EditableFilterBox x:Name="WorkshopCategoryFilter" ItemsSource="{Binding WorkshopCategories}"
+                                             Text="{Binding WorkshopCategoryInput, Mode=TwoWay}"
+                                             PlaceholderText="{DynamicResource Text.AllCategories}" ToolTip.Tip="{DynamicResource Text.TypeACategoryOrOpenTheList}" />
+                    <local:EditableFilterBox x:Name="WorkshopVersionFilter" Grid.Column="2" ItemsSource="{Binding WorkshopVersions}"
+                                             Text="{Binding WorkshopVersionInput, Mode=TwoWay}"
+                                             PlaceholderText="{DynamicResource Text.AllVersions}" ToolTip.Tip="{DynamicResource Text.TypeAVersionOrOpenTheList}" />
+                    <Button x:Name="WorkshopLookupButton" Grid.Column="4" Content="{DynamicResource Text.Search}" Classes="primary" MinWidth="94" Command="{Binding LookupWorkshopCommand}" />
+                    <Button Grid.Column="6" Content="{DynamicResource Text.Reset}" Command="{Binding ResetWorkshopCommand}" />
+                  </Grid>
+                  <TextBlock Text="{Binding WorkshopRecommendationBasis}" Classes="muted" FontSize="10.5" />
+                </StackPanel>
+              </Border>
+
+              <Border Grid.Row="2" Classes="card" Padding="12,14,12,10">
+                <Grid RowDefinitions="Auto,*,Auto">
+                  <Grid ColumnDefinitions="*,Auto,8,Auto" Margin="10,0,10,14">
+                    <StackPanel Spacing="5">
+                      <TextBlock Text="{Binding WorkshopResultLabel}" Classes="heading" />
+                      <TextBlock Text="{Binding WorkshopDataStatus}" IsVisible="{Binding HasWorkshopDataStatus}" Classes="muted" FontSize="11" />
+                    </StackPanel>
+                    <Button Grid.Column="1" Content="{DynamicResource Text.RefreshData}" FontSize="11" Padding="10,5" Command="{Binding RefreshWorkshopCommand}" />
+                  </Grid>
+
+                  <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled"
+                                IsVisible="{Binding HasWorkshopResults}" IsEnabled="{Binding !IsBusy}">
+                    <ItemsControl ItemsSource="{Binding WorkshopResults}">
+                      <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                          <Border BorderBrush="{StaticResource LineBrush}" BorderThickness="0,0,0,1" Padding="0,6">
+                            <Grid ColumnDefinitions="*,265">
+                              <Button Classes="resource" Command="{Binding OpenCommand}">
+                                <Grid ColumnDefinitions="50,12,*" MinHeight="64">
+                                  <Border Background="{DynamicResource AccentSoftBrush}" CornerRadius="8" Width="50" Height="50"
+                                          ClipToBounds="True" VerticalAlignment="Top">
+                                    <Grid>
+                                      <TextBlock Text="{Binding GameShortName}" FontWeight="SemiBold" FontSize="11"
+                                                 Foreground="{DynamicResource AccentLineBrush}" HorizontalAlignment="Center"
+                                                 VerticalAlignment="Center" IsVisible="{Binding !HasPreview}" />
+                                      <Image Source="{Binding Preview}" Stretch="UniformToFill" />
+                                    </Grid>
+                                  </Border>
+                                  <StackPanel Grid.Column="2" Spacing="3">
+                                    <TextBlock Text="{Binding Title}" FontSize="14" FontWeight="SemiBold"
+                                               Foreground="#2E2E2E" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Text="{Binding Summary}" FontSize="12" Foreground="{StaticResource TextSecondaryBrush}"
+                                               MaxLines="2" TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Text="{Binding Metadata}" FontSize="10.5" Foreground="{StaticResource TextTertiaryBrush}" />
+                                    <TextBlock Text="{Binding Tags}" FontSize="10.5" Foreground="{DynamicResource AccentBrush}"
+                                               TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
+                                  </StackPanel>
+                                </Grid>
+                              </Button>
+                              <StackPanel Grid.Column="1" Spacing="7" VerticalAlignment="Center" Margin="8,6,12,6">
+                                <TextBlock Text="{Binding VersionCount}" Classes="muted" FontSize="10.5" />
+                                <ComboBox ItemsSource="{Binding Versions}" SelectedItem="{Binding SelectedRelease}"
+                                          FontSize="11.5" ToolTip.Tip="{Binding Recommendation}" />
+                                <TextBlock Text="{Binding Recommendation}" FontSize="10.5"
+                                           Classes="recommendation"
+                                           Classes.matched="{Binding IsCompatibilityMatched}"
+                                           Classes.mismatched="{Binding IsCompatibilityMismatch}"
+                                           TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Recommendation}" />
+                              </StackPanel>
+                            </Grid>
+                          </Border>
+                        </DataTemplate>
+                      </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                  </ScrollViewer>
+
+                  <StackPanel Grid.Row="1" IsVisible="{Binding WorkshopNotLoaded}" VerticalAlignment="Center"
+                              HorizontalAlignment="Center" Spacing="12">
+                    <TextBlock Text="{DynamicResource Text.DiscoverModsInTheWorkshop}" FontSize="18" FontWeight="SemiBold" Foreground="#2E2E2E" HorizontalAlignment="Center" />
+                    <TextBlock Text="{Binding WorkshopLandingText}" Classes="muted" HorizontalAlignment="Center" />
+                  </StackPanel>
+                  <StackPanel Grid.Row="1" IsVisible="{Binding NoWorkshopResults}" VerticalAlignment="Center"
+                              HorizontalAlignment="Center" Spacing="10">
+                    <TextBlock Text="{Binding WorkshopEmptyPageTitle}" FontSize="18" FontWeight="SemiBold" Foreground="#2E2E2E" HorizontalAlignment="Center" />
+                    <TextBlock Text="{DynamicResource Text.TryAnotherSearchOrPage}" Classes="muted" />
+                  </StackPanel>
+
+                  <Grid Grid.Row="2" ColumnDefinitions="*,Auto" Margin="10,14,10,0">
+                    <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
+                      <TextBlock Text="{DynamicResource Text.Page}" Classes="muted" VerticalAlignment="Center" />
+                      <TextBox x:Name="WorkshopPageInput" Text="{Binding WorkshopPageInput, Mode=TwoWay}" Width="56"
+                               HorizontalContentAlignment="Center" VerticalAlignment="Center"
+                               ToolTip.Tip="{DynamicResource Text.EnterAPageNumberAndPressEnter}">
+                        <TextBox.KeyBindings>
+                          <KeyBinding Gesture="Enter" Command="{Binding GoToWorkshopPageCommand}" />
+                        </TextBox.KeyBindings>
+                      </TextBox>
+                      <TextBlock Text="{Binding WorkshopPageSuffix}" Classes="muted" VerticalAlignment="Center" />
+                      <Button x:Name="GoToPageButton" Content="{DynamicResource Text.Go}" Command="{Binding GoToWorkshopPageCommand}"
+                              IsEnabled="{Binding CanGoToWorkshopPage}" Margin="6,0,0,0" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8">
+                      <Button x:Name="PreviousPageButton" Content="{DynamicResource Text.Previous}" Command="{Binding PreviousWorkshopPageCommand}" IsEnabled="{Binding CanGoPreviousPage}" />
+                      <Button x:Name="NextPageButton" Content="{DynamicResource Text.Next}" Command="{Binding NextWorkshopPageCommand}" IsEnabled="{Binding CanGoNextPage}" />
+                    </StackPanel>
+                  </Grid>
+                </Grid>
+              </Border>
+            </Grid>
+
+            <ScrollViewer IsVisible="{Binding HasWorkshopItem}" HorizontalScrollBarVisibility="Disabled">
+              <StackPanel Spacing="16">
+                <Grid ColumnDefinitions="*,Auto">
+                  <Button Content="{DynamicResource Text.BackToResults}" Command="{Binding BackToWorkshopCommand}" HorizontalAlignment="Left" />
+                  <Button Grid.Column="1" Content="{DynamicResource Text.RefreshData}" Command="{Binding RefreshWorkshopCommand}" />
+                </Grid>
+                <TextBlock Text="{Binding WorkshopDataStatus}" IsVisible="{Binding HasWorkshopDataStatus}" Classes="muted" FontSize="12" />
+                <Border Classes="card">
+                  <StackPanel Spacing="20">
+                    <Grid ColumnDefinitions="300,24,*">
+                      <Border Background="{DynamicResource AccentSoftBrush}" CornerRadius="10" Height="188" ClipToBounds="True">
+                        <Grid>
+                          <TextBlock Text="STEAM WORKSHOP" FontSize="12" Foreground="{DynamicResource AccentLineBrush}"
+                                     VerticalAlignment="Center" HorizontalAlignment="Center" IsVisible="{Binding !HasWorkshopPreview}" />
+                          <Image Source="{Binding WorkshopPreview}" Stretch="Uniform" />
+                        </Grid>
+                      </Border>
+                      <StackPanel Grid.Column="2" Spacing="11" VerticalAlignment="Center">
+                        <TextBlock Text="{Binding WorkshopTitle}" FontSize="22" FontWeight="SemiBold" Foreground="#2B2B2B" />
+                        <TextBlock Text="{Binding WorkshopUpdated}" Classes="muted" />
+                        <TextBlock Text="{Binding WorkshopSize}" Classes="muted" />
+                        <TextBlock Text="{Binding WorkshopTags}" Foreground="{DynamicResource AccentBrush}" FontSize="11.5" />
+                        <Button x:Name="DownloadWorkshopButton" Content="{DynamicResource Text.SubscribeAndDownload}" Classes="primary" Command="{Binding DownloadWorkshopCommand}" HorizontalAlignment="Left" />
+                        <Button x:Name="OpenWorkshopItemButton" Content="{DynamicResource Text.OpenInSteam}" Command="{Binding OpenWorkshopItemCommand}"
+                                IsVisible="{Binding !Game.SupportsNativeWorkshopDownloads}" HorizontalAlignment="Left" />
+                        <TextBlock Text="{DynamicResource Text.SubscribeInSteamOrInTheGame}" IsVisible="{Binding !Game.SupportsNativeWorkshopDownloads}" Classes="muted" />
+                      </StackPanel>
+                    </Grid>
+                    <StackPanel Spacing="9">
+                      <Grid ColumnDefinitions="Auto,16,*">
+                        <TextBlock Text="{DynamicResource Text.ChooseAVersion}" Classes="heading" FontSize="14" VerticalAlignment="Center" />
+                        <ComboBox x:Name="WorkshopDetailVersionSelector" Grid.Column="2" ItemsSource="{Binding DetailVersions}"
+                                  SelectedItem="{Binding SelectedDetailVersion}" IsEnabled="{Binding !IsBusy}" />
+                      </Grid>
+                      <TextBlock Text="{Binding WorkshopRecommendation}" FontSize="12.5" Classes="recommendation"
+                                 Classes.matched="{Binding IsWorkshopCompatibilityMatched}" Classes.mismatched="{Binding IsWorkshopCompatibilityMismatch}" />
+                      <TextBlock Text="{Binding WorkshopReleaseAvailability}" Classes="muted" FontSize="11" />
+                    </StackPanel>
+                    <Border Background="{StaticResource SubtleBrush}" CornerRadius="8" Padding="14" BorderBrush="{StaticResource LineBrush}" BorderThickness="1">
+                      <StackPanel Spacing="7">
+                        <TextBlock Text="{Binding WorkshopDependencies}" Classes="muted" />
+                        <TextBlock Text="{DynamicResource Text.SteamDownloadsAndUpdatesTheModIt}" Classes="muted" />
+                      </StackPanel>
+                    </Border>
+                  </StackPanel>
+                </Border>
+                <Border Classes="card">
+                  <StackPanel Spacing="17">
+                    <TextBlock Text="{Binding WorkshopDescriptionLabel}" Classes="heading" />
+                    <TextBlock Text="{Binding WorkshopDescription}" FontSize="13" LineHeight="24" />
+                    <TextBlock Text="{Binding WorkshopIdentifier}" Classes="muted" FontSize="10" />
+                  </StackPanel>
+                </Border>
+              </StackPanel>
+            </ScrollViewer>
+          </Grid>
+
+          <ScrollViewer IsVisible="{Binding IsDownloads}">
+            <StackPanel Spacing="16">
+              <TextBlock Text="{DynamicResource Text.NoDownloadTasksYetChooseAMod}" IsVisible="{Binding !HasDownloads}" Classes="muted" />
+              <ItemsControl ItemsSource="{Binding Downloads}">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate>
+                    <Border Classes="card" Margin="0,0,0,12">
+                      <StackPanel Spacing="10">
+                        <Grid ColumnDefinitions="*,Auto,Auto">
+                          <TextBlock Text="{Binding Title}" Classes="heading" />
+                          <TextBlock Grid.Column="1" Text="{Binding StateText}" Foreground="{DynamicResource AccentBrush}" VerticalAlignment="Center" />
+                          <Button Grid.Column="2" Classes="rowdelete" Margin="8,0,0,0" Content="✕" Command="{Binding RemoveCommand}"
+                                  IsVisible="{Binding HasRemoveAction}" IsEnabled="{Binding CanRemove}" ToolTip.Tip="{Binding RemoveTooltip}" />
+                        </Grid>
+                        <TextBlock Text="{Binding Compatibility}" Classes="recommendation" FontSize="11"
+                                   Classes.matched="{Binding IsCompatibilityMatched}" Classes.mismatched="{Binding IsCompatibilityMismatch}" />
+                        <ProgressBar Minimum="0" Maximum="100" Value="{Binding Percent}" IsIndeterminate="{Binding IsIndeterminate}" Height="6" />
+                        <Grid ColumnDefinitions="*,Auto">
+                          <TextBlock Text="{Binding ProgressText}" Classes="muted" />
+                          <TextBlock Grid.Column="1" Text="{Binding SpeedText}" Classes="muted" />
+                        </Grid>
+                        <TextBlock Text="{Binding Message}" TextWrapping="Wrap" Classes="muted" />
+                        <StackPanel IsVisible="{Binding HasQrCode}" Spacing="8" HorizontalAlignment="Left">
+                          <Border Background="White" Padding="12"><Image Source="{Binding QrCode}" Width="200" Height="200" /></Border>
+                          <TextBlock Text="{DynamicResource Text.SteamClientSignInDoesNotAutomatically}" TextWrapping="Wrap" Classes="muted" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding InstallationStatus}" IsVisible="{Binding HasInstallationStatus}" Classes="muted" />
+                        <TextBlock Text="{Binding InstalledPath}" IsVisible="{Binding HasInstalledPath}" Classes="muted" TextWrapping="Wrap" FontSize="11" />
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                          <Button Content="{Binding CancelText}" Command="{Binding CancelCommand}" IsVisible="{Binding CanCancel}" ToolTip.Tip="{Binding CancelTooltip}" />
+                          <Button Content="{Binding RetryText}" Command="{Binding RetryCommand}" IsVisible="{Binding CanRetry}" />
+                          <Button Content="{DynamicResource Text.OpenInstallFolder}" Command="{Binding OpenDirectoryCommand}" IsVisible="{Binding HasInstalledPath}" />
+                        </StackPanel>
+                      </StackPanel>
+                    </Border>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+            </StackPanel>
+          </ScrollViewer>
+
+          <!-- 运行配置 -->
+          <Grid IsVisible="{Binding IsProfiles}" ColumnDefinitions="210,16,*">
+            <Border Classes="card" Padding="12">
+              <DockPanel IsEnabled="{Binding !HasProfileTransferPreview}">
+                <StackPanel DockPanel.Dock="Top" Spacing="8" Margin="2,0,2,12">
+                  <TextBlock Text="{DynamicResource Text.MyProfiles}" Classes="heading" Margin="4,0" />
+                  <Button Content="{DynamicResource Text.NewProfile}" Command="{Binding NewProfileCommand}" HorizontalAlignment="Stretch"
+                          HorizontalContentAlignment="Center" />
+                  <Grid ColumnDefinitions="*,8,*">
+                    <Button x:Name="ImportProfileFileButton" Content="{DynamicResource Text.Import}" Click="ImportProfileFile" ToolTip.Tip="{DynamicResource Text.ImportProfileFile}"
+                            IsEnabled="{Binding !IsBusy}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" />
+                    <Button x:Name="ExportProfileFileButton" Grid.Column="2" Content="{DynamicResource Text.Export}" Click="ExportProfileFile" ToolTip.Tip="{DynamicResource Text.ExportProfileFile}"
+                            HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">
+                      <Button.IsEnabled>
+                        <MultiBinding Converter="{x:Static converters:BoolConverters.And}">
+                          <Binding Path="HasProfile" />
+                          <Binding Path="!IsBusy" />
+                        </MultiBinding>
+                      </Button.IsEnabled>
+                    </Button>
+                  </Grid>
+                  <Grid ColumnDefinitions="*,8,*" IsVisible="{Binding SupportsPlaysetPackageTransfer}">
+                    <Button x:Name="ImportPlaysetPackageButton" Content="{DynamicResource Text.ImportPack}" Click="PickPlaysetPackageImport"
+                            IsEnabled="{Binding CanPreviewPlaysetPackage}" ToolTip.Tip="{DynamicResource Text.RestoreAPackAsASeparateLocal}"
+                            Padding="5,8" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" />
+                    <Button x:Name="ExportPlaysetPackageButton" Grid.Column="2" Content="{DynamicResource Text.ExportPack}" Click="PickPlaysetPackageExport"
+                            IsEnabled="{Binding CanExportPlaysetPackage}" ToolTip.Tip="{DynamicResource Text.SaveTheProfileAndEnabledModFiles}"
+                            Padding="5,8" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" />
+                  </Grid>
+                </StackPanel>
+                <Button DockPanel.Dock="Bottom" Classes="danger" Content="{Binding DeleteProfileLabel}"
+                        Command="{Binding DeleteProfileCommand}" Margin="0,12,0,0" />
+                <ListBox ItemsSource="{Binding Profiles}" SelectedItem="{Binding SelectedProfile}" IsEnabled="{Binding !IsBusy}">
+                  <ListBox.ItemTemplate>
+                    <DataTemplate>
+                      <Grid ColumnDefinitions="*,Auto">
+                        <TextBlock Text="{Binding Name}" Margin="0,5" VerticalAlignment="Center" />
+                        <Button Grid.Column="1" Classes="rowdelete" Content="✕" ToolTip.Tip="{DynamicResource Text.DeleteThisProfile}"
+                                Command="{Binding $parent[ListBox].DataContext.DeleteProfileCommand}"
+                                CommandParameter="{Binding}" />
+                      </Grid>
+                    </DataTemplate>
+                  </ListBox.ItemTemplate>
+                </ListBox>
+              </DockPanel>
+            </Border>
+
+            <Border Grid.Column="2" Classes="card">
+              <Border.IsVisible>
+                <MultiBinding Converter="{x:Static converters:BoolConverters.And}">
+                  <Binding Path="NoProfile" />
+                  <Binding Path="!HasProfileTransferPreview" />
+                </MultiBinding>
+              </Border.IsVisible>
+              <StackPanel Spacing="16" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="{DynamicResource Text.CreateAProfileForYourNextCampaign}" FontSize="18" FontWeight="SemiBold" Foreground="#2E2E2E" HorizontalAlignment="Center" />
+                <TextBlock Text="{DynamicResource Text.RecordTheTargetGameVersionAndMod}" Classes="muted" />
+                <Button Content="{DynamicResource Text.NewProfile2}" Classes="primary" Command="{Binding NewProfileCommand}" HorizontalAlignment="Center" />
+              </StackPanel>
+            </Border>
+
+            <Grid Grid.Column="2" IsEnabled="{Binding !IsBusy}" RowDefinitions="*,Auto">
+            <Grid.IsVisible>
+              <MultiBinding Converter="{x:Static converters:BoolConverters.And}">
+                <Binding Path="HasProfile" />
+                <Binding Path="!HasProfileTransferPreview" />
+              </MultiBinding>
+            </Grid.IsVisible>
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+              <StackPanel Spacing="12">
+                <Border Classes="card" Padding="14,12">
+                  <Grid ColumnDefinitions="*,12,140,Auto">
+                    <TextBox Text="{Binding ProfileName}" PlaceholderText="{DynamicResource Text.ProfileNameEGNorthernCampaign}"
+                             ToolTip.Tip="{DynamicResource Text.ProfileName}" VerticalAlignment="Center" />
+                    <TextBox Grid.Column="2" Text="{Binding ProfileGameVersion}" PlaceholderText="{DynamicResource Text.TargetVersionOptional}"
+                             ToolTip.Tip="{DynamicResource Text.TargetGameVersion}" VerticalAlignment="Center" />
+                    <TextBlock Grid.Column="3" Text="{Binding GameActivationState}" Classes="muted"
+                               Margin="12,0,2,0" VerticalAlignment="Center" />
+                  </Grid>
+                </Border>
+
+                <Border Classes="card" Padding="12">
+                  <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                    <Grid ColumnDefinitions="*,Auto">
+                      <TextBlock Text="{DynamicResource Text.ModList}" Classes="heading" Margin="4,2,0,0" VerticalAlignment="Center" />
+                      <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8">
+                        <Button x:Name="CheckDependenciesButton" Content="{DynamicResource Text.CheckDependencies}"
+                                Command="{Binding CheckDependenciesCommand}" IsVisible="{Binding SupportsDependencyCheck}" />
+                        <Button x:Name="CheckFileConflictsButton" Content="{DynamicResource Text.CheckConflicts}"
+                                Command="{Binding CheckFileConflictsCommand}" IsVisible="{Binding SupportsFileConflictCheck}" />
+                        <Button x:Name="CheckWorkshopUpdatesButton" Content="{DynamicResource Text.CheckUpdates}"
+                                Command="{Binding CheckWorkshopUpdatesCommand}" IsVisible="{Binding SupportsWorkshopUpdateCheck}" />
+                      </StackPanel>
+                    </Grid>
+
+                    <Grid Grid.Row="1" ColumnDefinitions="*,10,Auto" Margin="0,10,0,10">
+                      <ComboBox ItemsSource="{Binding InstalledMods}" SelectedItem="{Binding SelectedInstalledMod}" PlaceholderText="{DynamicResource Text.ChooseFromLocalMods}">
+                        <ComboBox.ItemTemplate>
+                          <DataTemplate>
+                            <TextBlock Text="{Binding PickerName}" ToolTip.Tip="{Binding ContentPath}" TextTrimming="CharacterEllipsis" />
+                          </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                      </ComboBox>
+                      <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="6">
+                        <Button Content="{DynamicResource Text.UseSelectedCopy}" IsVisible="{Binding HasUnresolvedSelectedMod}"
+                                Command="{Binding UseInstalledCopyCommand}" />
+                        <Button Content="{DynamicResource Text.AddToProfile}" Command="{Binding AddModCommand}" />
+                      </StackPanel>
+                    </Grid>
+
+                    <StackPanel Grid.Row="2" Spacing="6" IsVisible="{Binding HasWorkshopUpdateReport}">
+                      <TextBlock Text="{DynamicResource Text.CurrentProfileLocalSteamStatus}" Classes="muted" />
+                      <TextBlock Text="{Binding WorkshopUpdateNote}" IsVisible="{Binding HasWorkshopUpdateNote}"
+                                 Classes="muted" TextWrapping="Wrap" />
+                      <ListBox ItemsSource="{Binding WorkshopUpdateRows}" MaxHeight="160">
+                        <ListBox.ItemTemplate>
+                          <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10" Margin="0,3">
+                              <TextBlock Text="{Binding Name}" TextWrapping="Wrap" />
+                              <TextBlock Grid.Column="1" Text="{Binding Status}" Classes="muted" />
+                            </Grid>
+                          </DataTemplate>
+                        </ListBox.ItemTemplate>
+                      </ListBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3" Spacing="6" Margin="4,0,4,10" IsVisible="{Binding HasFileConflictReport}">
+                      <TextBlock Text="{DynamicResource Text.FileConflictsEnabledMods}" Classes="heading" FontSize="13" />
+                      <TextBlock Text="{Binding FileConflictSummary}" Classes="muted" TextWrapping="Wrap" />
+                      <TextBlock Text="{DynamicResource Text.TheArrowShowsProfileOrderALater}"
+                                 Classes="muted" FontSize="11" TextWrapping="Wrap" />
+                      <ListBox ItemsSource="{Binding FileConflictRows}" MaxHeight="184">
+                        <ListBox.ItemTemplate>
+                          <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10" RowDefinitions="Auto,Auto" Margin="0,4">
+                              <TextBlock Text="{Binding Path}" TextWrapping="Wrap" FontWeight="SemiBold" />
+                              <TextBlock Grid.Column="1" Text="{Binding State}" Classes="muted" />
+                              <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding LoadOrder}"
+                                         Classes="muted" TextWrapping="Wrap" FontSize="11" />
+                            </Grid>
+                          </DataTemplate>
+                        </ListBox.ItemTemplate>
+                      </ListBox>
+                      <TextBlock Text="{Binding DefinitionConflictSummary}" FontWeight="SemiBold" TextWrapping="Wrap" />
+                      <ListBox ItemsSource="{Binding DefinitionConflictRows}" IsVisible="{Binding HasDefinitionConflicts}" MaxHeight="150">
+                        <ListBox.ItemTemplate>
+                          <DataTemplate>
+                            <StackPanel Spacing="3" Margin="0,4">
+                              <TextBlock Text="{Binding Key}" FontWeight="SemiBold" />
+                              <TextBlock Text="{Binding Sources}" Classes="muted" TextWrapping="Wrap" />
+                            </StackPanel>
+                          </DataTemplate>
+                        </ListBox.ItemTemplate>
+                      </ListBox>
+                      <TextBlock Text="{DynamicResource Text.DirectoryOverridesReplacePath}" IsVisible="{Binding HasDirectoryReplacements}" FontWeight="SemiBold" />
+                      <ListBox ItemsSource="{Binding DirectoryReplacementRows}" IsVisible="{Binding HasDirectoryReplacements}" MaxHeight="130">
+                        <ListBox.ItemTemplate>
+                          <DataTemplate>
+                            <StackPanel Spacing="3" Margin="0,4">
+                              <TextBlock Text="{Binding Path}" FontWeight="SemiBold" />
+                              <TextBlock Text="{Binding Detail}" Classes="muted" TextWrapping="Wrap" />
+                            </StackPanel>
+                          </DataTemplate>
+                        </ListBox.ItemTemplate>
+                      </ListBox>
+                      <ListBox ItemsSource="{Binding FileConflictWarnings}" IsVisible="{Binding HasFileConflictWarnings}" MaxHeight="105">
+                        <ListBox.ItemTemplate>
+                          <DataTemplate>
+                            <TextBlock Text="{Binding}" TextWrapping="Wrap" Classes="muted" />
+                          </DataTemplate>
+                        </ListBox.ItemTemplate>
+                      </ListBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="4" Spacing="6" Margin="4,0,4,10" IsVisible="{Binding HasDependencyReport}">
+                      <TextBlock Text="{DynamicResource Text.DependenciesEnabledMods}" Classes="heading" FontSize="13" />
+                      <TextBlock Text="{Binding DependencySummary}" Classes="muted" TextWrapping="Wrap" />
+                      <ListBox ItemsSource="{Binding DependencyFindings}" MaxHeight="170">
+                        <ListBox.ItemTemplate>
+                          <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8" Margin="0,4">
+                              <TextBlock Text="{Binding Message}" TextWrapping="Wrap" VerticalAlignment="Center" />
+                              <Button Grid.Column="1" Content="{DynamicResource Text.OpenWorkshop}" IsVisible="{Binding HasWorkshopId}"
+                                      Command="{Binding $parent[Window].DataContext.OpenDependencyWorkshopCommand}"
+                                      CommandParameter="{Binding WorkshopId}" />
+                            </Grid>
+                          </DataTemplate>
+                        </ListBox.ItemTemplate>
+                      </ListBox>
+                      <StackPanel Spacing="5" IsVisible="{Binding CanDownloadDependencies}">
+                        <TextBlock Text="{DynamicResource Text.DownloadPlan}" FontWeight="SemiBold" />
+                        <ListBox ItemsSource="{Binding DependencyDownloadPreview}" MaxHeight="96">
+                          <ListBox.ItemTemplate>
+                            <DataTemplate>
+                              <TextBlock Text="{Binding}" TextWrapping="Wrap" Classes="muted" />
+                            </DataTemplate>
+                          </ListBox.ItemTemplate>
+                        </ListBox>
+                        <Button x:Name="ConfirmDependencyDownloadButton" Content="{Binding DependencyDownloadLabel}"
+                                Command="{Binding DownloadDependenciesCommand}" />
+                      </StackPanel>
+                    </StackPanel>
+
+                    <ListBox Grid.Row="5" x:Name="ProfileModList" ItemsSource="{Binding ProfileMods}"
+                             SelectedItem="{Binding SelectedProfileMod}" Height="300" Margin="0,2,0,0">
+                      <ListBox.Styles>
+                        <Style Selector="ListBoxItem.insertBefore Border.reorderMarker">
+                          <Setter Property="BorderThickness" Value="0,2,0,0" />
+                        </Style>
+                        <Style Selector="ListBoxItem.insertAfter Border.reorderMarker">
+                          <Setter Property="BorderThickness" Value="0,0,0,2" />
+                        </Style>
+                      </ListBox.Styles>
+                      <ListBox.ItemTemplate>
+                        <DataTemplate>
+                          <Grid ColumnDefinitions="48,*,76" Margin="0,4">
+                            <StackPanel Orientation="Horizontal" Spacing="5" VerticalAlignment="Center">
+                              <Border x:Name="ProfileDragHandle" Background="Transparent" Cursor="SizeAll" Padding="2,4"
+                                      ToolTip.Tip="{DynamicResource Text.DragToChangeLoadOrder}" PointerPressed="ProfileHandlePressed">
+                                <TextBlock Text="⠿" Foreground="{DynamicResource AccentBrush}" />
+                              </Border>
+                              <TextBlock Text="{Binding Order}" Foreground="{DynamicResource AccentBrush}"
+                                         FontWeight="SemiBold" VerticalAlignment="Center" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Spacing="5">
+                              <StackPanel Orientation="Horizontal" Spacing="8">
+                                <TextBlock Text="{Binding Name}" FontWeight="SemiBold" VerticalAlignment="Center" />
+                                <Border IsVisible="{Binding IsCompatibilityMatched}" Background="#E8F5E9" CornerRadius="4"
+                                        Padding="5,1" VerticalAlignment="Center">
+                                  <TextBlock Text="{DynamicResource Text.Compatible}" FontSize="10" Foreground="#2E7D32" />
+                                </Border>
+                                <Border IsVisible="{Binding IsCompatibilityMismatch}" Background="#FDECEC" CornerRadius="4"
+                                        Padding="5,1" VerticalAlignment="Center">
+                                  <TextBlock Text="{DynamicResource Text.Incompatible}" FontSize="10" Foreground="#C62828" />
+                                </Border>
+                                <Border IsVisible="{Binding IsCompatibilityUnknown}" Background="#F1F1F1" CornerRadius="4"
+                                        Padding="5,1" VerticalAlignment="Center">
+                                  <TextBlock Text="{DynamicResource Text.Unknown}" FontSize="10" Foreground="#777777" />
+                                </Border>
+                              </StackPanel>
+                              <TextBlock Text="{Binding Detail}" Classes="muted" FontSize="10.5" />
+                            </StackPanel>
+                            <ToggleButton Grid.Column="2" Classes="modActivation" IsChecked="{Binding Enabled, Mode=TwoWay}"
+                                          IsEnabled="{Binding $parent[Window].DataContext.SupportsGameActivation}"
+                                          ToolTip.Tip="{Binding EnableText}" AutomationProperties.Name="{Binding Name}" VerticalAlignment="Center" />
+                            <Border Grid.ColumnSpan="3" Classes="reorderMarker" IsHitTestVisible="False"
+                                    BorderBrush="{DynamicResource AccentBrush}" />
+                          </Grid>
+                        </DataTemplate>
+                      </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <Grid Grid.Row="6" ColumnDefinitions="*,Auto" Margin="6,10,6,2">
+                      <TextBlock Text="{DynamicResource Text.TheProfileIsEmptyChooseAMod}" Classes="muted" VerticalAlignment="Center"
+                                 IsVisible="{Binding ProfileEmpty}" />
+                      <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8">
+                        <Button Content="{DynamicResource Text.MoveUp}" Command="{Binding MoveUpCommand}" />
+                        <Button Content="{DynamicResource Text.MoveDown}" Command="{Binding MoveDownCommand}" />
+                        <Button Content="{DynamicResource Text.Remove}" Command="{Binding RemoveModCommand}" />
+                      </StackPanel>
+                    </Grid>
+                  </Grid>
+                </Border>
+              </StackPanel>
+            </ScrollViewer>
+                <Grid Grid.Row="1" ColumnDefinitions="*,Auto" Margin="0,12,0,0">
+                  <TextBlock Text="{Binding ProfileSaveState}" Classes="muted" VerticalAlignment="Center" />
+                  <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8">
+                    <Button Content="{DynamicResource Text.ReadProfile}" Command="{Binding ReadGameProfileCommand}" />
+                    <Button Content="{DynamicResource Text.SaveProfile}" Command="{Binding SaveProfileCommand}" />
+                    <Button x:Name="ApplyGameProfileButton" Content="{DynamicResource Text.ApplyToGame}" Classes="primary" Command="{Binding ApplyGameProfileCommand}" />
+                  </StackPanel>
+                </Grid>
+            </Grid>
+
+            <Border Grid.Column="2" Classes="card" IsVisible="{Binding HasProfileImportPreview}">
+              <Grid RowDefinitions="Auto,Auto,*,Auto">
+                <StackPanel Spacing="8">
+                  <TextBlock Text="{DynamicResource Text.ImportPreview}" Classes="heading" />
+                  <TextBlock Text="{Binding ProfileImportSummary}" Classes="muted" TextWrapping="Wrap" />
+                  <TextBlock Text="{DynamicResource Text.MatchingUsesTheVersionDeclaredByEach}" Classes="muted" TextWrapping="Wrap" FontSize="11" />
+                </StackPanel>
+                <Grid Grid.Row="1" ColumnDefinitions="40,*,60,142" Margin="10,16,12,6">
+                  <TextBlock Text="{DynamicResource Text.Order}" Classes="muted" />
+                  <TextBlock Grid.Column="1" Text="Mod" Classes="muted" />
+                  <TextBlock Grid.Column="2" Text="{DynamicResource Text.State}" Classes="muted" />
+                  <TextBlock Grid.Column="3" Text="{DynamicResource Text.LocalStatus}" Classes="muted" />
+                </Grid>
+                <ListBox Grid.Row="2" ItemsSource="{Binding ProfileImportRows}">
+                  <ListBox.ItemTemplate>
+                    <DataTemplate>
+                      <Grid ColumnDefinitions="40,*,60,142" RowDefinitions="Auto,Auto,Auto" RowSpacing="4" Margin="0,5">
+                        <TextBlock Text="{Binding OrderText}" />
+                        <TextBlock Grid.Column="1" Text="{Binding DisplayName}" TextWrapping="Wrap" Margin="0,0,8,0" />
+                        <TextBlock Grid.Column="2" Text="{Binding EnabledText}" />
+                        <TextBlock Grid.Column="3" Text="{Binding AvailabilityText}" TextWrapping="Wrap" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding VersionComparison}"
+                                   Classes="muted" TextWrapping="Wrap" />
+                        <ComboBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" IsVisible="{Binding HasChoices}"
+                                  ItemsSource="{Binding Choices}" SelectedItem="{Binding SelectedChoice, Mode=TwoWay}"
+                                  HorizontalAlignment="Stretch">
+                          <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                              <TextBlock Text="{Binding Label}" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Label}" />
+                            </DataTemplate>
+                          </ComboBox.ItemTemplate>
+                        </ComboBox>
+                      </Grid>
+                    </DataTemplate>
+                  </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel Grid.Row="3" Orientation="Horizontal" Spacing="8" Margin="0,14,0,0" HorizontalAlignment="Right">
+                  <Button x:Name="CancelProfileImportButton" Content="{DynamicResource Text.Cancel}" Command="{Binding CancelProfileImportCommand}" />
+                  <Button x:Name="ConfirmProfileImportButton" Content="{Binding ConfirmProfileImportText}"
+                          Command="{Binding ConfirmProfileImportCommand}" Classes="primary" />
+                </StackPanel>
+              </Grid>
+            </Border>
+            <Border Grid.Column="2" Classes="card" IsVisible="{Binding HasPlaysetPackagePreview}">
+              <Grid RowDefinitions="Auto,*,Auto">
+                <StackPanel Spacing="8" Margin="0,0,0,10">
+                  <TextBlock Text="{DynamicResource Text.PackPreview}" Classes="heading" />
+                  <TextBlock Text="{Binding PlaysetPackageSummary}" Classes="muted" TextWrapping="Wrap" />
+                  <TextBlock Text="{DynamicResource Text.TheOriginalOrderIsKeptEnabledMod}"
+                             Classes="muted" TextWrapping="Wrap" />
+                </StackPanel>
+                <ListBox Grid.Row="1" ItemsSource="{Binding PlaysetPackageRows}">
+                  <ListBox.ItemTemplate>
+                    <DataTemplate>
+                      <Grid ColumnDefinitions="34,*,130" RowDefinitions="Auto,Auto" ColumnSpacing="8" Margin="0,4">
+                        <TextBlock Text="{Binding Order}" />
+                        <TextBlock Grid.Column="1" Text="{Binding Name}" TextWrapping="Wrap" FontWeight="SemiBold" />
+                        <TextBlock Grid.Column="2" Text="{Binding State}" Classes="muted" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Version}" Classes="muted" TextWrapping="Wrap" />
+                      </Grid>
+                    </DataTemplate>
+                  </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8" Margin="0,14,0,0">
+                  <Button Content="{DynamicResource Text.Cancel}" Command="{Binding CancelPlaysetPackageImportCommand}" />
+                  <Button x:Name="ConfirmPlaysetPackageImportButton" Content="{DynamicResource Text.VerifyAndRestore}" Classes="primary"
+                          Command="{Binding ConfirmPlaysetPackageImportCommand}" />
+                </StackPanel>
+              </Grid>
+            </Border>
+          </Grid>
+
+          <Grid IsVisible="{Binding IsDiagnostics}" RowDefinitions="Auto,Auto,*" RowSpacing="12">
+            <Border Classes="card">
+              <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                <StackPanel Spacing="6">
+                  <TextBlock Text="{DynamicResource Text.CK3CrashesAndLogs}" Classes="heading" />
+                  <TextBlock Text="{Binding DiagnosticSummary}" Classes="muted" TextWrapping="Wrap" />
+                  <TextBlock Text="{Binding DiagnosticRoot}" IsVisible="{Binding HasDiagnosticsReport}" Classes="muted" TextWrapping="Wrap" />
+                </StackPanel>
+                <Button x:Name="ReadDiagnosticsButton" Grid.Column="1" Content="{DynamicResource Text.ReadLogs}" Classes="primary"
+                        Command="{Binding ReadDiagnosticsCommand}" VerticalAlignment="Center" />
+              </Grid>
+            </Border>
+
+            <ListBox Grid.Row="1" ItemsSource="{Binding DiagnosticIssues}" IsVisible="{Binding HasDiagnosticIssues}" MaxHeight="110">
+              <ListBox.ItemTemplate>
+                <DataTemplate>
+                  <TextBlock Text="{Binding}" TextWrapping="Wrap" Classes="muted" />
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Border Grid.Row="2" Classes="card" IsVisible="{Binding HasDiagnosticsReport}">
+              <TextBlock Text="{DynamicResource Text.NoSessionLogsOrCrashReportsWere}" IsVisible="{Binding !HasDiagnosticGroups}"
+                         Classes="muted" TextWrapping="Wrap" />
+            </Border>
+
+            <Grid Grid.Row="2" IsVisible="{Binding HasDiagnosticGroups}" ColumnDefinitions="235,12,*">
+              <Border Classes="card">
+                <DockPanel>
+                  <TextBlock DockPanel.Dock="Top" Text="{DynamicResource Text.SessionsAndPastCrashes}" Classes="heading" Margin="0,0,0,8" />
+                  <ListBox ItemsSource="{Binding DiagnosticGroups}" SelectedItem="{Binding SelectedDiagnosticGroup}">
+                    <ListBox.ItemTemplate>
+                      <DataTemplate>
+                        <StackPanel Spacing="4" Margin="0,3">
+                          <TextBlock Text="{Binding Name}" TextWrapping="Wrap" FontWeight="SemiBold" />
+                          <TextBlock Text="{Binding Timestamp}" Classes="muted" />
+                        </StackPanel>
+                      </DataTemplate>
+                    </ListBox.ItemTemplate>
+                  </ListBox>
+                </DockPanel>
+              </Border>
+              <Border Grid.Column="2" Classes="card">
+                <Grid RowDefinitions="Auto,Auto,*" RowSpacing="8" IsVisible="{Binding HasDiagnosticSelection}">
+                  <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                    <TextBlock Text="{Binding DiagnosticDirectory}" TextWrapping="Wrap" Classes="muted" VerticalAlignment="Center" />
+                    <Button Grid.Column="1" Content="{DynamicResource Text.OpenFolder}" Command="{Binding OpenDiagnosticDirectoryCommand}" />
+                  </Grid>
+                  <ComboBox Grid.Row="1" ItemsSource="{Binding DiagnosticLogs}" SelectedItem="{Binding SelectedDiagnosticLog}"
+                            IsVisible="{Binding HasDiagnosticLog}" HorizontalAlignment="Stretch">
+                    <ComboBox.ItemTemplate>
+                      <DataTemplate>
+                        <TextBlock Text="{Binding RelativePath}" TextTrimming="CharacterEllipsis" />
+                      </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                  </ComboBox>
+                  <TextBlock Grid.Row="2" Text="{DynamicResource Text.ThisFolderHasNoReadableTextLogs}" IsVisible="{Binding !HasDiagnosticLog}"
+                             Classes="muted" TextWrapping="Wrap" />
+                  <Grid Grid.Row="2" RowDefinitions="Auto,Auto,*" RowSpacing="6" IsVisible="{Binding HasDiagnosticLog}">
+                    <TextBlock Text="{Binding DiagnosticLogHeading}" TextWrapping="Wrap" FontWeight="SemiBold" />
+                    <TextBlock Grid.Row="1" Text="{DynamicResource Text.ShowingUpTo32KiBAnd120}"
+                               IsVisible="{Binding IsDiagnosticLogTruncated}" Classes="muted" TextWrapping="Wrap" />
+                    <TextBox Grid.Row="2" Text="{Binding DiagnosticLogTail, Mode=OneWay}" IsReadOnly="True"
+                             AcceptsReturn="True" TextWrapping="Wrap" FontFamily="Menlo, Consolas, monospace"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto" />
+                  </Grid>
+                </Grid>
+              </Border>
+            </Grid>
+          </Grid>
+
+          <!-- 路径设置 -->
+          <ScrollViewer IsVisible="{Binding IsSettings}" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Spacing="17">
+              <Border Classes="card" IsVisible="{Binding SupportsUiLanguage}">
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                  <StackPanel Spacing="6">
+                    <TextBlock Text="{DynamicResource Text.UiLanguage}" Classes="heading" />
+                    <TextBlock Text="{DynamicResource Text.UiLanguageHelp}" Classes="muted" TextWrapping="Wrap" />
+                  </StackPanel>
+                  <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                    <Button x:Name="ChineseLanguageButton" Content="简体中文" Classes.primary="{Binding IsChineseUi}"
+                            Command="{Binding SelectUiLanguageCommand}" CommandParameter="zh-CN" />
+                    <Button x:Name="EnglishLanguageButton" Content="English" Classes.primary="{Binding IsEnglishUi}"
+                            Command="{Binding SelectUiLanguageCommand}" CommandParameter="en" />
+                  </StackPanel>
+                </Grid>
+              </Border>
+              <Border Classes="card">
+                <StackPanel Spacing="19">
+                  <TextBlock Text="{DynamicResource Text.GameAndModPaths}" Classes="heading" />
+                  <TextBlock Text="{DynamicResource Text.LeaveBlankToDetectAutomaticallySavingRefreshes}" Classes="muted" />
+                  <StackPanel>
+                    <TextBlock Text="{DynamicResource Text.SteamRootFolder}" Classes="label" />
+                    <TextBox Text="{Binding SteamPath}" PlaceholderText="{DynamicResource Text.AutomaticallyFindSteam}" />
+                  </StackPanel>
+                  <StackPanel>
+                    <TextBlock Text="{Binding GameDirectoryLabel}" Classes="label" />
+                    <TextBox Text="{Binding GamePath}" PlaceholderText="{Binding GameDirectoryPlaceholder}" />
+                  </StackPanel>
+                  <StackPanel>
+                    <TextBlock Text="{Binding UserDataDirectoryLabel}" Classes="label" />
+                    <TextBox Text="{Binding UserPath}" PlaceholderText="{Binding UserDataDirectoryPlaceholder}" />
+                  </StackPanel>
+                  <Button Content="{DynamicResource Text.SaveAndRescan}" Classes="primary" Command="{Binding SaveSettingsCommand}" HorizontalAlignment="Left" />
+                </StackPanel>
+              </Border>
+              <Border Classes="card">
+                <StackPanel Spacing="10">
+                  <TextBlock Text="{DynamicResource Text.CurrentUserDataPaths}" Classes="heading" />
+                  <TextBlock Text="{Binding UserDirectoryText}" Classes="muted" TextWrapping="Wrap" />
+                  <TextBlock Text="{DynamicResource Text.LocalModFolder}" Classes="label" />
+                  <TextBlock Text="{Binding LocalModDirectoriesText}" Classes="muted" TextWrapping="Wrap" />
+                  <TextBlock Text="{DynamicResource Text.SteamWorkshopFolder}" Classes="label" />
+                  <TextBlock Text="{Binding WorkshopDirectoriesText}" Classes="muted" TextWrapping="Wrap" />
+                  <TextBlock Text="{DynamicResource Text.ProfilesAreStoredSeparatelyChangesToThe}" Classes="muted" />
+                </StackPanel>
+              </Border>
+            </StackPanel>
+          </ScrollViewer>
+        </Grid>
+      </Grid>
+    </Grid>
+
+    <Border Grid.Row="2" Background="{StaticResource SubtleBrush}" BorderBrush="{StaticResource LineBrush}" BorderThickness="0,1,0,0" Padding="20,0">
+      <Grid ColumnDefinitions="*,100">
+        <TextBlock Text="{Binding Status}" FontSize="10.5" Foreground="{StaticResource TextTertiaryBrush}" VerticalAlignment="Center" />
+        <ProgressBar Grid.Column="1" IsIndeterminate="True" IsVisible="{Binding CanCancelOperation}" Height="3"
+                     Foreground="{DynamicResource AccentBrush}" VerticalAlignment="Center" />
+      </Grid>
+    </Border>
+  </Grid>
+</Window>
