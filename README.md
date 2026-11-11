@@ -99,6 +99,8 @@ dotnet run --project src/Ck3ModManager.Desktop
 
 On macOS or Linux, you can also run `bash scripts/run-desktop.sh`.
 
+The desktop UI embeds Noto Sans SC (SIL OFL 1.1) so Chinese text renders even on systems without a CJK font installed. The license text ships next to the font in `src/Ck3ModManager.Desktop/Assets/Fonts/OFL.txt`.
+
 ### Build the macOS app
 
 ```shell

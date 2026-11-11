@@ -27,8 +27,15 @@
     <SolidColorBrush x:Key="SurfaceBrush" Color="#FFFFFF" />
     <SolidColorBrush x:Key="CanvasBrush" Color="#F5F6F7" />
     <SolidColorBrush x:Key="SubtleBrush" Color="#FAFAFA" />
+
+    <!-- 界面以中文为主。系统只保证拉丁字体，不保证有中文字形，因此随程序内嵌 Noto Sans SC
+         （SIL OFL 1.1，见 Assets/Fonts/OFL.txt），避免在缺中文字体的机器上整屏显示方框。 -->
+    <FontFamily x:Key="AppFontFamily">avares://Ck3ModManager.Desktop/Assets/Fonts/NotoSansSC-Regular.otf#Noto Sans SC</FontFamily>
   </Application.Resources>
   <Application.Styles>
     <FluentTheme />
+    <Style Selector="Window">
+      <Setter Property="FontFamily" Value="{StaticResource AppFontFamily}" />
+    </Style>
   </Application.Styles>
 </Application>

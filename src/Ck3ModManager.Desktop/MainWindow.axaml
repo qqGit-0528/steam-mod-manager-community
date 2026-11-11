@@ -4,7 +4,7 @@
         x:Class="Ck3ModManager.Desktop.MainWindow" Title="{Binding WindowTitle}"
         Width="1180" Height="800" MinWidth="1000" MinHeight="690"
         Background="{StaticResource CanvasBrush}" Foreground="{StaticResource TextPrimaryBrush}"
-        FontSize="13" FontFamily="PingFang SC, Microsoft YaHei UI, Segoe UI, sans-serif">
+        FontSize="13" FontFamily="{StaticResource AppFontFamily}">
   <Window.Resources>
     <local:SteamGameIconConverter x:Key="SteamGameIcon" />
     <local:LocalizedGameNameConverter x:Key="LocalizedGameName" />
