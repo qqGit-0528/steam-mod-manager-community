@@ -5,7 +5,7 @@ using Ck3ModManager.Core;
 
 namespace Ck3ModManager.Infrastructure;
 
-/// <summary>只检查已知 Steam 根目录及其声明的库，不遍历用户磁盘。</summary>
+/// <summary>只检查已知 Steam 根目录（默认位置、Windows 注册表）及其声明的库，不遍历用户磁盘。</summary>
 public sealed class SteamGameLocator : IGameLocator
 {
     private readonly IEnumerable<string>? steamRoots;
@@ -107,7 +107,8 @@ public sealed class SteamGameLocator : IGameLocator
         var knownRoots = new List<string>();
         if (!string.IsNullOrWhiteSpace(steamDirectory)) AddKnown(steamDirectory, knownRoots);
         if (!string.IsNullOrWhiteSpace(steamDirectory)) AddExisting(steamDirectory, roots, warnings, T("SelectedSteamFolder"));
-        foreach (var root in (steamRoots ?? DefaultRoots()).Concat([definition.SteamLibraryHint]).OfType<string>().Concat(definition.SteamLibraryRoots))
+        var discovered = steamRoots ?? DefaultRoots().Concat(SteamRootDiscovery.Read());
+        foreach (var root in discovered.Where(LooksLikeSteamRoot).Concat([definition.SteamLibraryHint]).OfType<string>().Concat(definition.SteamLibraryRoots))
         {
             AddKnown(root, knownRoots);
             AddExisting(root, roots, null, T("SteamFolder"));
@@ -141,6 +142,16 @@ public sealed class SteamGameLocator : IGameLocator
             catch (Exception ex) when (IsReadableError(ex)) { warnings.Add(T("CouldNotReadSteamLibraryManifest", vdf, ex.Message)); }
         }
         return (libraries.Distinct(PathComparer).ToArray(), knownLibraries, knownRoots);
+    }
+
+    internal static bool LooksLikeSteamRoot(string path)
+    {
+        try
+        {
+            // Steam 安装根目录必定有 steamapps。仅存在同名目录（例如缓存用的 %LOCALAPPDATA%\Steam）不算安装。
+            return Directory.Exists(Path.Combine(Path.GetFullPath(path), "steamapps"));
+        }
+        catch (Exception ex) when (IsReadableError(ex)) { return false; }
     }
 
     internal static string WorkshopPath(string library, uint appId) =>

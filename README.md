@@ -39,7 +39,8 @@ Steam Mod Manager reads the `supported_version` declared in each mod's descripto
 
 - Reads every Steam library and installed-game manifest on startup.
 - Adds a game only when it supports the Steam Workshop, detected from a local Workshop directory, `appworkshop_<AppId>.acf`, or the Steam store Workshop category.
-- Supports the default Steam location, every library in `libraryfolders.vdf`, and Steam paths saved for other games.
+- Finds Steam through the Windows registry (including installs outside Program Files), the default locations, every library in `libraryfolders.vdf`, and Steam paths saved for other games.
+- Ignores folders that only look like a Steam install, such as a `%LOCALAPPDATA%\Steam` cache directory without `steamapps`.
 - Keeps separate paths, profiles, search state and version selection for each game.
 
 ### Mod library
